@@ -175,11 +175,16 @@
             <ul class="fa-ul mb-0">
               <li>
                 <i class="fa-li fa fa-angle-right"></i>
-                • Junior Data Scientist where I specialize in Natural Language Processing (NLP) in low-resource settings, particularly in Myanmar Language.
-                • Developed pipelines and machine learning models for sentiment analysis for (Myanmar) for use in chatbots and general NLP tasks.
-                • Collaborate with product and development teams to implement algorithms into product code.
+                Junior Data Scientist where I specialize in Natural Language Processing (NLP) in low-resource settings, particularly in Myanmar Language.
               </li>
-              
+              <li>
+                <i class="fa-li fa fa-angle-right"></i>
+                Developed pipelines and machine learning models for sentiment analysis for (Myanmar) for use in chatbots and general NLP tasks.
+              </li>
+              <li>
+                <i class="fa-li fa fa-angle-right"></i>
+                Collaborate with product and development teams to implement algorithms into product code.
+              </li>
             </ul>
           </div>
           <div class="resume-date text-md-right">
@@ -226,50 +231,6 @@
           </div>
         </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Software Developer</h3>
-            <div class="subheading mb-3">A*STAR - Agency for Science, Technology and Research</div>
-            <ul class="fa-ul mb-0">
-              <li>
-                <i class="fa-li fa fa-angle-right"></i>
-                Single-handedly created an android application and a web portal for non-profit organizations to organize
-                events and list volunteering opportunities
-              </li>
-              <li>
-                <i class="fa-li fa fa-angle-right"></i>
-                Collaboratively developed both mobile and web self-health care
-                service applications for dementia patients' helpers
-              </li>
-            </ul>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">October 2016 - March 2017<br /> (6 months)</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Software Tester</h3>
-            <div class="subheading mb-3">Pactera</div>
-            <ul class="fa-ul mb-0">
-              <li>
-                <i class="fa-li fa fa-angle-right"></i>
-                Performed day to day duties such as testing functionality of printer firmware on printers
-              </li>
-              <li>
-                <i class="fa-li fa fa-angle-right"></i>
-                Worked closely
-                with the professionals from various background to consistently hit the monthly projected performance
-                target
-              </li>
-            </ul>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2013 - November 2013<br /> (6 months)</span>
-          </div>
-        </div>
-
       </div>
     </section>
 
@@ -283,18 +244,17 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">University of Miyazaki , Japan</h3>
+            <h3 class="mb-0">University of Miyazaki, Japan</h3>
             <div class="subheading mb-3">Master of Engineering (M.Eng) </div>
             <ul class="fa-ul mb-0">
               <li>
                 <i class="fa-li fa fa-trophy text-warning"></i>
-                
-                Naoji Iwatani Full Scholarship For Master Program (2020-2022)</li>
+                Naoji Iwatani Full Scholarship For Master Program (2020-2022)
+              </li>
               <li>
                 <i class="fa-li fa fa-trophy text-warning"></i>
-               
-                Women in Engineering (WIE) Best Paper Award</li>
-              
+                Women in Engineering (WIE) Best Paper Award
+              </li>
             </ul>
           </div>
           <div class="resume-date text-md-right">
@@ -302,7 +262,7 @@
           </div>
         </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">University of Miyazaki, Japan</h3>
             <div class="subheading mb-3">Research Student</div>
