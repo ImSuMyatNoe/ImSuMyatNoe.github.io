@@ -83,6 +83,10 @@
 
         <p class="lead mb-3 text-justify">I am currently studying Master of Computer Science at University of Miyazaki, Japan. 
           My research interest includes Computer Vision based on Machine Learning and Deep Learning.I am passionate about AI technologies: mainly reinforcement learning, computer vision, and generative adversarial networks. 
+          
+        </p>
+
+        <p class="lead mb-3 text-justify">
           My undergraduate thesis was Question Answering based on SQUAD Dataset (NLP). After then, worked as a Junior Data Scientist at one of the local company in Myanmar. I enjoy working at the intersection of teams; have mediated between technical, business to build products. I have a strong multi-disciplinary research record, with publications in image processing field.
           I care deeply about data and how it mirrors the systems and world around us. I love developing methodologies that deliver tangible results using data.
         </p>
@@ -377,10 +381,19 @@
             <ul class="fa-ul mb-0">
               <li>
                 <i class="fa-li fa fa-angle-right"></i>
-                Data Scientist with Python Track - DataCamp</li>
+                Big Data Course in Acroquest Myanmar Technology Co.Ltd(08/2017)</li>
               <li>
                 <i class="fa-li fa fa-angle-right"></i>
-                Accredited Developer - Blue Prism</li>
+                Accomplished Data Analyst Track in Data Camp (08/2018)</li>
+                <li>
+                  <i class="fa-li fa fa-angle-right"></i>
+                  Accomplished Prof. Andrew Ng Machine learning course(05/2018) (08/2018)</li>
+                <li>
+                    <i class="fa-li fa fa-angle-right"></i>
+                    Accomplished Prof. Andrew Ng Deep learning course(12/2018)</li>
+                <li>
+                      <i class="fa-li fa fa-angle-right"></i>
+                      Southeast Asia Machine Learning Summer School (07/2019)</li>
             </ul>
           </div>
         </div>
@@ -391,10 +404,17 @@
             <ul class="fa-ul mb-0">
               <li>
                 <i class="fa-li fa fa-angle-right"></i>
-                Intelligent Outdoor Aquaponics with Automated Grow Lights and Internet of Things - IEEE</li>
+                Detection of Estrus in Cattle by using Image Technology and Machine Learning Methods - 2020 IEEE 9th Global Conference on Consumer Electronics (GCCE),
+                320-321</li>
               <li>
                 <i class="fa-li fa fa-angle-right"></i>
-                Smart Aquaponics System for Urban Farming - Science Direct</li>
+                Automatic Detection of Mounting Behavior in Cattle using Semantic Segmentation Classification - 2021 IEEE 3rd Global Conference on Life Sciences and Technologies
+                Women in Engineering (WIE) Best Paper Award</li>
+              <li>
+                  <i class="fa-li fa fa-angle-right"></i>
+                  A Deep Learning-based Instance Segmentation Model using Mask R-CNN for Automated Detection and Tracking of Mounting Behavior in Cattles - 15th International Conference on Innovative Computing, Information and Control (ICICIC2021)
+                  Online, September 15-16, 2021
+              </li>
             </ul>
           </div>
         </div>
@@ -403,72 +423,23 @@
 
     <hr class="m-0">
 
-    <!-- Public Speaking -->
+    <!-- ORGANIZATIONS -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="public_speaking">
       <div class="w-100">
 
-        <h2 class="mb-5">Public Speaking</h2>
+        <h2 class="mb-5">ORGANIZATIONS</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
           <div class="resume-content">
-            <h3 class="mb-0">Singapore Institute of Management</h3>
-            <div class="subheading mb-3">Technical interview workshop</div>
+            <h3 class="mb-0">Women in AI</h3>
+            <div class="subheading mb-3">Technical and Content Lead</div>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">Singapore <br />Jan 2020</span>
+            <span class="text-primary">Japan <br />(12/2020 - Present)</span>
           </div>
         </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
-          <div class="resume-content">
-            <h3 class="mb-0">University of Glasgow Singapore</h3>
-            <div class="subheading mb-3">How to get started with AI</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Singapore <br />Jan 2020</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
-          <div class="resume-content">
-            <h3 class="mb-0">Google Cloud DevFest KL 2019</h3>
-            <div class="subheading mb-3">Multimodal classification using TensorFlow</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Kuala Lumpur <br />Dec 2019</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
-          <div class="resume-content">
-            <h3 class="mb-0">PyCon Singapore 2019</h3>
-            <div class="subheading mb-3">Demystifying rpa with Python</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Singapore <br />Oct 2019</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
-          <div class="resume-content">
-            <h3 class="mb-0">AI Singapore</h3>
-            <div class="subheading mb-3">Inaugural AI4K bootcamp</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Singapore <br />Feb 2019</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
-          <div class="resume-content">
-            <h3 class="mb-0">JuniorDev Meetup Singapore</h3>
-            <div class="subheading mb-3">Developer » AI Apprentice</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Singapore <br />Jan 2019</span>
-          </div>
-        </div>
-
+        
       </div>
     </section>
 
