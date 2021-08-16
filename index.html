@@ -73,37 +73,35 @@
     <!-- About -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
-        <h1 class="mb-0">Thu Ya
-          <span class="text-primary">Kyaw</span>
+        <h1 class="mb-0">Su Myat
+          <span class="text-primary">Noe</span>
         </h1>
 
         <div class="subheading mb-5">
-          <a href="mailto:contact.thuya@gmail.com">contact.thuya@gmail.com</a>
+          <a href="mailto:contact.sumyatnoe@gmail.com">contact.sumyatnoe@gmail.com</a>
         </div>
 
-        <p class="lead mb-3 text-justify">I am experienced in creating applications, building data pipelines, scaling
-          machine learning models, and production deployment. I am passionate about AI technologies: mainly natural
-          language
-          processing, reinforcement learning, computer vision, and generative adversarial networks. Apart from being one
-          of the 13 pioneer graduates of AI apprentice programme from AI Singapore, I am also a certified Blue Prism RPA
-          developer.
+        <p class="lead mb-3 text-justify">I am currently studying Master of Computer Science at University of Miyazaki, Japan. 
+          My research interest includes Computer Vision based on Machine Learning and Deep Learning.I am passionate about AI technologies: mainly reinforcement learning, computer vision, and generative adversarial networks. 
+          My undergraduate thesis was Question Answering based on SQUAD Dataset (NLP). After then, worked as a Junior Data Scientist at one of the local company in Myanmar. I enjoy working at the intersection of teams; have mediated between technical, business to build products. I have a strong multi-disciplinary research record, with publications in image processing field.
+          I care deeply about data and how it mirrors the systems and world around us. I love developing methodologies that deliver tangible results using data.
         </p>
 
         <p class="lead mb-5 text-justify">Whenever I am not coding, I give back to the community by organizing
-          hackathons, conducting technical and soft skills workshops and mentoring the next generation of developers. My
-          love for sharing experience and knowledge has led me to contribute even more by speaking at various tech
+          events.I am Technical and Content Lead at Women in AI, Myanmar.The main motivation was to promote Gender-inclusivity in the field of AI in Myanmar. 
+          I love for sharing experience and knowledge has led me to contribute even more by speaking at various tech
           conferences and events around the world. I am always keeping a lookout for new gigs. Do
           you have a perfect gig for me? I am only an email away.
         </p>
 
         <div class="social-icons mb-5">
-          <a href="https://www.linkedin.com/in/thuyakyaw/" target="_blank">
+          <a href="https://www.linkedin.com/in/%F0%9F%8C%BB-su-myat-noe-148089113/" target="_blank">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="https://github.com/itsthuya" target="_blank">
+          <a href="https://github.com/ImSuMyatNoe" target="_blank">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://twitter.com/ItsThuYa" target="_blank">
+          <a href="https://twitter.com/SuMNoe29" target="_blank">
             <i class="fab fa-twitter"></i>
           </a>
         </div>
@@ -168,20 +166,16 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Machine Learning Engineer</h3>
-            <div class="subheading mb-3">NTUC Enterprise</div>
+            <h3 class="mb-0">Junior Data Scientist</h3>
+            <div class="subheading mb-3">Bagan Innovation Technology</div>
             <ul class="fa-ul mb-0">
               <li>
                 <i class="fa-li fa fa-angle-right"></i>
-                Working closely with a team of data scientists in building and scaling machine learning models for
-                forecasting store items demand and replenishment planning
+                • Junior Data Scientist where I specialize in Natural Language Processing (NLP) in low-resource settings, particularly in Myanmar Language.
+                • Developed pipelines and machine learning models for sentiment analysis for (Myanmar) for use in chatbots and general NLP tasks.
+                • Collaborate with product and development teams to implement algorithms into product code.
               </li>
-              <li>
-                <i class="fa-li fa fa-angle-right"></i>
-                Mainly leveraging Python and Golang to produce
-                scalable
-                code, Docker and Kubernetes for production deployments, and AWS and GCP as deployment platforms
-              </li>
+              
             </ul>
           </div>
           <div class="resume-date text-md-right">
@@ -191,29 +185,17 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">AI Apprentice <i class="fa fa-angle-double-right"></i> AI Engineer </h3>
-            <div class="subheading mb-3">AI Singapore</div>
+            <h3 class="mb-0"><i class="fa fa-angle-double-right"></i>Junior Business Analyst  </h3>
+            <div class="subheading mb-3">Nuzay</div>
             <ul class="fa-ul mb-0">
               <li>
                 <i class="fa-li fa fa-angle-right"></i>
-                Collaborated closely with researchers in building machine learning models to calculate credit scores for
-                'unbankable' based on their behaviours and relevant social data
+                I was 4 months internship at there. My main role was to solve organizational information problems and requirements by analyzing requirements also designing computer programs, recommending system controls and protocols. 
+                Furthermore, refined and implemented complex SQL and extract, transform, load (ETL) workflows to acquire, filter, and enrich data as required for the project at hand. 
+                Moreover, I was given a task to maintain an in-depth understanding of current project management application development methodologies, tools, and techniques (SDLC) for large-sized projects.
               </li>
-              <li>
-                <i class="fa-li fa fa-angle-right"></i>
-                Assisted another research team in
-                producing computer vision methods for an unmanned tumour removal robot
-              </li>
-              <li>
-                <i class="fa-li fa fa-angle-right"></i>
-                Integrated SociBot, a personal
-                assistance robot, with Azure Cognitive services to boost its overall capability
-              </li>
-              <li>
-                <i class="fa-li fa fa-angle-right"></i>
-                Contributed to AI4K (AI
-                for kids) curriculum and conducted the inaugural AI4K workshop
-              </li>
+              
+              
             </ul>
           </div>
           <div class="resume-date text-md-right">
@@ -223,21 +205,16 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Analyst, Solution Development</h3>
-            <div class="subheading mb-3">Avanade</div>
+            <h3 class="mb-0">Junior System Developer</h3>
+            <div class="subheading mb-3">Fujitsu System Development Workshop</div>
             <ul class="fa-ul mb-0">
               <li>
                 <i class="fa-li fa fa-angle-right"></i>
-                Synergistically designed, built and deployed RPA processes for a few clients from the banking industry
+                • Participate as part of a software development team in a collaborative manner.
+                • Code specifications by converting logical sequence and workflow into program language.
+                • Developed a "Hotel Reservation System " with PHP, JavaScript, and JQuery Language by following the first paced agile environment.
               </li>
-              <li>
-                <i class="fa-li fa fa-angle-right"></i>
-                Successfully delivered the processes 1 week ahead of the scheduled timeline
-              </li>
-              <li>
-                <i class="fa-li fa fa-angle-right"></i>
-                Conducted blue prism foundation training for the new analysts
-              </li>
+              
             </ul>
           </div>
           <div class="resume-date text-md-right">
@@ -302,46 +279,52 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">University of Glasgow</h3>
-            <div class="subheading mb-3">Bachelor of Science (Hons) in Computing Science</div>
+            <h3 class="mb-0">University of Miyazaki , Japan</h3>
+            <div class="subheading mb-3">Master of Engineering (M.Eng) </div>
             <ul class="fa-ul mb-0">
               <li>
                 <i class="fa-li fa fa-trophy text-warning"></i>
-                1<sup>st</sup>
-                Class Honours - University of Glasgow Singapore - Class of 2015</li>
+                
+                Naoji Iwatani Full Scholarship For Master Program (2020-2022)</li>
               <li>
                 <i class="fa-li fa fa-trophy text-warning"></i>
-                1<sup>st</sup>
-                Place - University of Glasgow Singapore - Project Award 2016</li>
-              <li>
-                <i class="fa-li fa fa-trophy text-warning"></i>
-                2<sup>nd</sup>
-                Place - Glasgow University Tech Society - Hackathon 2016</li>
+               
+                Women in Engineering (WIE) Best Paper Award</li>
+              
             </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">2015 - 2017</span>
+            <span class="text-primary">2020 - 2022</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
-            <h3 class="mb-0">Republic Polytechnic</h3>
-            <div class="subheading mb-3">Diploma in Information Technology</div>
-            <ul class=fa-ul mb-0">
+            <h3 class="mb-0">University of Miyazaki, Japan</h3>
+            <div class="subheading mb-3">Research Student</div>
+            <ul class="fa-ul mb-0">
+      
               <li>
-                <i class="fa-li fa fa-angle-right"></i>
-                Information Security Specialization</li>
-              <li>
-                <i class="fa-li fa fa-angle-right"></i>
-                APAC PyCon 2010 Volunteer</li>
-              <li>
-                <i class="fa-li fa fa-angle-right"></i>
-                Open-source Community Member</li>
+                <i class="fa-li fa fa-trophy text-warning"></i>
+               
+                Cattle Monitoring with Image Processing Project</li>
+              
             </ul>
+            
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">2010 - 2013</span>
+            <span class="text-primary">2019 October - 2020 March</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">University of Information Technology, Yangon</h3>
+            <div class="subheading mb-3">Bachelor Degree in Knowledge Engineering</div>
+            
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2013 - 2018</span>
           </div>
         </div>
 
