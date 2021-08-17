@@ -32,7 +32,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
 
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Thu Ya Kyaw</span>
+      <span class="d-block d-lg-none">Su Myat Noe</span>
       <span class="d-none d-lg-block">
         <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.png" alt="">
       </span>
@@ -61,7 +61,7 @@
           <a class="nav-link js-scroll-trigger" href="#accomplishments">Accomplishments</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#public_speaking">Public Speaking</a>
+          <a class="nav-link js-scroll-trigger" href="#voluteering_experience">Voluteering Experience</a>
         </li>
       </ul>
     </div>
@@ -129,21 +129,21 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="img/pycon-sg-2019.jpg" alt="PyCon Singapore 2019">
+              <img class="d-block w-100" src="img/pycon-sg-2019.jpg" alt="SEAMLS 2019">
               <div class="carousel-caption d-none d-md-block">
-                <h5>PyCon Singapore 2019</h5>
+                <h5>SEAMLS 2019</h5>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="img/google-cloud-devfest-kl-2019.jpg" alt="Google Cloud DevFest KL 2019">
+              <img class="d-block w-100" src="img/google-cloud-devfest-kl-2019.jpg" alt="LifeTech, IEEE 2021 Virtual Conference">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Google Cloud DevFest KL 2019</h5>
+                <h5>LifeTech, IEEE 2021 Virtual Conference</h5>
               </div>
             </div>
             <div class="carousel-item">
               <img class="d-block w-100" src="img/sit-uofg-2020.jpg" alt="Second slide">
               <div class="carousel-caption d-none d-md-block">
-                <h5>SIT-UofG Orientation 2019</h5>
+                <h5>Women in Engineering (WIE) Award 2021</h5>
               </div>
             </div>
           </div>
@@ -168,6 +168,23 @@
 
         <h2 class="mb-5">Experience</h2>
 
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Reserach Student</h3>
+            <div class="subheading mb-3">University of Miyazaki , Japan </div>
+            <ul class="fa-ul mb-0">
+              <li>
+                <i class="fa-li fa fa-angle-right"></i>
+                Cattle Monitoring with Image Processing Project
+              </li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">October 2019 - March 2021</span>
+          </div>
+        </div>
+
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Junior Data Scientist</h3>
@@ -188,19 +205,29 @@
             </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">May 2019 - Present</span>
+            <span class="text-primary">September 2018 - November 2018</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0"><i class="fa fa-angle-double-right"></i>Junior Business Analyst  </h3>
+            <h3 class="mb-0"><i class="fa-li fa fa-angle-right"></i>Junior Business Analyst  </h3>
             <div class="subheading mb-3">Nuzay</div>
             <ul class="fa-ul mb-0">
               <li>
                 <i class="fa-li fa fa-angle-right"></i>
                 I was 4 months internship at there. My main role was to solve organizational information problems and requirements by analyzing requirements also designing computer programs, recommending system controls and protocols. 
-                Furthermore, refined and implemented complex SQL and extract, transform, load (ETL) workflows to acquire, filter, and enrich data as required for the project at hand. 
+                
+              </li>
+
+              <li>
+                <i class="fa-li fa fa-angle-right"></i>
+                  Furthermore, refined and implemented complex SQL and extract, transform, load (ETL) workflows to acquire, filter, and enrich data as required for the project at hand. 
+                
+              </li>
+
+              <li>
+                <i class="fa-li fa fa-angle-right"></i>
                 Moreover, I was given a task to maintain an in-depth understanding of current project management application development methodologies, tools, and techniques (SDLC) for large-sized projects.
               </li>
               
@@ -208,7 +235,7 @@
             </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">May 2018 - May 2019<br /> (1 year 1 month)</span>
+            <span class="text-primary">June 2018 - September 2018<br /> Internship</span>
           </div>
         </div>
 
@@ -219,15 +246,26 @@
             <ul class="fa-ul mb-0">
               <li>
                 <i class="fa-li fa fa-angle-right"></i>
-                • Participate as part of a software development team in a collaborative manner.
-                • Code specifications by converting logical sequence and workflow into program language.
-                • Developed a "Hotel Reservation System " with PHP, JavaScript, and JQuery Language by following the first paced agile environment.
+                Participate as part of a software development team in a collaborative manner.
+               
+              </li>
+
+              <li>
+                <i class="fa-li fa fa-angle-right"></i>
+          
+                Code specifications by converting logical sequence and workflow into program language.
+                
+              </li>
+
+              <li>
+                <i class="fa-li fa fa-angle-right"></i>
+                Developed a "Hotel Reservation System " with PHP, JavaScript, and JQuery Language by following the first paced agile environment.
               </li>
               
             </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">June 2017 - May 2018<br /> (1 year)</span>
+            <span class="text-primary">October 2017 - November 2017<br /> Field Study</span>
           </div>
         </div>
 
@@ -264,20 +302,20 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">University of Miyazaki, Japan</h3>
-            <div class="subheading mb-3">Research Student</div>
+            <h3 class="mb-0">University of Information Technology, Yangon</h3>
+            <div class="subheading mb-3">Master Student</div>
             <ul class="fa-ul mb-0">
       
               <li>
                 <i class="fa-li fa fa-trophy text-warning"></i>
                
-                Cattle Monitoring with Image Processing Project</li>
+                Coursework </li>
               
             </ul>
             
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">2019 October - 2020 March</span>
+            <span class="text-primary">2018 December - 2019 September</span>
           </div>
         </div>
 
@@ -322,9 +360,7 @@
               <li class="list-inline-item" data-toggle="tooltip" title="JavaScript">
                 <i class="fab fa-js-square"></i>
               </li>
-              <li class="list-inline-item" data-toggle="tooltip" title="NodeJS">
-                <i class="fab fa-node-js"></i>
-              </li>
+             
               <li class="list-inline-item" data-toggle="tooltip" title="PHP">
                 <i class="fab fa-php"></i>
               </li>
@@ -365,29 +401,31 @@
               <li>
                 <i class="fa-li fa fa-angle-right"></i>
                 Detection of Estrus in Cattle by using Image Technology and Machine Learning Methods - 2020 IEEE 9th Global Conference on Consumer Electronics (GCCE),
-                320-321</li>
+                320-321.</li>
               <li>
                 <i class="fa-li fa fa-angle-right"></i>
                 Automatic Detection of Mounting Behavior in Cattle using Semantic Segmentation Classification - 2021 IEEE 3rd Global Conference on Life Sciences and Technologies
-                Women in Engineering (WIE) Best Paper Award</li>
+                ,Women in Engineering (WIE) Best Paper Award.</li>
               <li>
                   <i class="fa-li fa fa-angle-right"></i>
-                  A Deep Learning-based Instance Segmentation Model using Mask R-CNN for Automated Detection and Tracking of Mounting Behavior in Cattles - 15th International Conference on Innovative Computing, Information and Control (ICICIC2021)
-                  Online, September 15-16, 2021
+                  A Deep Learning-based Instance Segmentation Model using Mask R-CNN for Automated Detection and Tracking of Mounting Behavior in Cattles - 15th International Conference on Innovative Computing, Information and Control (ICICIC2021).
+                  Online, September 15-16, 2021.
               </li>
             </ul>
           </div>
         </div>
       </div>
+      
+    </div>
     </section>
 
     <hr class="m-0">
 
-    <!-- ORGANIZATIONS -->
+    <!-- Voluteering Experience -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="public_speaking">
       <div class="w-100">
 
-        <h2 class="mb-5">ORGANIZATIONS</h2>
+        <h2 class="mb-5">Voluteering Experience</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
           <div class="resume-content">
@@ -396,6 +434,26 @@
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">Japan <br />(12/2020 - Present)</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+          <div class="resume-content">
+            <h3 class="mb-0">Miyazaki Kita Science High School Japanese Students Research Poster Presentation</h3>
+            <div class="subheading mb-3">Evaluation judge </div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Japan <br />(4/2021)</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+          <div class="resume-content">
+            <h3 class="mb-0">JST Sakura Science Exchange Program in University of Miyazaki</h3>
+            <div class="subheading mb-3">Japanese Translator </div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Japan <br />(12/2019)</span>
           </div>
         </div>
 
