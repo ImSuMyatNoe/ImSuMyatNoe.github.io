@@ -81,8 +81,8 @@
           <a href="mailto:contact.sumyatnoe@gmail.com">contact.sumyatnoe@gmail.com</a>
         </div>
 
-        <p class="lead mb-3 text-justify">I am currently studying Master of Computer Science at University of Miyazaki, Japan. 
-          My research interest includes Computer Vision based on Machine Learning and Deep Learning.I am passionate about AI technologies: mainly reinforcement learning, computer vision, and generative adversarial networks. 
+        <p class="lead mb-3 text-justify">I am currently studying Master of Computer Engineering at University of Miyazaki, Japan. 
+          My research interest includes Computer Vision based on Machine Learning and Deep Learning. I am passionate about AI technologies: mainly reinforcement learning, computer vision, and generative adversarial networks. 
           
         </p>
 
@@ -92,10 +92,14 @@
         </p>
 
         <p class="lead mb-5 text-justify">Whenever I am not coding, I give back to the community by organizing
-          events.I am Technical and Content Lead at Women in AI, Myanmar.The main motivation was to promote Gender-inclusivity in the field of AI in Myanmar. 
-          I love for sharing experience and knowledge has led me to contribute even more by speaking at various tech
-          conferences and events around the world. I am always keeping a lookout for new gigs. Do
-          you have a perfect gig for me? I am only an email away.
+          events.I am volunterring a Technical and Content Lead at Women in AI, Myanmar.The main motivation is to promote Gender-inclusivity in the field of AI in Myanmar. 
+          I love for sharing experience and knowledge has led me to contribute even more by speaking at various tech conferences and events around the world. 
+         
+        </p>
+
+        <p class="lead mb-5 text-justify">
+          
+          I am always keeping a lookout for new gigs. Do you have a perfect gig for me? I am only an email away.
         </p>
 
         <div class="social-icons mb-5">
@@ -108,7 +112,12 @@
           <a href="https://twitter.com/SuMNoe29" target="_blank">
             <i class="fab fa-twitter"></i>
           </a>
+         
+          <a href="https://www.researchgate.net/profile/Su-Myat-Noe-3" target="_blank">
+            <i class="fab fa-researchgate"></i>
+          </a>
         </div>
+        
 
       </div>
     </section>
@@ -176,8 +185,7 @@
             <ul class="fa-ul mb-0">
               <li>
                 <i class="fa-li fa fa-angle-right"></i>
-                Cattle Monitoring with Image Processing Project
-              </li>
+                Cattle Monitoring with Image Processing Methods </li>
             </ul>
           </div>
           <div class="resume-date text-md-right">
@@ -205,7 +213,7 @@
             </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">September 2018 - November 2018</span>
+            <span class="text-primary">September 2018 - November 2018</br>Full Time</span>
           </div>
         </div>
 
@@ -287,7 +295,7 @@
             <ul class="fa-ul mb-0">
               <li>
                 <i class="fa-li fa fa-trophy text-warning"></i>
-                Naoji Iwatani Full Scholarship For Master Program (2020-2022)
+                Naoji Iwatani Full Scholarship For Master Program (2020 April - 2022 March)
               </li>
               <li>
                 <i class="fa-li fa fa-trophy text-warning"></i>
@@ -296,7 +304,7 @@
             </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">2020 - 2022</span>
+            <span class="text-primary">2020 April - 2022 March</span>
           </div>
         </div>
 
@@ -326,7 +334,7 @@
             
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">2013 - 2018</span>
+            <span class="text-primary">2013 December - 2018 December</span>
           </div>
         </div>
 
@@ -383,13 +391,49 @@
                 Accomplished Data Analyst Track in Data Camp (08/2018)</li>
                 <li>
                   <i class="fa-li fa fa-angle-right"></i>
-                  Accomplished Prof. Andrew Ng Machine learning course(05/2018) (08/2018)</li>
+                  Accomplished Prof. Andrew Ng Machine learning course(05/2018)</li>
                 <li>
                     <i class="fa-li fa fa-angle-right"></i>
                     Accomplished Prof. Andrew Ng Deep learning course(12/2018)</li>
+                
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">ACHIEVEMENTS</h3>
+            <ul class="fa-ul mb-0">
+              <li>
+                <i class="fa-li fa fa-angle-right"></i>
+                Succeed in ITPEC exam (2016)</li>
+              <li>
+                <i class="fa-li fa fa-angle-right"></i>
+                Accomplished Data Analyst Track in Data Camp (08/2018)</li>
                 <li>
-                      <i class="fa-li fa fa-angle-right"></i>
-                      Southeast Asia Machine Learning Summer School (07/2019)</li>
+                  <i class="fa-li fa fa-angle-right"></i>
+                  SEAMLS 2019 Scholar (2019)</li>
+                <li>
+                    <i class="fa-li fa fa-angle-right"></i>
+                    Naoji Iwatani Full Scholarship For Master Program (2020-2022)</li>
+                
+            </ul>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Language</h3>
+            <ul class="fa-ul mb-0">
+              <li>
+                <i class="fa-li fa fa-angle-right"></i>
+                JLPT N3</li>
+              <li>
+                <i class="fa-li fa fa-angle-right"></i>
+               TOEFL ibt</li>
+                <li>
+                  
             </ul>
           </div>
         </div>
