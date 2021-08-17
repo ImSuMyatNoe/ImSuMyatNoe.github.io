@@ -61,7 +61,7 @@
           <a class="nav-link js-scroll-trigger" href="#accomplishments">Accomplishments</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#voluteering_experience">Voluteering Experience</a>
+          <a class="nav-link js-scroll-trigger" href="#public_speaking">Voluteering Experience</a>
         </li>
       </ul>
     </div>
