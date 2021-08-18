@@ -189,7 +189,7 @@
             </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">October 2019 - March 2021</span>
+            <span class="text-primary">October 2019 - March 2020</span>
           </div>
         </div>
 
