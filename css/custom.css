@@ -1,3 +1,13 @@
-.carousel-caption > h5 {
+/* .carousel-caption > h5 {
     color: white;
-}
+} */
+
+i {
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+.fa-icon-size{
+    font-size:6pt;
+ }
