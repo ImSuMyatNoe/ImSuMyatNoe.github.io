@@ -23,3 +23,8 @@ i {
 .fw-bold {
   font-weight: 600;
 }
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
