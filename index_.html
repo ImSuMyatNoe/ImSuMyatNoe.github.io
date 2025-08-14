@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Su Myat Noe, Ph.D - Project Researcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for a more modern look (optional) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9; /* slate-100 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #64748b; /* slate-500 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569; /* slate-600 */
+        }
+        .nav-link.active {
+            color: #2563eb; /* blue-600 */
+            font-weight: 600;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #2563eb; /* blue-600 */
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#hero" class="text-xl font-bold text-blue-600 hover:text-blue-700 transition-colors">Su Myat Noe, PhD</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="nav-link text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="#experience" class="nav-link text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Experience</a>
+                        <a href="#publications" class="nav-link text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Publications</a>
+                        <a href="#talks" class="nav-link text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Talks</a>
+                        <a href="#education" class="nav-link text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Education</a>
+                        <a href="#skills" class="nav-link text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Skills</a>
+                        <a href="#contact" class="nav-link text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-slate-500 hover:text-blue-600 hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="nav-link text-slate-600 hover:text-blue-600 hover:bg-slate-200 block px-3 py-2 rounded-md text-base font-medium transition-colors">About</a>
+                <a href="#experience" class="nav-link text-slate-600 hover:text-blue-600 hover:bg-slate-200 block px-3 py-2 rounded-md text-base font-medium transition-colors">Experience</a>
+                <a href="#publications" class="nav-link text-slate-600 hover:text-blue-600 hover:bg-slate-200 block px-3 py-2 rounded-md text-base font-medium transition-colors">Publications</a>
+                <a href="#talks" class="nav-link text-slate-600 hover:text-blue-600 hover:bg-slate-200 block px-3 py-2 rounded-md text-base font-medium transition-colors">Talks</a>
+                <a href="#education" class="nav-link text-slate-600 hover:text-blue-600 hover:bg-slate-200 block px-3 py-2 rounded-md text-base font-medium transition-colors">Education</a>
+                <a href="#skills" class="nav-link text-slate-600 hover:text-blue-600 hover:bg-slate-200 block px-3 py-2 rounded-md text-base font-medium transition-colors">Skills</a>
+                <a href="#contact" class="nav-link text-slate-600 hover:text-blue-600 hover:bg-slate-200 block px-3 py-2 rounded-md text-base font-medium transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-white py-16 md:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/3 mb-8 md:mb-0 text-center md:text-left">
+                <!-- Placeholder for profile image -->
+                <img src="https://placehold.co/240x240/E2E8F0/475569?text=SMN" alt="Su Myat Noe" class="rounded-full w-48 h-48 md:w-60 md:h-60 mx-auto md:mx-0 shadow-lg border-4 border-slate-200">
+            </div>
+            <div class="md:w-2/3 md:pl-12 text-center md:text-left">
+                <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 leading-tight">
+                    Su Myat Noe, <span class="text-blue-600">PhD</span>
+                </h1>
+                <p class="mt-4 text-xl text-slate-600">
+                    Machine Learning Researcher specializing in Explainable AI (XAI) and Human-AI Collaboration.
+                </p>
+                <p class="mt-2 text-md text-slate-500">
+                    National University of Singapore
+                </p>
+                <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                    <a href="https://www.linkedin.com/in/sumyatnoe/" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-blue-600 transition-colors" title="LinkedIn">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
+                    </a>
+                    <a href="https://github.com/ImSuMyatNoe" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-blue-600 transition-colors" title="GitHub">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" clip-rule="evenodd"/></svg>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=K52DPXwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-blue-600 transition-colors" title="Google Scholar">
+                         <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 12.162A4.985 4.985 0 0 0 4.974 14H1.026a4.986 4.986 0 0 0-.268-1.838L5.242 12.162zM12 4.01C10.045 4.01 8.212 4.887 6.883 6.31L4.057 3.483A10.02 10.02 0 0 1 12 2c5.523 0 10 4.477 10 10 0 2.24-.737 4.314-1.996 5.996L12.593 12H19.5a7.502 7.502 0 0 0-7.5-7.99zM12 14.75c-1.519 0-2.75-1.231-2.75-2.75S10.481 9.25 12 9.25s2.75 1.231 2.75 2.75S13.519 14.75 12 14.75zm8.974 3.162A4.985 4.985 0 0 0 21.242 16H13.801l5.173 1.924zM4.057 20.517A10.02 10.02 0 0 1 2 12c0-2.24.737-4.314 1.996-5.996L11.407 12H4.5a7.502 7.502 0 0 0 7.5 7.99c1.618 0 3.12-.516 4.34-1.396l-3.323 3.323A9.98 9.98 0 0 1 12 22a9.96 9.96 0 0 1-7.943-1.483z"/></svg>
+                    </a>
+                    <a href="mailto:sumyatnoe.research@gmail.com" class="text-slate-500 hover:text-blue-600 transition-colors" title="Email">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+                    </a>
+                     <a href="https://twitter.com/its_thuya" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-blue-600 transition-colors" title="Twitter">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- About Section -->
+        <section id="about" class="mb-16 scroll-mt-16">
+            <h2 class="section-title text-3xl font-bold text-slate-900 mb-8">About Me</h2>
+            <div class="bg-white p-6 sm:p-8 rounded-lg shadow-lg space-y-4 text-slate-700 leading-relaxed">
+                <p>I am a researcher with a Ph.D. in Machine Learning from the School of Computing, National University of Singapore (NUS). My research focuses on explainable AI (XAI) and human-AI collaboration, particularly in decision-making processes.</p>
+                <p>I am passionate about developing AI systems that are not only intelligent but also transparent, trustworthy, and aligned with human values. My work involves creating novel algorithms, conducting user studies, and building interactive systems to enhance human understanding and interaction with AI.</p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-16 scroll-mt-16">
+            <h2 class="section-title text-3xl font-bold text-slate-900 mb-8">Experience</h2>
+            <div class="space-y-8">
+                <!-- Experience Item 1 -->
+                <div class="bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+                        <h3 class="text-xl font-semibold text-blue-600">Research Fellow</h3>
+                        <span class="text-sm text-slate-500 mt-1 sm:mt-0">Jul 2023 - Present</span>
+                    </div>
+                    <p class="text-md font-medium text-slate-700 mb-3">National University of Singapore</p>
+                    <ul class="list-disc list-inside text-slate-600 space-y-1 text-sm sm:text-base">
+                        <li>Leading research projects in Explainable AI (XAI) and Human-AI Collaboration.</li>
+                        <li>Developing novel algorithms for generating counterfactual explanations.</li>
+                        <li>Conducting user studies to evaluate the effectiveness of XAI methods.</li>
+                        <li>Mentoring junior researchers and students.</li>
+                    </ul>
+                </div>
+                <!-- Experience Item 2 -->
+                <div class="bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+                        <h3 class="text-xl font-semibold text-blue-600">Research Assistant</h3>
+                        <span class="text-sm text-slate-500 mt-1 sm:mt-0">Aug 2018 - Jun 2023</span>
+                    </div>
+                    <p class="text-md font-medium text-slate-700 mb-3">National University of Singapore</p>
+                    <ul class="list-disc list-inside text-slate-600 space-y-1 text-sm sm:text-base">
+                        <li>Conducted Ph.D. research on counterfactual explanations for hybrid human-AI decision-making.</li>
+                        <li>Published research findings in top-tier conferences and journals.</li>
+                        <li>Collaborated with interdisciplinary teams on various research projects.</li>
+                    </ul>
+                </div>
+                <!-- Experience Item 3 -->
+                <div class="bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+                        <h3 class="text-xl font-semibold text-blue-600">Software Engineer</h3>
+                        <span class="text-sm text-slate-500 mt-1 sm:mt-0">May 2016 - Jul 2018</span>
+                    </div>
+                    <p class="text-md font-medium text-slate-700 mb-3">GLOBAL WAVE TECHNOLOGY</p>
+                    <ul class="list-disc list-inside text-slate-600 space-y-1 text-sm sm:text-base">
+                        <li>Developed and maintained web applications using Java and Spring framework.</li>
+                        <li>Participated in the full software development lifecycle, from requirements gathering to deployment.</li>
+                        <li>Worked in an Agile environment and contributed to team meetings and code reviews.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="mb-16 scroll-mt-16">
+            <h2 class="section-title text-3xl font-bold text-slate-900 mb-8">Publications</h2>
+            <div class="space-y-6">
+                <!-- Publication Item 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-lg font-semibold text-blue-700 hover:text-blue-800"><a href="#" target="_blank" rel="noopener noreferrer">Counterfactual Explanations for Hybrid Human-AI Decision Making</a></h3>
+                    <p class="text-sm text-slate-600 mt-1">Noe, S. M., & Chua, T. S.</p>
+                    <p class="text-sm text-slate-500 italic mt-1">Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI '23).</p>
+                </div>
+                <!-- Publication Item 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-lg font-semibold text-blue-700 hover:text-blue-800"><a href="#" target="_blank" rel="noopener noreferrer">Evaluating and Improving User Trust in AI through Counterfactual Explanations</a></h3>
+                    <p class="text-sm text-slate-600 mt-1">Noe, S. M., & Chua, T. S.</p>
+                    <p class="text-sm text-slate-500 italic mt-1">ACM Transactions on Interactive Intelligent Systems (TiiS), 2022.</p>
+                </div>
+                <!-- Publication Item 3 -->
+                 <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-lg font-semibold text-blue-700 hover:text-blue-800"><a href="#" target="_blank" rel="noopener noreferrer">A Survey on Explainable Artificial Intelligence (XAI): Towards Medical XAI</a></h3>
+                    <p class="text-sm text-slate-600 mt-1">Noe, S. M., et al.</p> <!-- Assuming 'et al.' if more authors -->
+                    <p class="text-sm text-slate-500 italic mt-1">IEEE Transactions on Neural Networks and Learning Systems, 2021.</p>
+                </div>
+                 <!-- Add more publications as needed -->
+            </div>
+        </section>
+
+        <!-- Talks Section -->
+        <section id="talks" class="mb-16 scroll-mt-16">
+            <h2 class="section-title text-3xl font-bold text-slate-900 mb-8">Talks & Presentations</h2>
+            <div class="space-y-6">
+                 <!-- Talk Item 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-lg font-semibold text-blue-700">Counterfactual Explanations for Hybrid Human-AI Decision Making</h3>
+                    <p class="text-sm text-slate-600 mt-1">ACM SIGCHI Conference on Human Factors in Computing Systems (CHI) 2023</p>
+                    <p class="text-sm text-slate-500 italic mt-1">Hamburg, Germany, April 2023</p>
+                </div>
+                 <!-- Talk Item 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-lg font-semibold text-blue-700">Explainable AI: Opening the Black Box of Deep Learning Models</h3>
+                    <p class="text-sm text-slate-600 mt-1">NUS School of Computing, Research Seminar Series</p>
+                    <p class="text-sm text-slate-500 italic mt-1">Singapore, October 2022</p>
+                </div>
+                <!-- Add more talks as needed -->
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="mb-16 scroll-mt-16">
+            <h2 class="section-title text-3xl font-bold text-slate-900 mb-8">Education</h2>
+            <div class="space-y-8">
+                <!-- Education Item 1 -->
+                <div class="bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+                        <h3 class="text-xl font-semibold text-blue-600">Doctor of Philosophy (Ph.D.), Computer Science</h3>
+                        <span class="text-sm text-slate-500 mt-1 sm:mt-0">2018 - 2023</span>
+                    </div>
+                    <p class="text-md font-medium text-slate-700 mb-1">National University of Singapore</p>
+                    <p class="text-sm text-slate-600 italic">Thesis: "Counterfactual Explanations for Hybrid Human-AI Decision Making"</p>
+                </div>
+                <!-- Education Item 2 -->
+                <div class="bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+                        <h3 class="text-xl font-semibold text-blue-600">Master of Computer Science (M.C.Sc.)</h3>
+                        <span class="text-sm text-slate-500 mt-1 sm:mt-0">2015 - 2016</span>
+                    </div>
+                    <p class="text-md font-medium text-slate-700">University of Computer Studies, Yangon</p>
+                </div>
+                <!-- Education Item 3 -->
+                <div class="bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+                        <h3 class="text-xl font-semibold text-blue-600">Bachelor of Computer Science (Hons.)</h3>
+                        <span class="text-sm text-slate-500 mt-1 sm:mt-0">2011 - 2015</span>
+                    </div>
+                    <p class="text-md font-medium text-slate-700">University of Computer Studies, Yangon</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-16 scroll-mt-16">
+            <h2 class="section-title text-3xl font-bold text-slate-900 mb-8">Skills</h2>
+            <div class="bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-700 mb-3">Programming Languages & Tools</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Java</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">C++</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">PyTorch</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">TensorFlow</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Scikit-learn</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Pandas</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">NumPy</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Git</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Docker</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-700 mb-3">Expertise & Workflow</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">Machine Learning</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">Deep Learning</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">Explainable AI (XAI)</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">Human-AI Interaction</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">Natural Language Processing</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">Agile Development</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">Research & Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="mb-16 scroll-mt-16">
+            <h2 class="section-title text-3xl font-bold text-slate-900 mb-8">Awards & Honors</h2>
+            <div class="bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+                <ul class="list-disc list-inside text-slate-600 space-y-2">
+                    <li>Dean's Graduate Research Achievement Award (2022-2023), National University of Singapore</li>
+                    <li>NUS Research Scholarship (2018 - 2023)</li>
+                    <li>Valedictorian, University of Computer Studies, Yangon (2015)</li>
+                    <li>Best Student Award (Multiple years: 2011-2015), University of Computer Studies, Yangon</li>
+                    <li>Completed Deep Learning Specialization (Coursera)</li>
+                    <!-- Add other key awards, keep it concise -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section id="interests" class="mb-16 scroll-mt-16">
+            <h2 class="section-title text-3xl font-bold text-slate-900 mb-8">Interests</h2>
+            <div class="bg-white p-6 sm:p-8 rounded-lg shadow-lg text-slate-700 leading-relaxed">
+                <p>Apart from being a researcher, I enjoy reading books and exploring the latest advancements in technology. I am also an avid photographer and love capturing moments during my travels. In my free time, I contribute to open-source projects and mentor aspiring students in STEM.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Contact / Footer -->
+    <footer id="contact" class="bg-slate-800 text-slate-300 py-12 scroll-mt-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-semibold mb-6">Get In Touch</h2>
+            <p class="mb-2">
+                <a href="mailto:sumyatnoe.research@gmail.com" class="hover:text-blue-400 transition-colors">sumyatnoe.research@gmail.com</a>
+            </p>
+            <p class="mb-6">
+                Phone: (+65) 8345 0914 (Optional - consider privacy)
+            </p>
+            <div class="flex justify-center space-x-6 mb-8">
+                 <a href="https://www.linkedin.com/in/sumyatnoe/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors" title="LinkedIn">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
+                </a>
+                <a href="https://github.com/ImSuMyatNoe" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors" title="GitHub">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" clip-rule="evenodd"/></svg>
+                </a>
+                <a href="https://scholar.google.com/citations?user=K52DPXwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors" title="Google Scholar">
+                     <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 12.162A4.985 4.985 0 0 0 4.974 14H1.026a4.986 4.986 0 0 0-.268-1.838L5.242 12.162zM12 4.01C10.045 4.01 8.212 4.887 6.883 6.31L4.057 3.483A10.02 10.02 0 0 1 12 2c5.523 0 10 4.477 10 10 0 2.24-.737 4.314-1.996 5.996L12.593 12H19.5a7.502 7.502 0 0 0-7.5-7.99zM12 14.75c-1.519 0-2.75-1.231-2.75-2.75S10.481 9.25 12 9.25s2.75 1.231 2.75 2.75S13.519 14.75 12 14.75zm8.974 3.162A4.985 4.985 0 0 0 21.242 16H13.801l5.173 1.924zM4.057 20.517A10.02 10.02 0 0 1 2 12c0-2.24.737-4.314 1.996-5.996L11.407 12H4.5a7.502 7.502 0 0 0 7.5 7.99c1.618 0 3.12-.516 4.34-1.396l-3.323 3.323A9.98 9.98 0 0 1 12 22a9.96 9.96 0 0 1-7.943-1.483z"/></svg>
+                </a>
+                 <a href="https://twitter.com/its_thuya" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors" title="Twitter">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                </a>
+            </div>
+            <p class="text-sm">&copy; <span id="currentYear"></span> Su Myat Noe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const svgs = mobileMenuButton.querySelectorAll('svg');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            svgs.forEach(svg => svg.classList.toggle('hidden'));
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileNavLinks = mobileMenu.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                svgs.forEach(svg => svg.classList.toggle('hidden')); // Reset icon
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Active navigation link highlighting on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav a.nav-link');
+        const mobileNavLinksAll = document.querySelectorAll('#mobile-menu a.nav-link');
+
+
+        function changeNav() {
+            let index = sections.length;
+
+            while(--index && window.scrollY + 100 < sections[index].offsetTop) {} // 100 is offset
+            
+            navLinks.forEach((link) => link.classList.remove('active'));
+            mobileNavLinksAll.forEach((link) => link.classList.remove('active'));
+
+            // Check if such an element exists before trying to add a class
+            if (navLinks[index]) {
+                 navLinks[index].classList.add('active');
+            }
+            if (mobileNavLinksAll[index]){
+                 mobileNavLinksAll[index].classList.add('active');
+            }
+           
+            // Special case for hero section (or top of page) to activate "About"
+             if (window.scrollY < sections[0].offsetTop - 100) { // If above the first section (e.g. hero)
+                navLinks.forEach((link) => link.classList.remove('active'));
+                mobileNavLinksAll.forEach((link) => link.classList.remove('active'));
+
+                // Try to activate the "About" link if it exists
+                const aboutDesktopLink = document.querySelector('nav a.nav-link[href="#about"]');
+                const aboutMobileLink = document.querySelector('#mobile-menu a.nav-link[href="#about"]');
+                if (aboutDesktopLink) aboutDesktopLink.classList.add('active');
+                if (aboutMobileLink) aboutMobileLink.classList.add('active');
+             }
+
+        }
+
+        // Debounce scroll event for performance
+        let scrollTimeout;
+        window.addEventListener('scroll', () => {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(changeNav, 50); // Adjust delay as needed
+        }, false);
+        
+        // Initial call to set active link on page load
+        changeNav();
+
+    </script>
+
+</body>
+</html>
