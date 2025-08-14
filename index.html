@@ -1,1109 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Su Myat Noe, Ph.D. | AI Researcher</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <title>Su Myat Noe</title>
+    <style>
+        /* --- General Styling --- */
+        :root {
+            --primary-text: #212529;
+            --secondary-text: #495057;
+            --accent-color: #0056b3;
+            --background-color: #ffffff;
+            --section-bg-color: #f8f9fa;
+            --border-color: #dee2e6;
+        }
 
-    <!-- Bootstrap core CSS -->
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+        html {
+            scroll-behavior: smooth;
+        }
 
-    <!-- Custom fonts for this template -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
-      rel="stylesheet"
-    />
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--primary-text);
+            line-height: 1.7;
+        }
 
-    <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet" />
-    <link href="css/custom.css" rel="stylesheet" />
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-    <!-- Custom favicon -->
-    <link rel="icon" href="img/profile.png" type="image/x-icon" />
-  </head>
+        h1, h2, h3, h4 {
+            color: var(--primary-text);
+            font-weight: 700;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--accent-color);
+            margin-bottom: 40px;
+            text-align: center;
+        }
 
-  <body id="page-top">
-    <!-- Nav Bar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-      id="sideNav"
-    >
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Su Myat Noe</span>
-        <span class="d-none d-lg-block">
-          <img
-            class="img-fluid img-profile rounded-circle mx-auto mb-2"
-            src="img/profile.png"
-            alt=""
-          />
-        </span>
-      </a>
+        h3 {
+            font-size: 1.6rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+        
+        h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#highlight"
-              >HIGHLIGHT</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education"
-              >EDUCATION</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#resarchinterests"
-              >RESEARCH INTERESTS</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#researchexperience"
-              >EXPERIENCE</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#honors"
-              >HONORS & AWARDS</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#publications"
-              >PUBLICATIONS
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#internshipexperience"
-              >INTERNSHIP EXPERIENCE
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#technicalskills"
-              >TECHNICAL SKILLS
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#softskills"
-              >SOFT SKILLS
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#talks"
-              >INVITED TALKS
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#volunteer"
-              >VOLUNTEERING</a
-            >
-          </li>
-        </ul>
-      </div>
+        a:hover {
+            color: #003d82;
+        }
+        
+        ul {
+            list-style-position: outside;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .skill-list li {
+            margin-bottom: 5px;
+        }
+
+        /* --- Navigation Bar --- */
+        nav {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            z-index: 1000;
+            padding: 10px 0;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            padding: 10px 15px;
+            font-weight: 500;
+            color: var(--primary-text);
+            font-size: 0.95rem;
+        }
+
+        /* --- Sections --- */
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        section:nth-of-type(even) {
+            background-color: var(--section-bg-color);
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        /* --- Hero Section --- */
+        #home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 80vh;
+        }
+
+        #home h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        #home .subtitle {
+            font-size: 1.5rem;
+            color: var(--secondary-text);
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .social-links a {
+            font-size: 1.8rem;
+            margin: 0 15px;
+            color: var(--secondary-text);
+        }
+        
+        /* --- Content Blocks Styling --- */
+        .content-block {
+            margin-bottom: 35px;
+        }
+        .block-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+        .content-block h4 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: var(--primary-text);
+        }
+        .content-block .date {
+            font-weight: 500;
+            color: var(--secondary-text);
+            white-space: nowrap;
+            margin-left: 20px;
+        }
+        .content-block .location {
+            font-style: italic;
+            color: var(--secondary-text);
+            margin-bottom: 15px;
+        }
+        .content-block ul {
+            margin-top: 15px;
+        }
+        
+        /* --- Skills Section --- */
+        #skills .skills-container {
+            columns: 2;
+            gap: 40px;
+        }
+        #skills .skill-category {
+            break-inside: avoid;
+            padding-bottom: 20px;
+        }
+
+        /* --- Publications Section --- */
+        .publication {
+            margin-bottom: 25px;
+        }
+        .publication .title {
+            font-weight: bold;
+        }
+        .publication .authors, .publication .venue {
+            font-size: 0.95rem;
+            color: var(--secondary-text);
+        }
+        
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #212529;
+            color: #f8f9fa;
+        }
+        footer h2 {
+            color: #ffffff;
+            border-bottom: none;
+        }
+        footer a {
+            color: #ffffff;
+        }
+        
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            #home .subtitle { font-size: 1.2rem; }
+            nav a { padding: 10px 5px; font-size: 0.85rem;}
+            .block-header { flex-direction: column; align-items: flex-start; }
+            .content-block .date { margin-left: 0; margin-top: 5px; }
+            #skills .skills-container { columns: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#publications">Publications</a>
+            <a href="#awards">Awards</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
 
-    <div class="container-fluid p-0">
-      <div class="pl-lg-5 pt-lg-5 pt-5 pl-3 pr-3 pr-lg-5">
-        <!-- About -->
+    <main>
+        <section id="home">
+            <div class="container">
+                <h1>Su Myat Noe, Ph.D.</h1>
+                <p class="subtitle">Researcher in Multimodal Generative AI & Vision-Language Models</p>
+                <div class="social-links">
+                    <a href="mailto:sumyatnoe.uit@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linktr.ee/sumyatnoe" target="_blank" title="Linktree"><i class="fas fa-link"></i></a>
+                    <a href="https://scholar.google.com/citations?user=BdUh5ogAAAAJ&hl=en&oi=sra" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                </div>
+            </div>
+        </section>
+
         <section id="about">
-          <div class="col-xs-2">
-            <h1 class="mb-0">
-              Su
-              <span class="text-primary">Myat Noe</span>
-            </h1>
-
-            <div class="subheading mb-5">
-              <a href="mailto:sumyatnoe.uit@gmail.com"
-                >sumyatnoe.uit@gmail.com</a
-              >
+            <div class="container">
+                <h2>About Me</h2>
+                <p>A multidisciplinary researcher in Computer Science with expertise in Computer Vision, Artificial Intelligence, Machine Learning, and Deep Learning. I recently completed a Ph.D. at the University of Miyazaki, Japan, with a research focus on developing deep learning-based methods for detecting estrus behavior in cattle using multi-camera tracking systems.</p>
+                <p>Currently serving as a Project Researcher at the National Institute of Informatics (NII) in Tokyo, Japan, I contribute to advanced research in vision-language modeling, retrieval-augmented generation (RAG) systems, agentic AI, video question answering (VideoQA), and video summarization. My research contributions have been published in leading international conferences and journals, with the aim of advancing impactful and practical AI solutions for real-world applications.</p>
             </div>
-
-            <p class="lead mb-3 text-justify">
-              I am Su Myat Noe, a passionate and multidisciplinary researcher in Computer Science, specializing in Computer Vision, 
-              Artificial Intelligence, Machine Learning, and Deep Learning. I recently completed my Ph.D. at the University of Miyazaki, 
-              Japan, where I focused on developing deep learning-based methods for detecting estrus in cattle using multi-camera 
-              tracking systems. Currently, I am working as a Project Researcher at the National Institute of Informatics (NII), Tokyo, Japan,
-              contributing to cutting-edge research in vision-language modeling, RAG systems, agentic AI, Video Question Answering 
-              (VideoQA), and video summarization. 
-              Through my publications in leading conferences and journals, I aim to advance impactful and practical AI solutions.
-            </p>
-
-            <p class="lead mb-3 text-justify">
-              Beyond academia, I actively engage in leadership and advocacy
-              roles within the AI community. As the Ambassador of Women in AI
-              Myanmar, I work tirelessly to promote gender inclusivity and
-              diversity in the AI domain. Additionally, serving as the Google
-              Developer Student Club Lead of Japan 2022-2023 allows me to
-              connect with fellow AI enthusiasts, providing them with valuable
-              learning opportunities and resources. I find great joy in
-              organizing and speaking at tech events and conferences worldwide,
-              where I share my knowledge and experiences, inspiring others to
-              pursue their aspirations in AI.
-            </p>
-
-            <p class="lead mb-5 text-justify">
-              I am always keeping a lookout for new gigs. Do you have a perfect
-              gig for me? I am only an email away.
-            </p>
-
-            <div class="social-icons mb-5">
-              <a
-                href="https://www.linkedin.com/in/sumyatnoe29/"
-                target="_blank"
-              >
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="https://github.com/ImSuMyatNoe" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://twitter.com/SuMNoe29" target="_blank">
-                <i class="fab fa-twitter"></i>
-              </a>
-
-              <a
-                href="https://www.researchgate.net/profile/Su-Myat-Noe-3"
-                target="_blank"
-              >
-                <i class="fab fa-researchgate"></i>
-              </a>
-              <a
-                href="https://scholar.google.com/citations?user=BdUh5ogAAAAJ&hl=en"
-                target="_blank"
-              >
-                <i class="fab fa-goolescholar"></i>
-              </a>
-            </div>
-          </div>
         </section>
 
-        <hr class="m-0 mt-5" />
-        
-        <!-- Highlight -->
-        <section id="highlight">
-          <div class="col-xs-2 mt-5">
-            <h2 class="mb-3">Highlight</h2>
+        <section id="experience">
+            <div class="container">
+                <h2>Experience & Activities</h2>
+                
+                <h3>Professional Experience</h3>
+                <div class="content-block">
+                    <div class="block-header"><h4>Project Researcher</h4><span class="date">1 Apr 2025 – Present</span></div>
+                    <p class="location">National Institute of Informatics (NII), Tokyo, Japan</p>
+                    <ul>
+                        <li>Conduct advanced research on multimodal large language models (LLMs) that integrate image, video, and natural language understanding, with applications in generative AI for the Asia-Pacific (APAC) region.</li>
+                        <li>Design, implement, and evaluate culturally-adapted image and video generation pipelines using diffusion models, autoregressive generative models, and LoRA-based fine-tuning techniques.</li>
+                        <li>Develop Retrieval-Augmented Generation (RAG) systems to enhance multimodal content retrieval and Video Question Answering (VideoQA) capabilities.</li>
+                        <li>Build and curate large-scale, high-quality datasets for training and fine-tuning vision-language generative models, ensuring diversity and cultural relevance in generated outputs.</li>
+                        <li>Collaborate with interdisciplinary teams across research and product groups to drive innovations from concept to prototype, focusing on scalable and impactful generative AI solutions.</li>
+                        <li>Work closely with Ethics and Governance teams to ensure generative outputs meet ethical standards, uphold safety guidelines, and provide broad societal benefits.</li>
+                    </ul>
+                </div>
+                
+                <h3>Project Activities</h3>
+                 <div class="content-block">
+                    <div class="block-header"><h4>Detection of Lameness Behavior in Cattle (Lab Project)</h4><span class="date">2022 – 2023</span></div>
+                    <p class="location">Project led by the Ministry of Internal Affairs and Communications, Japan</p>
+                    <ul>
+                        <li>Core member of a significant project focusing on utilizing local 5G networks for practical problem-solving.</li>
+                        <li>This initiative aimed to develop a real-time detection and tracking system for lameness behavior in cattle.</li>
+                        <li>My core responsibilities included implementing a computer vision program to detect and track cattle lameness behavior using advanced deep-learning techniques, then testing our system on the real-time 5G network to check its performance.</li>
+                    </ul>
+                </div>
+                
+                <h3>Volunteering & Community Leadership</h3>
+                <div class="content-block">
+                     <div class="block-header"><h4>Women in AI Myanmar, Ambassador</h4><span class="date">1 Dec 2020 – Present</span></div>
+                     <p>My focus is empowering women to take leadership positions within AI and machine learning industries while also creating opportunities for underprivileged youth, particularly girls, to gain valuable skills and knowledge in this rapidly evolving field.</p>
+                </div>
+                <div class="content-block">
+                     <div class="block-header"><h4>Google Developer Student Club Lead, Japan</h4><span class="date">1 Aug 2022 – Aug 2023</span></div>
+                    <p>Through the Google Developer Student Club (GDSC) network, I spearheaded initiatives to empower next-generation undergraduate students to innovate through emerging AI technologies by introducing engaging campus activities that fostered hands-on learning.</p>
+                </div>
 
-            <div
-              id="carouselIndicators"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <ol class="carousel-indicators">
-                <li
-                  data-target="#carouselIndicators"
-                  data-slide-to="0"
-                  class="active"
-                ></li>
-                <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselIndicators" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    class="d-block w-100"
-                    src="img/pycon-sg-2019.jpg"
-                    alt="SEAMLS 2019"
-                  />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>ICGEC Conference Best Paper Award 2025</h5>
-                  </div>
+                <h3>Internship Experience</h3>
+                 <div class="content-block">
+                     <div class="block-header"><h4>Bagan Innovation Technology, Junior Data Scientist</h4><span class="date">1 Sep 2018 – 30 Nov 2018</span></div>
+                    <ul>
+                        <li>Collaboratively built Natural Language Processing (NLP) models for the Myanmar Language that work with limited resource settings.</li>
+                        <li>Performed text mining and web scraping from online data sources using Python libraries.</li>
+                        <li>Developed data pipelines and machine learning models for Sentiment Analysis for Myanmar Language to be used in chatbot offerings.</li>
+                    </ul>
                 </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="img/google-cloud-devfest-kl-2019.jpg"
-                    alt="LifeTech, IEEE 2021 Virtual Conference"
-                  />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Google Developer Student Club </h5>
-                  </div>
+                 <div class="content-block">
+                     <div class="block-header"><h4>Fujitsu Japan, Junior System Developer</h4><span class="date">1 Oct 2017 – 30 Nov 2017</span></div>
+                     <ul>
+                        <li>Performed day-to-day duties such as testing system functionalities to ensure the software quality.</li>
+                        <li>Developed a Hotel Reservation System with PHP, JavaScript, and jQuery Language by following the fast-paced agile development cycle.</li>
+                        <li>Produced source codes by converting logical sequences and workflows from the project requirements.</li>
+                    </ul>
                 </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="img/sit-uofg-2020.jpg"
-                    alt="Second slide"
-                  />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Doctoal Graduction Ceremony </h5>
-                  </div>
+                
+                <h3>Invited Talks</h3>
+                 <div class="content-block">
+                    <ul>
+                        <li>**2025 Aug:** Women in AI Myanmar (Virtually), Machine Learning Summer School, “Vision Meets Language: Ensuring Safety in Multimodal Video AI”</li>
+                        <li>**2025 Aug:** Google I/O Extended Yangon 2025 (Virtually), “Empowering Safer Agents: The Future of Vision-Language AI”</li>
+                        <li>**2023 Mar:** The Second Sakura Workshop, Taichung Taiwan, “A Study on Automatic Black Cattle Tracking with Computer Vision and Deep Learning”</li>
+                        <li>**2022 Nov:** Google Developer Expert, DevFest, Yangon, Myanmar (Virtually), “Object Detection and Instance Segmentation with Detectron 2 Framework”</li>
+                        <li>**2022 Jul:** Google Developer Expert, DevFest, Yangon, Myanmar (Virtually), “Knowledge Sharing About Computer Vision Kaggle”</li>
+                        <li>**2019 Jul:** Technical Workshop at University of Information Technology Myanmar, “How to Build a Machine Learning Community in a Developing Country”</li>
+                    </ul>
                 </div>
-              </div>
-              <a
-                class="carousel-control-prev"
-                href="#carouselIndicators"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#carouselIndicators"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Next</span>
-              </a>
+
             </div>
-          </div>
         </section>
 
-        <!-- Education -->
         <section id="education">
-          <div class="col mt-5 pt-5">
-            <div class="row">
-              <h4 class="mb-3 text-primary">Education</h4>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-1">
-                <h5 class="text-left fw-bold">Ph.D.</h5>
-              </div>
-              <div class="col ml-3">
-                <p class="mt-0">
-                  University of Miyazaki , Japan <br />
-                  Department of Materials and Informatics, <br />
-                  Computer Science and Bioinformatics Course, 
-                  Visual Information Processing Lab <br />
-                  Advisor: Dr. Thi Thi Zin
-                  Research focused on deep learning-based detection and tracking of animal behavior using multi-camera systems, with transferable methods applicable to multimodal AI and large-scale generative models.
-                </p>
-              </div>
-              <div class="col-xs-2">
-                <div class="text-right">
-                  <span class="text-primary">Apr 2022 – Mar 2025</span>
+            <div class="container">
+                <h2>Education</h2>
+                 <div class="content-block">
+                    <div class="block-header"><h4>Ph.D. in Engineering</h4><span class="date">1 Apr 2022 – 25 Mar 2025</span></div>
+                    <p class="location">University of Miyazaki, Japan</p>
+                    <p>Department of Materials and Informatics, Computer Science and Bioinformatics Course, Visual Information Processing Lab. Advisor: Dr. Thi Thi Zin.
+                    <br><em>Research focused on deep learning-based detection and tracking of animal behavior using multi-camera systems, with transferable methods applicable to multimodal AI and large-scale generative models.</em></p>
                 </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-1">
-                <h5 class="text-left fw-bold">M.Eng.</h5>
-              </div>
-              <div class="col ml-2">
-                <p class="mt-0">
-                  University of Miyazaki<br />
-                  Department of Energy and Electronics, Visual Information
-                  Processing Lab<br />
-                  Advisor: Dr. Thi Thi Zin
-                </p>
-              </div>
-              <div class="col-xs-2">
-                <div class="text-right">
-                  <span class="text-primary">Apr 2020 – Mar 2022</span>
+                 <div class="content-block">
+                    <div class="block-header"><h4>M.Eng. in Engineering</h4><span class="date">1 Apr 2020 – 31 Mar 2022</span></div>
+                    <p class="location">University of Miyazaki, Japan</p>
+                    <p>Department of Energy and Electronics, Visual Information Processing Lab. Advisor: Dr. Thi Thi Zin.</p>
                 </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-1">
-                <h5 class="text-left fw-bold">B.C.Sc.</h5>
-              </div>
-              <div class="col ml-2">
-                <p class="mt-0">
-                  University of Information Technology, UIT, Myanmar <br />
-                  Department of Computer Science <br />
-                  Major of Knowledge Engineering
-                </p>
-              </div>
-              <div class="col-xs-2">
-                <div class="text-right">
-                  <span class="text-primary">Dec 2013 – Dec 2018</span>
+                 <div class="content-block">
+                    <div class="block-header"><h4>Research Student</h4><span class="date">1 Oct 2019 – 31 Mar 2020</span></div>
+                    <p class="location">University of Miyazaki, Japan</p>
                 </div>
-              </div>
+                <div class="content-block">
+                    <div class="block-header"><h4>B.C.Sc. in Computer Science</h4><span class="date">1 Dec 2013 – 31 Dec 2018</span></div>
+                    <p class="location">University of Information Technology (UIT), Myanmar</p>
+                    <p>Major of Knowledge Engineering.</p>
+                </div>
+                 <div class="content-block">
+                    <div class="block-header"><h4>High School</h4><span class="date">1 July 2003 – June 2013</span></div>
+                    <p class="location">Practicing High School Yangon Institute of Education, Myanmar</p>
+                </div>
             </div>
-          </div>
         </section>
 
-        <!-- RESEARCH INTERESTS -->
-        <section id="resarchinterests">
-          <div class="col mt-5">
-            <div class="row">
-              <h4 class="mb-2 text-primary">RESEARCH INTERESTS</h4>
-            </div>
-            <div class="row">
-              <p class="text-justify">
-               Working on computer vision and multimodal AI with focus on multi-camera tracking, 
-               object detection, VideoQA, and video summarization. Exploring RAG models, agentic systems, 
-               and automated annotation using vision-language techniques for real-world applications.
-
-
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!--  EXPERIENCE -->
-        <section id="researchexperience">
-          <div class="col mt-5">
-            <div class="row">
-              <h4 class="mb-2 text-primary"> EXPERIENCE</h4>
-            </div>
-            <div class="row justify-content-between">
-              <div class="col-xs-2 text-left">
-                <span>National Institute of Informatics, Tokyo , Japan</span>
-              </div>
-              <div class="col-xs-2 text-right">
-                <span class="text-primary">April 2025 – Present </span>
-              </div>
-            </div>
-
-            <div class="col-xs-2">
-              <div class="row">
-                <p>
-                  Research and Development Center For Large Language Models - Project Researcher
-                </p>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    Working closely with professors and team members at the Research and Development Center 
-                    for Large Language Models on advancing Vision-Language Models (VLM), Retrieval-Augmented Generation (RAG), 
-                    and diffusion-based image generation. 
-                    
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    Developing multimodal systems for Video Question Answering (VideoQA), integrating visual content with natural language 
-                    understanding to improve real-world information retrieval and comprehension.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row justify-content-between">
-              <div class="col-xs-2 text-left">
-                <span>University of Miyazaki, Miyazaki, Japan</span>
-              </div>
-              <div class="col-xs-2 text-right">
-                <span class="text-primary">Oct 2019 – Mar 2020</span>
-              </div>
-            </div>
-
-            <div class="col-xs-2">
-              <div class="row">
-                <p>
-                  Dr. Thi Thi Zin - Visual Information Processing Lab, Research
-                  Student
-                </p>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    Worked closely with professors and team members in
-                    developing Cattle Monitoring System using various image
-                    processing methods and deploying AI Models
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    Explored and integrated object segmentation and
-                    classification algorithms like SVM (support vector machine)
-                    using state of the art deep learning algorithms and neural
-                    networks
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- HONORS & AWARDS -->
-        <section id="honors">
-          <div class="col mt-5">
-            <div class="row">
-              <h4 class="mb-2 text-primary">HONORS & AWARDS</h4>
-            </div>
-
-            <div class="col-xs-2">
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    2025 Encouragement Women Research Award, University of Miyazaki, Japan
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-xs-2">
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    2024  Best Student Paper Award, 2024 , ICGEC Conference, Miyazaki, Japan
-                  </p>
-                </div>
-              </div>
-
-
-              <div class="col-xs-2">
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    2024-2025 University of Miyazaki, President’s Research Funding Award 
-                  </p>
-                </div>
-              </div>
-
-
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    Google Developer Student Club
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    2022 Ministry of Japan Science Technology (JST) Researchers
-                    Grant for Doctoral Studies (2022- 2025)
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    2022 NEC C&C Non-Japanese Foreign Researchers Grant for
-                    Doctoral (2022-2023)
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    2022 Scholarship, JASSO Scholarship for International Student, Japan
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    2021 Women in Engineering Best Paper Award, 2021 IEEE 3rd
-                    Global Conference on LifeTech, Japan
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    2020 Full Scholarship, Naoji Iwatani Full Scholarship for
-                    Master Program, Japan
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    2019 Scholarship, JASSO Scholarship for International
-                    Student, Japan
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- PUBLICATIONS -->
         <section id="publications">
-          <div class="col mt-5">
-            <div class="row">
-              <h4 class="mb-2 text-primary">PUBLICATIONS</h4>
+            <div class="container">
+                <h2>Publications & Thesis</h2>
+                
+                <h3>Peer-Reviewed Journals</h3>
+                <ul>
+                    <li class="publication">
+                        <span class="title">Optimizing black cattle tracking in complex open ranch environments using YOLOv8 embedded multi-camera system.</span><br>
+                        <span class="authors">Su Myat Noe, Thi Thi Zin, Pyke Tin, and Ikuo Kobayashi.</span><br>
+                        <span class="venue">*Scientific Reports*, 15, Article no. 6820. (2025)</span>
+                    </li>
+                    <li class="publication">
+                        <span class="title">Precision Livestock Tracking: Advancements in Black Cattle Monitoring for Sustainable Agriculture.</span><br>
+                        <span class="authors">Su Myat Noe, Thi Thi Zin, Pyke Tin, and I. Kobayashi.</span><br>
+                        <span class="venue">*Journal of Signal Processing*, 28(4), pp. 179-182. (2024)</span>
+                    </li>
+                    <li class="publication">
+                        <span class="title">Comparing State-of-the-Art Deep Learning Algorithms for the Automated Detection and Tracking of Black Cattle.</span><br>
+                        <span class="authors">Su Myat Noe, Thi Thi Zin, Pyke Tin and Kobayashi, I. Kobayashi.</span><br>
+                        <span class="venue">*Sensors*, 23(1), p.532. (2023)</span>
+                    </li>
+                    <li class="publication">
+                        <span class="title">Automatic detection and tracking of mounting behavior in cattle using a deep learning-based instance segmentation model.</span><br>
+                        <span class="authors">Su Myat Noe, Thi Thi Zin, Pyke Tin, and I. Kobayashi.</span><br>
+                        <span class="venue">*International Journal of Innovative Computing, Information, and Control*, 18(1). (2022)</span>
+                    </li>
+                </ul>
+
+                <h3>Peer-Reviewed Conference Proceedings</h3>
+                 <ul>
+                    <li>Su Myat Noe, et al. “From Vision to Vocabulary: A Multimodal Approach to Detect and Track Black Cattle Behaviors”, The 16th International Conference on Genetic and Evolutionary Computing (ICGEC).</li>
+                    <li>Su Myat Noe, et al. “Precision Livestock Tracking...”, 2024 RISP International Workshop on NCSP.</li>
+                    <li>Su Myat Noe, et al. "Efficient Segment-Anything Model for Automatic Mask Region Extraction...", IEEE ICCE-Berlin 2023.</li>
+                    <li>Su Myat Noe, et al. "A Deep Learning-based Solution to Cattle Region Extraction for Lameness Detection", 2022 IEEE LifeTech.</li>
+                    <li>Thi Thi Zin, Su Myat Noe, et al. "An Intelligent Method for Detecting Lameness in Modern Dairy Industry", 2022 IEEE LifeTech.</li>
+                    <li>Su Myat Noe, et al. “A Deep Learning-based Instance Segmentation Model using Mask-RCNN...”, ICICIC2021.</li>
+                    <li>Su Myat Noe, et al. “Automatic Detection of Mounting Behavior in Cattle...”, IEEE LifeTech 2021. (IEEE WIE Student Paper Award)</li>
+                    <li>Su Myat Noe, et al. “Detection of Estrus in Cattle by using Image Technology and Machine Learning Methods”, IEEE GCCE 2020.</li>
+                </ul>
+
+                <h3>Thesis</h3>
+                 <ul>
+                    <li>Doctoral Thesis (2025): "A Study on Deep Learning-based Automated Detection and Tracking of Estrus Behavior in Black Cattle"</li>
+                    <li>Master’s Thesis (2022):“Cow Estrus Detection and Tracking based on Image Technology with the Enforcement of Deep Learning Methods”</li>
+                    <li>Bachelor’s Thesis (2018): “Question Answering System using Bi-Directional Attention Flow”</li>
+                </ul>
             </div>
-
-            <div class="col-xs-2">
-              <div class="row">
-                <p class="font-italic text-black fw-bold">Journal Papers</p>
-              </div>
-
-              <div class="row">
-                <p class="text-justify">
-                  [1]Su Myat Noe, Thi Thi Zin, Pyke Tin, and Ikuo Kobayashi, 2025. Optimizing black cattle tracking in 
-                  complex open ranch environments using YOLOv8 embedded multi-camera system. Scientific Reports, 
-                  15, Article no. 6820. Available at: https://doi.org/10.1038/s41598-025-13850-6  
-                </p>
-              </div>
-
-              <div class="row">
-                <p class="text-justify">
-                  [2] Su Myat Noe, Thi Thi Zin, Pyke Tin, and Ikuo Kobayashi, "Precision Livestock Tracking: Advancements in Black Cattle Monitoring for Sustainable Agriculture", 
-                  Journal of Signal Processing, 2024 Volume 28 Issue 4 Pages 179-182 , DOI:10.2299/jsp.28.179. 
-                </p>
-              </div>
-
-              <div class="row">
-                <p class="text-justify">
-                  [3] Su Myat Noe, Thi Thi Zin, Pyke Tin, and Ikuo Kobayashi,
-                  “Automatic detection and tracking of mounting behavior in
-                  cattle using a deep learning-based instance segmentation
-                  model”, International Journal of Innovative Computing,
-                  Information and Control, Volume 18, Number 1, February 2022,
-                  ISSN1349-4198.
-                </p>
-              </div>
-              <div class="row">
-                <p class="text-justify">
-                  [4] Su Myat Noe, Thi Thi Zin, Pyke Tin and Kobayashi, Ikuo
-                  Kobayashi, “Comparing State-of-the-Art Deep Learning
-                  Algorithms for the Automated Detection and Tracking of Black
-                  Cattle”, Sensors, 23(1), p.532, DOI:10.3390/s23010532 (Scopus,
-                  IF: 3.9)
-                </p>
-              </div>
-
-              <div class="row">
-                <p class="font-italic text-black fw-bold">
-                  International Conference Papers and Symposiums
-                </p>
-              </div>
-              <div class="row">
-                <p class="text-justify">
-                  [1] Su Myat Noe, Thi Thi Zin, Pyke Tin, H. Hama, “Detection of
-                  Estrus in Cattle by using Image Technology and Machine
-                  Learning Methods”, Proc. of IEEE 9th Global Conf. on Consumer
-                  Electronics (GCCE 2020), Kobe, Japan, DOI:
-                  10.1109/GCCE50665.2020.9291987, pp. 320-321, Dec. 2020.
-                </p>
-              </div>
-              <div class="row">
-                <p class="text-justify">
-                  [2] Su Myat Noe, Thi Thi Zin, Pyke Tin, Ikuo Kobayashi,
-                  “Automatic Detection of Mounting Behavior in Cattle using
-                  Semantic segmentation and classification”, Proc.of IEEE Global
-                  Conference on Life Sciences and Technologies (LifeTech 2021),
-                  Nara, Japan, DOI: 10.1109/LifeTech52111.2021.9391980, pp.
-                  227-228, April 2021. (IEEE WIE Student Paper Award)
-                </p>
-              </div>
-              <div class="row">
-                <p class="text-justify">
-                  [3] Su Myat Noe, Thi Thi Zin, Pyke Tin, Ikuo Kobayashi, “A
-                  Deep Learning-based Instance Segmentation Model using
-                  Mask-RCNN for Automated Detection and Tracking of Mounting
-                  Behavior in Cattle”, Proc.of the 15th International Conference
-                  on Innovative Computing, Information and Control (ICICIC2021)
-                  September 15-16, 2021, online.
-                </p>
-              </div>
-              <div class="row">
-                <p class="text-justify">
-                  [4] Su Myat Noe, Thi Thi Zin, Pyke Tin, and Ikuo Kobayashi. "A
-                  Deep Learning-based solution to Cattle Region Extraction for
-                  Lameness Detection" In 2022 IEEE 4th Global Conference on Life
-                  Sciences and Technologies (LifeTech), pp. 572-573. IEEE, 2022,
-                  DOI: 10.1109/LifeTech53646.2022.9754780.
-                </p>
-              </div>
-              <div class="row">
-                <p class="text-justify">
-                  [5] Thi Thi Zin, Su Myat Noe, Moe Zet Pwint, and Ikuo
-                  Kobayashi. "An Intelligent Method for Detecting Lameness in
-                  Modern Dairy Industry'' on 2022 IEEE 4th Global Conference on
-                  Life Sciences and Technologies (LifeTech), pp. 564-565. IEEE,
-                  2022, DOI: 10.1109/LifeTech53646.2022.9754941.
-                </p>
-              </div>
-              <div class="row">
-                <p class="text-justify">
-                  [6] Su Myat Noe, Thi Thi Zin, Pyke Tin, and Ikuo Kobayashi. "
-                  A Study on Automatic Black Cattle Tracking with Computer
-                  Vision and Deep Learning” In The Second Sakura Workshop,
-                  Taichung Taiwan , March 2023.
-                </p>
-              </div>
-              <div class="row">
-                <p class="text-justify">
-                  [7] Su Myat Noe, Thi Thi Zin, Pyke Tin, and Ikuo Kobayashi.
-                  "Efficient Segment-Anything Model for Automatic Mask Region
-                  Extraction in Livestock Monitoring" In IEEE ICCE-Berlin 2023,
-                  DOI: 10.1109/ICCE-Berlin58801.2023.10375624.
-                </p>
-              </div>
-              <div class="row">
-                <p class="text-justify">
-                  [8] Su Myat Noe, Thi Thi Zin, Pyke Tin, and Ikuo Kobayashi.
-                  "Enhancing Precision Agriculture: Innovative Tracking
-                  Solutions for Black Cattle Monitoring" In NCSP-Hawaii 2024
-                  [Presented, Best Student Paper Award]
-                </p>
-              </div>
-
-              <div class="row">
-                <p class="font-italic text-black fw-bold">Doctoral Thesis</p>
-              </div>
-              <div class="row">
-                <p class="text-justify">
-                  [1] Su Myat Noe, "A Study on Deep Learning-based Automated Detection
-and Tracking of Estrus Behavior in Black Cattle", Doctorals Thesis, University of Miyazaki, Japan.
-                  2022.
-                </p>
-              </div>
-
-
-              <div class="row">
-                <p class="font-italic text-black fw-bold">Master’s Thesis</p>
-              </div>
-              <div class="row">
-                <p class="text-justify">
-                  [1] Su Myat Noe, “Cow Estrus Detection and Tracking based on
-                  Image Technology with the Enforcement of Deep Learning
-                  Methods”, Master’s Thesis, University of Miyazaki, Japan, Jan.
-                  2022.
-                </p>
-              </div>
-              <div class="row">
-                <p class="font-italic text-black fw-bold">Bachelor’s Thesis</p>
-              </div>
-              <div class="row">
-                <p class="text-justify">
-                  [1] Su Myat Noe, Khine Myat Thwe, “Question Answering System
-                  using Bi-Directional Attention Flow”, Bachelor’s Thesis,
-                  University of Information Technology (UIT), Yangon, Myanmar,
-                  Sept. 2018.
-                </p>
-              </div>
-
-              <div class="row">
-                <p class="font-italic text-black fw-bold">Technical Workshop , Poster Presentation</p>
-              </div>
-              <div class="row">
-                <p class="text-justify">
-                  [1] Su Myat Noe. "Towards Automatic Tracking of Black Cattle by Combining with Computer Vision and Deep Learning Approach".
-                  NOKOH Student Seminar in English, November 1, 2022, University of Miyazaki. (Oral and Poster Presentation)
-                </p>
-              </div>
-
-              <div class="row">
-                <p class="text-justify">
-                  [2] Su Myat Noe, Thi Thi Zin, Pyke Tin, and Ikuo Kobayashi. 
-                  "A Study on Automatic Black Cattle Tracking with Computer Vision and Deep Learning".  
-                   In The Second Sakura Workshop, Taichung Taiwan , March 2023.
-
-                </p>
-              </div>
-
-            </div>
-          </div>
         </section>
 
-        <!-- INTERNSHIP EXPERIENCE -->
-        <section id="internshipexperience">
-          <div class="col mt-5">
-            <div class="row">
-              <h4 class="mb-2 text-primary">INTERNSHIP EXPERIENCE</h4>
+        <section id="awards">
+             <div class="container">
+                <h2>Awards & Honors</h2>
+                <ul>
+                    <li>2025 Encouragement Women Research Award, University of Miyazaki, Japan</li>
+                    <li>2024 Best Student Paper Award, ICGEC Conference, Miyazaki, Japan</li>
+                    <li>2024-2025 University of Miyazaki, President’s Research Funding Award</li>
+                    <li>2024 Best Student Paper Award, RISP International Workshop on NCSP, Honolulu, Hawaii (Top – 1 out of 25 candidates)</li>
+                    <li>2022 Ministry of Japan Science Technology (JST) Researchers Grant for Doctoral Studies (2022-2025)</li>
+                    <li>2022 NEC C&C Non-Japanese Foreign Researchers Grant for Doctoral (2022-2023)</li>
+                    <li>2022 Scholarship, JASSO Scholarship for International Student, Japan</li>
+                    <li>2021 Women in Engineering Best Paper Award, 2021 IEEE 3rd Global Conference on LifeTech, Japan</li>
+                    <li>2020 Full Scholarship, Naoji Iwatani Full Scholarship for Master Program, Japan</li>
+                    <li>2019 Scholarship, JASSO Scholarship for International Students, Japan</li>
+                    <li>2019 Scholarship, Southeast Asia Machine Learning Summer School (SEAMLS), Indonesia</li>
+                </ul>
             </div>
-
-            <div class="row justify-content-between mt-3">
-              <div class="col-xs-2 text-left">
-                <h4>BAGAN INNOVATION TECHNOLOGY, JUNIOR DATA SCIENTIST</h4>
-              </div>
-              <div class="col-xs-2 text-right">
-                <span class="text-primary">Sep 2018 – Nov 2018</span>
-              </div>
-            </div>
-
-            <div class="col-xs-2">
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    Collaboratively built Natural Language Processing (NLP)
-                    models for Myanmar Language that works with limited resource
-                    settings.
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    Performed text mining and web scraping from online data
-                    sources using Python libraries.
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    Developed data pipelines and machine learning models for
-                    Sentiment Analysis for Myanmar Language to be used in
-                    chat-bot offerings.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row justify-content-between mt-3">
-              <div class="col-xs-2 text-left">
-                <h4>FUJITSU JAPAN, JUNIOR SYSTEM DEVELOPER</h4>
-              </div>
-              <div class="col-xs-2 text-right">
-                <span class="text-primary">Oct 2017 – Nov 2017</span>
-              </div>
-            </div>
-
-            <div class="col-xs-2">
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    Performed day to day duties such as testing functionalities
-                    of the system to ensure the software quality.
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    Developed a Hotel Reservation System with PHP, JavaScript,
-                    and jQuery Language by following the fast-paced agile
-                    development cycle.
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    Produced source codes by converting logical sequences and
-                    workflows from the project requirements.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
 
-        <!-- TECHNICAL SKILLS -->
-        <section id="technicalskills">
-          <div class="col mt-5">
-            <div class="row">
-              <h4 class="mb-4 text-primary">TECHNICAL SKILLS</h4>
+        <section id="skills">
+            <div class="container">
+                <h2>Technical Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h4>Programming</h4>
+                        <ul class="skill-list"><li>Python, C++, MATLAB</li></ul>
+                        
+                        <h4>Deep Learning Skills</h4>
+                        <ul class="skill-list">
+                            <li>TensorFlow, Keras, CUDA</li>
+                            <li>Machine Learning, Deep Learning</li>
+                            <li>Data/image processing algorithms</li>
+                            <li>Automatic Dataset Generation</li>
+                            <li>Building Datasets from Scratch</li>
+                            <li>Supervised & Unsupervised Learning</li>
+                        </ul>
+                        
+                        <h4>Generative AI</h4>
+                        <ul class="skill-list">
+                            <li>Diffusion Models (Stable Diffusion, etc.)</li>
+                            <li>Autoregressive Generative Models</li>
+                            <li>Multimodal LLM Training & Evaluation</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Computer Vision Skills</h4>
+                        <ul class="skill-list"><li>OpenCV, Image Processing, CNN Models</li></ul>
+                        
+                        <h4>Libraries</h4>
+                        <ul class="skill-list"><li>Pandas, Numpy, Matplotlib, Keras, OpenCV</li></ul>
+
+                        <h4>Version Control & Cloud</h4>
+                        <ul class="skill-list">
+                            <li>Git, Docker</li>
+                            <li>Google Cloud, AWS</li>
+                        </ul>
+
+                        <h4>Additional Skills</h4>
+                        <ul class="skill-list">
+                            <li>Data Pipelines, NLP, Sentiment Analysis</li>
+                            <li>Visualization, IoT, Network Simulation</li>
+                            <li>High-Performance Computing</li>
+                        </ul>
+                        
+                        <h4>Language Skills</h4>
+                        <ul class="skill-list">
+                            <li>English (TOEFL IBT 81, TOEIC 850)</li>
+                            <li>Japanese (JLPT N3)</li>
+                            <li>Myanmar (Native)</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-2">
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    <span class="fw-bold text-black">Programming:</span> Python,
-                    C++, MATLAB
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    <span class="fw-bold text-black"
-                      >Computer Vision Skills:</span
-                    >
-                    OpenCV, Image Processing, CNN Models
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    <span class="fw-bold text-black"
-                      >Deep Learning Skills:</span
-                    >
-                    TensorFlow, Keras, CUDA, Machine Learning, Deep Learning,
-                    Development and implementation of data/image processing
-                    algorithms, Automatic Dataset Generation, Building Datasets
-                    from Scratch, Supervised Learning, Unsupervised Learning
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    <span class="fw-bold text-black">Libraries:</span>
-                    Pandas, Numpy, Matplotlib, TensorFlow, Keras, OpenCV
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    <span class="fw-bold text-black"
-                      >Additional Data Processing Skills:</span
-                    >
-                    Data Pipelines, Advanced digital data/image processing
-                    techniques, Natural Language Processing, Sentiment Analysis
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
+    </main>
 
-        <!-- SOFT SKILLS -->
-        <section id="softskills">
-          <div class="col mt-5">
-            <div class="row">
-              <h4 class="mb-2 text-primary">SOFT SKILLS</h4>
+    <footer id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p class="email">
+                <a href="mailto:sumyatnoe.uit@gmail.com">sumyatnoe.uit@gmail.com</a>
+            </p>
+            <div class="social-links">
+                <a href="mailto:sumyatnoe.uit@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://linktr.ee/sumyatnoe" target="_blank" title="Linktree"><i class="fas fa-link"></i></a>
+                <a href="https://scholar.google.com/citations?user=BdBdUh5ogAAAAJ&hl=en&oi=sra" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
             </div>
+            <p style="margin-top: 30px; font-size: 0.9rem;">
+                &copy; 2025 Su Myat Noe.
+            </p>
+        </div>
+    </footer>
 
-            <div class="row mt-3">
-              <h4>Languages:</h4>
-            </div>
-            <div class="col-xs-2">
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p>English (TOEFL IBT 81, TOEIC 850)</p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p>Japanese (JLPT N3)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- INVITED TALKS -->
-        <section id="talks">
-          <div class="col mt-5">
-            <div class="row">
-              <h4 class="mb-2 text-primary">INVITED TALKS</h4>
-            </div>
-            <div class="col-xs-2">
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    <a href="#" class="disabled">2019 Jul:</a> Technical
-                    Workshop at University of Information Technology Myanmar
-                    “How to Build a Machine Learning Community in a Developing
-                    Country”.
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    <a href="#" class="disabled">2022 Jul:</a> Google Developer
-                    Expert, DevFest, Yangon, Myanmar (Virtually), “Knowledge
-                    Sharing About Computer Vision Kaggle”
-                  </p>
-                </div>
-              </div>
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    <a href="#" class="disabled">2022 Nov:</a> Google Developer
-                    Expert, DevFest, Yangon, Myanmar (Virtually), “Object
-                    Detection and Instance Segmentation with Detectron 2
-                    Framework”
-                  </p>
-                </div>
-              </div>
-              <!-- <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    <a href="#" class="disabled">2023 Mar:</a> The Second Sakura
-                    Workshop, Taichung Taiwan, “A Study on Automatic Black
-                    Cattle Tracking with Computer Vision and Deep Learning”
-                  </p>
-                </div>
-              </div> -->
-            </div>
-          </div>
-        </section>
-
-        <!-- VOLUNTEERING -->
-        <section id="volunteer">
-          <div class="col mt-5 mb-5">
-            <div class="row">
-              <h4 class="mb-2 text-primary">VOLUNTEERING</h4>
-            </div>
-
-            <div class="row justify-content-between mt-3">
-              <div class="col-xs-2 text-left">
-                <h4>WOMEN IN AI Myanmar, Ambassador</h4>
-              </div>
-              <div class="col-xs-2 text-right">
-                <span class="text-primary">Dec 2020 – Present</span>
-              </div>
-            </div>
-
-            <div class="col-xs-2">
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    Since December 2020, I've served as an Ambassador for Women
-                    in AI Myanmar, a chapter dedicated to promoting gender
-                    equality in the field. My focus lies on empowering women to
-                    take leadership positions within AI and machine learning
-                    industries, while also creating opportunities for
-                    underprivileged youth, particularly girls, to gain valuable
-                    skills and knowledge in this rapidly evolving field.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row justify-content-between mt-3">
-              <div class="col-xs-2 text-left">
-                <h4>Google Developer Student Club Lead, Japan</h4>
-              </div>
-              <div class="col-xs-2 text-right">
-                <span class="text-primary">Aug 2022 – Aug 2023</span>
-              </div>
-            </div>
-
-            <div class="col-xs-2">
-              <div class="row ml-0">
-                <div class="col-xs-1">
-                  <i class="fas fa-circle fa-icon-size"></i>
-                </div>
-                <div class="col">
-                  <p class="text-justify">
-                    Through the Google Developer Student Club (GDSC) network, I spearheaded initiatives to empower next-generation undergraduate students to innovate through emerging AI technologies. This involved introducing engaging campus activities that fostered hands-on learning and exploration of cutting-edge AI tools.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
-  </body>
+</body>
 </html>
