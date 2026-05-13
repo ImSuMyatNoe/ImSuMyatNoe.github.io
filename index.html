@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --bg: #ffffff;
       --surface: #f7f7f5;
@@ -21,9 +20,7 @@
       --accent-light: #e8eef7;
       --red: #c0392b;
     }
-
     html { scroll-behavior: smooth; }
-
     body {
       background: var(--bg);
       color: var(--text);
@@ -33,7 +30,6 @@
       -webkit-font-smoothing: antialiased;
       text-align: justify;
     }
-
     /* NAV */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -47,10 +43,8 @@
     .nav-links { display: flex; gap: 28px; list-style: none; }
     .nav-links a { font-size: 13px; color: var(--muted); text-decoration: none; transition: color 0.15s; }
     .nav-links a:hover { color: var(--accent); }
-
     /* LAYOUT */
     .page { max-width: 860px; margin: 0 auto; padding: 0 40px; }
-
     /* HERO */
     #hero {
       padding-top: 120px;
@@ -93,7 +87,6 @@
     .pill-solid:hover { background: #0f2a55; }
     .pill-outline { border: 1px solid var(--border); color: var(--muted); background: #fff; }
     .pill-outline:hover { border-color: var(--accent); color: var(--accent); }
-
     /* avatar placeholder */
     .avatar-box {
       width: 180px; height: 180px;
@@ -109,11 +102,9 @@
       overflow: hidden;
     }
     .avatar-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
     /* SECTION */
     section { padding: 56px 0; border-bottom: 1px solid var(--border); }
     section:last-of-type { border-bottom: none; }
-
     .sec-label {
       font-size: 11px;
       font-weight: 600;
@@ -122,16 +113,10 @@
       color: var(--accent);
       margin-bottom: 28px;
     }
-
     /* ABOUT */
-    .about-cols { display: grid; grid-template-columns: 1fr 88px; gap: 40px; align-items: start; }
+    .about-cols { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: start; }
     .about-text { font-family: 'Times New Roman', Times, serif; font-size: 18px; color: var(--muted); line-height: 1.75; text-align: justify; }
     .about-text + .about-text { margin-top: 14px; }
-    .about-stat-list { display: flex; flex-direction: column; gap: 16px; padding-top: 4px; }
-    .about-stat { display: flex; flex-direction: column; }
-    .stat-num { font-family: 'Lora', serif; font-size: 22px; color: var(--accent); font-weight: 600; line-height: 1; }
-    .stat-label { font-size: 10px; color: var(--light); margin-top: 3px; line-height: 1.3; }
-
     /* PUBLICATIONS */
     .pub-list { display: flex; flex-direction: column; gap: 0; }
     .pub-item {
@@ -174,7 +159,6 @@
     }
     .pub-link { font-size: 11px; color: var(--accent); text-decoration: none; font-weight: 500; }
     .pub-link:hover { text-decoration: underline; }
-
     /* PROJECTS */
     .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
     .proj-card {
@@ -201,7 +185,6 @@
     .proj-desc { font-size: 12px; color: var(--muted); line-height: 1.6; margin-bottom: 12px; }
     .proj-footer { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
     .proj-tag { font-size: 10px; padding: 2px 8px; border-radius: 3px; background: var(--surface); border: 1px solid var(--border); color: var(--muted); }
-
     /* Research Interests */
     .interests-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
     .interest-tag {
@@ -217,7 +200,6 @@
     .proj-gh { font-size: 11px; color: var(--accent); text-decoration: none; font-weight: 500; margin-left: auto; }
     .proj-gh:hover { text-decoration: underline; }
     .proj-gh.dim { color: var(--light); cursor: default; }
-
     /* EXPERIENCE + EDU — timeline style */
     .timeline { display: flex; flex-direction: column; gap: 0; }
     .tl-item { display: grid; grid-template-columns: 120px 1fr; gap: 0 24px; padding: 18px 0; border-bottom: 1px solid var(--border); }
@@ -226,13 +208,11 @@
     .tl-role { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
     .tl-org { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
     .tl-note { font-size: 12px; color: var(--light); }
-
     /* AWARDS */
     .award-row { display: flex; justify-content: space-between; align-items: baseline; padding: 13px 0; border-bottom: 1px solid var(--border); gap: 12px; }
     .award-row:last-child { border-bottom: none; }
     .award-name { font-size: 13px; color: var(--text); }
     .award-yr { font-size: 12px; color: var(--light); white-space: nowrap; }
-
     /* WOMEN IN AI BLOCK */
     .wai-block { border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; padding: 22px 24px; background: var(--surface); margin-bottom: 4px; }
     .wai-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 12px; }
@@ -244,14 +224,11 @@
     .wai-stat { background: var(--bg); padding: 16px 14px; text-align: center; }
     .wai-num { font-family: 'Lora', serif; font-size: 28px; color: var(--accent); display: block; line-height: 1; margin-bottom: 5px; }
     .wai-lbl { font-size: 11.5px; color: var(--muted); line-height: 1.5; }
-
     /* CONTACT */
     #contact { padding-bottom: 80px; }
     .contact-text { font-size: 15px; color: var(--muted); max-width: 480px; margin-bottom: 28px; line-height: 1.7; }
-
     /* FOOTER */
     footer { padding: 28px 0; font-size: 12px; color: var(--light); display: flex; justify-content: space-between; }
-
     /* NAV BURGER */
     .nav-burger {
       display: none;
@@ -268,7 +245,6 @@
     .nav-burger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
     .nav-burger.open span:nth-child(2) { opacity: 0; }
     .nav-burger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-
     .mobile-menu {
       display: none;
       position: fixed; top: 56px; left: 0; right: 0; z-index: 99;
@@ -285,11 +261,9 @@
       transition: color 0.15s;
     }
     .mobile-menu a:hover { color: var(--accent); }
-
     /* ANIM */
     .fade-in { opacity: 0; transform: translateY(14px); transition: opacity 0.55s ease, transform 0.55s ease; }
     .fade-in.visible { opacity: 1; transform: none; }
-
     @media (max-width: 700px) {
       nav { padding: 0 20px; }
       .nav-links { display: none; }
@@ -306,7 +280,6 @@
   </style>
 </head>
 <body>
-
 <nav>
   <a href="#hero" class="nav-name">Su Myat Noe</a>
   <ul class="nav-links">
@@ -333,9 +306,7 @@
   <a href="#awards" onclick="closeMenu()">Awards</a>
   <a href="#contact" onclick="closeMenu()">Contact</a>
 </div>
-
 <div class="page">
-
   <!-- HERO -->
   <section id="hero">
     <div>
@@ -360,33 +331,20 @@
       <div class="avatar-box">👩🏻‍💻</div>
     </div>
   </section>
-
   <!-- ABOUT -->
   <section id="about">
     <div class="sec-label">About</div>
     <div class="about-cols fade-in">
       <div>
         <p class="about-text">I build AI safety tools at the <strong style="color:var(--text)">National Institute of Informatics (NII)</strong>, Tokyo. The short version: when frontier vision-language models meet the messiness of real languages and cultures, I'm one of the people checking whether they actually hold up.</p>
-
         <p class="about-text" style="margin-top:14px">I didn't always think this way. During my Ph.D. at the University of Miyazaki, I spent 5.5 years building computer vision systems to track cattle across multi-camera farms (yes, really — cattle 🐄). The work ended up in <em>Nature Scientific Reports</em>, but the bigger lesson wasn't technical. Watching farmers depend on a model I'd written quietly rewired how I think. I stopped asking <em>"can it work?"</em> and started asking <em>"is it safe when someone actually depends on it?"</em></p>
-
         <p class="about-text" style="margin-top:14px"><strong style="color:var(--text)">At NII</strong>, my work sits at the intersection of multimodal safety and agentic AI. I contribute to Japanese agent benchmarks. The questions I keep returning to: how do frontier models behave when the language and culture shift, and what does <em>safe</em> actually mean when an AI agent acts on someone's behalf?</p>
-
         <p class="about-text" style="margin-top:14px"><strong style="color:var(--text)">Outside the research life</strong>, I'm probably just another curious builder chasing late-night ideas with coffee, notebooks, and too many half-finished side projects ☕ My latest weekend obsession is <em>AI Workshop Radar</em> — a tiny open-source tool I built after missing one too many submission deadlines (don't ask). I also write on Medium, mentor students, organize tech events, and turn up at AI meetups around Tokyo. Honestly, a lot of my best opportunities and friendships came from community spaces, not formal meetings.</p>
-
         <p class="about-text" style="margin-top:14px"><strong style="color:var(--text)">When I'm not coding or writing</strong>, you'll find me at the gym, on a pilates reformer, or trying to convince myself that yoga counts as productivity. (It does — clearer head, better code 🧘‍♀️) Originally from Myanmar 🇲🇲 and based in Japan 🇯🇵 since 2019, I serve as a <strong style="color:var(--text)">Women in AI Myanmar</strong> Ambassador &amp; Board Member, a <strong style="color:var(--text)">GDG Tokyo</strong> volunteer, and Session Chair at AAAI 2026 &amp; ICAART 2026. I work across English, Japanese (JLPT N3), and Burmese — because good ideas shouldn't have to cross language barriers alone.</p>
-
         <p class="about-text" style="margin-top:14px">If you're building something impactful, experimental, community-driven, or a little bit crazy — let's talk. I'm probably just one message away.</p>
-      </div>
-      <div class="about-stat-list">
-        <div class="about-stat"><span class="stat-num">179</span><span class="stat-label">Citations</span></div>
-        <div class="about-stat"><span class="stat-num">7</span><span class="stat-label">h-index</span></div>
-        <div class="about-stat"><span class="stat-num">16</span><span class="stat-label">Publications</span></div>
-        <div class="about-stat"><span class="stat-num">8</span><span class="stat-label">Awards &amp; Grants</span></div>
       </div>
     </div>
   </section>
-
   <!-- RESEARCH INTERESTS -->
   <section id="interests">
     <div class="sec-label">🌱 Research Interests</div>
@@ -403,12 +361,10 @@
       <span class="interest-tag">🌏 Low-resource Language Modeling</span>
     </div>
   </section>
-
   <!-- PUBLICATIONS -->
   <section id="publications">
     <div class="sec-label">Publications</div>
     <div class="pub-list fade-in">
-
       <!-- 2026 -->
       <div class="pub-item">
         <div class="pub-year">2026</div>
@@ -419,7 +375,6 @@
           <div class="pub-meta">The 32nd Annual Conference of the Association for Natural Language Processing · Japan</div>
         </div>
       </div>
-
       <div class="pub-item">
         <div class="pub-year">2026</div>
         <div>
@@ -429,7 +384,6 @@
           <div class="pub-meta">The 32nd Annual Conference of the Association for Natural Language Processing · Japan</div>
         </div>
       </div>
-
       <div class="pub-item">
         <div class="pub-year">2026</div>
         <div>
@@ -439,7 +393,6 @@
           <div class="pub-meta">18th International Conference on Agents and Artificial Intelligence · Marbella, Spain</div>
         </div>
       </div>
-
       <div class="pub-item">
         <div class="pub-year">2026</div>
         <div>
@@ -449,7 +402,6 @@
           <div class="pub-meta">Joint International Conference on Computational Linguistics, Language Resources and Evaluation</div>
         </div>
       </div>
-
       <div class="pub-item">
         <div class="pub-year">2025</div>
         <div>
@@ -464,7 +416,6 @@
           </div>
         </div>
       </div>
-
       <div class="pub-item">
         <div class="pub-year">2024</div>
         <div>
@@ -477,7 +428,6 @@
           </div>
         </div>
       </div>
-
       <div class="pub-item">
         <div class="pub-year">2024</div>
         <div>
@@ -490,7 +440,6 @@
           </div>
         </div>
       </div>
-
       <div class="pub-item">
         <div class="pub-year">2023</div>
         <div>
@@ -505,7 +454,6 @@
           </div>
         </div>
       </div>
-
       <div class="pub-item">
         <div class="pub-year">2021</div>
         <div>
@@ -518,19 +466,16 @@
           </div>
         </div>
       </div>
-
     </div>
     <p style="margin-top:20px;font-size:12px;color:var(--light)">
       Full list: 4 journal papers (Scopus-indexed) · 12 conference papers ·
       <a href="https://scholar.google.com/citations?user=BdUh5ogAAAAJ&hl=en" target="_blank" style="color:var(--accent)">Google Scholar ↗</a>
     </p>
   </section>
-
   <!-- PROJECTS -->
   <section id="projects">
     <div class="sec-label">Selected Projects</div>
     <div class="projects-grid fade-in">
-
       <div class="proj-card">
         <div class="proj-img">
           <div class="proj-placeholder">
@@ -548,7 +493,6 @@
           </div>
         </div>
       </div>
-
       <div class="proj-card">
         <div class="proj-img">
           <div class="proj-placeholder">
@@ -567,7 +511,6 @@
           </div>
         </div>
       </div>
-
       <div class="proj-card">
         <div class="proj-img">
           <div class="proj-placeholder">
@@ -586,12 +529,10 @@
           </div>
         </div>
       </div>
-
       <!--
         ╔══════════════════════════════════════════════════╗
         ║  ADD A NEW PROJECT — copy this block and fill in ║
         ╚══════════════════════════════════════════════════╝
-
       <div class="proj-card">
         <div class="proj-img">
           <img src="your-image.jpg" alt="Project name">
@@ -611,12 +552,9 @@
           </div>
         </div>
       </div>
-
       -->
-
     </div>
   </section>
-
   <!-- EXPERIENCE -->
   <section id="experience">
     <div class="sec-label">Experience</div>
@@ -646,7 +584,6 @@
         </div>
       </div>
     </div>
-
     <div class="sec-label" style="margin-top:40px">Education</div>
     <div class="timeline fade-in">
       <div class="tl-item">
@@ -674,7 +611,6 @@
       </div>
     </div>
   </section>
-
   <!-- AWARDS -->
   <section id="awards">
     <div class="sec-label">Awards &amp; Grants</div>
@@ -688,10 +624,8 @@
       <div class="award-row"><span class="award-name">IEEE Women in Engineering Best Paper Award — LifeTech</span><span class="award-yr">2021</span></div>
       <div class="award-row"><span class="award-name">Naoji Iwatani Full Master Scholarship Award</span><span class="award-yr">2020–2022</span></div>
     </div>
-
     <div class="sec-label" style="margin-top:40px">Community &amp; Service</div>
     <div class="fade-in">
-
       <!-- Women in AI Myanmar — expanded block -->
       <div class="wai-block">
         <div class="wai-header">
@@ -725,7 +659,6 @@
           As a trilingual communicator (English · Japanese · Burmese), I also publish AI articles on Medium and speak at events across global communities — translating cutting-edge research into accessible insights for audiences encountering these ideas for the first time.
         </p>
       </div>
-
       <!-- Other community rows -->
       <div class="award-row" style="margin-top:4px">
         <span class="award-name"><a href="https://eccv2026.ecva.net/" target="_blank">Workshop Organizer — ECCV 2026 LIMIT Workshop</a>, Sweden</span>
@@ -753,7 +686,6 @@
       </div>
     </div>
   </section>
-
   <!-- CONTACT -->
   <section id="contact">
     <div class="sec-label">Contact</div>
@@ -769,21 +701,17 @@
       <a href="https://orcid.org/0000-0001-7802-8263" target="_blank" class="pill pill-outline">ORCID</a>
     </div>
   </section>
-
   <footer>
     <span>© 2026 Su Myat Noe</span>
     <span>Tokyo, Japan · EN · JP · Burmese</span>
   </footer>
-
 </div><!-- .page -->
-
 <script>
   const io = new IntersectionObserver(
     es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }),
     { threshold: 0.08 }
   );
   document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
-
   function toggleMenu() {
     document.querySelector('.nav-burger').classList.toggle('open');
     document.getElementById('mobileMenu').classList.toggle('open');
