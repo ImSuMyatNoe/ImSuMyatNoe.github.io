@@ -96,15 +96,15 @@
 
     /* avatar placeholder */
     .avatar-box {
-      width: 130px; height: 130px;
+      width: 180px; height: 180px;
       border-radius: 50%;
       background: var(--accent-light);
       border: 2px solid var(--border);
       display: flex; align-items: center; justify-content: center;
-      font-family: 'Lora', serif;
-      font-size: 36px;
+      font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', 'Lora', serif;
+      font-size: 90px;
+      line-height: 1;
       color: var(--accent);
-      font-style: italic;
       flex-shrink: 0;
       overflow: hidden;
     }
@@ -125,7 +125,7 @@
 
     /* ABOUT */
     .about-cols { display: grid; grid-template-columns: 1fr 88px; gap: 40px; align-items: start; }
-    .about-text { font-size: 15px; color: var(--muted); line-height: 1.8; text-align: justify; }
+    .about-text { font-family: 'Times New Roman', Times, serif; font-size: 18px; color: var(--muted); line-height: 1.75; text-align: justify; }
     .about-text + .about-text { margin-top: 14px; }
     .about-stat-list { display: flex; flex-direction: column; gap: 16px; padding-top: 4px; }
     .about-stat { display: flex; flex-direction: column; }
@@ -201,6 +201,19 @@
     .proj-desc { font-size: 12px; color: var(--muted); line-height: 1.6; margin-bottom: 12px; }
     .proj-footer { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
     .proj-tag { font-size: 10px; padding: 2px 8px; border-radius: 3px; background: var(--surface); border: 1px solid var(--border); color: var(--muted); }
+
+    /* Research Interests */
+    .interests-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+    .interest-tag {
+      font-size: 13px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      transition: border-color .2s ease, transform .2s ease, background .2s ease;
+    }
+    .interest-tag:hover { border-color: var(--accent); background: #fff; transform: translateY(-1px); }
     .proj-gh { font-size: 11px; color: var(--accent); text-decoration: none; font-weight: 500; margin-left: auto; }
     .proj-gh:hover { text-decoration: underline; }
     .proj-gh.dim { color: var(--light); cursor: default; }
@@ -297,6 +310,8 @@
 <nav>
   <a href="#hero" class="nav-name">Su Myat Noe</a>
   <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#interests">Interests</a></li>
     <li><a href="#publications">Publications</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
@@ -310,6 +325,8 @@
 </nav>
 <!-- Mobile dropdown -->
 <div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#interests" onclick="closeMenu()">Interests</a>
   <a href="#publications" onclick="closeMenu()">Publications</a>
   <a href="#projects" onclick="closeMenu()">Projects</a>
   <a href="#experience" onclick="closeMenu()">Experience</a>
@@ -332,13 +349,15 @@
         <a href="https://scholar.google.com/citations?user=BdUh5ogAAAAJ&hl=en" target="_blank" class="pill pill-solid">Google Scholar</a>
         <a href="https://github.com/ImSuMyatNoe" target="_blank" class="pill pill-outline">GitHub</a>
         <a href="https://www.linkedin.com/in/sumyatnoe29/" target="_blank" class="pill pill-outline">LinkedIn</a>
+        <a href="https://medium.com/@sumyatnoe" target="_blank" class="pill pill-outline">Medium</a>
+        <a href="https://orcid.org/0000-0001-7802-8263" target="_blank" class="pill pill-outline">ORCID</a>
         <a href="https://linktr.ee/sumyatnoe" target="_blank" class="pill pill-outline">LinkTree</a>
         <a href="mailto:sumyatnoe.uit@gmail.com" class="pill pill-outline">Email</a>
       </div>
     </div>
     <div>
       <!-- Replace with: <img src="photo.jpg" alt="Su Myat Noe"> inside the div -->
-      <div class="avatar-box">S</div>
+      <div class="avatar-box">👩🏻‍💻</div>
     </div>
   </section>
 
@@ -347,15 +366,17 @@
     <div class="sec-label">About</div>
     <div class="about-cols fade-in">
       <div>
-        <p class="about-text">I am a Ph.D.-trained researcher at the National Institute of Informatics (NII), Tokyo, working on multimodal AI safety — specifically how frontier vision-language models (VLMs) behave when safety matters, across languages, modalities, and cultures.</p>
+        <p class="about-text">I build AI safety tools at the <strong style="color:var(--text)">National Institute of Informatics (NII)</strong>, Tokyo. The short version: when frontier vision-language models meet the messiness of real languages and cultures, I'm one of the people checking whether they actually hold up.</p>
 
-        <p class="about-text" style="margin-top:14px"><strong style="color:var(--text)">My core project</strong> is extending DeepMind's Multimodal Safety Test Suite (MSTS) to Japanese as the 12th language. This is not a translation task — it is a full cross-linguistic safety evaluation involving human-translated and human-edited prompts, model evaluations across both multimodal (image + text) and text-only conditions, and a rigorous human annotation campaign (1,700+ safety judgments). I evaluate five frontier VLMs — including GPT-5, Gemini-2.5-Flash, Qwen2.5-VL, InternVL2.5, and LLM-JP-3-VILA — and find that Japanese inputs consistently produce higher violation rates than English (+10 to +46 percentage points depending on model and condition). This reveals a systematic safety gap that text-only evaluation misses entirely.</p>
+        <p class="about-text" style="margin-top:14px">I didn't always think this way. During my Ph.D. at the University of Miyazaki, I spent four years building computer vision systems to track cattle across multi-camera farms (yes, really — cattle 🐄). The work ended up in <em>Nature Scientific Reports</em>, but the bigger lesson wasn't technical. Watching farmers depend on a model I'd written quietly rewired how I think. I stopped asking <em>"can it work?"</em> and started asking <em>"is it safe when someone actually depends on it?"</em></p>
 
-        <p class="about-text" style="margin-top:14px"><strong style="color:var(--text)">On evaluation methodology</strong>, I build and validate automated LLM-as-Judge pipelines, comparing them against human judgments through correlation analysis and ablation studies across modality and language conditions. A key finding: text-only reference answers actively hurt automated evaluation when applied to multimodal prompts — because models appropriately incorporate visual context that text-only references don't anticipate. This has direct implications for how we design reward signals for safer model alignment.</p>
+        <p class="about-text" style="margin-top:14px"><strong style="color:var(--text)">At NII</strong>, my work sits at the intersection of multimodal safety and agentic AI. I lead <strong style="color:var(--text)">MSTS-JP</strong> — the Japanese extension of DeepMind's Multimodal Safety Test Suite — and contribute to Japanese agent benchmarks like <strong style="color:var(--text)">OSWorld-JP</strong>. The questions I keep returning to: how do frontier models behave when the language and culture shift, and what does <em>safe</em> actually mean when an AI agent acts on someone's behalf?</p>
 
-        <p class="about-text" style="margin-top:14px"><strong style="color:var(--text)">Beyond safety evaluation</strong>, I contribute to an end-to-end agent evaluation framework for Japanese, localizing benchmarks like OSWorld to assess whether LLM-powered agents can complete real-world tasks — not just call tools. I also study agentic architectures empirically: my ICAART 2026 paper shows that well-designed single-agent systems significantly outperform multi-agent decomposition for vision-based reasoning tasks.</p>
+        <p class="about-text" style="margin-top:14px"><strong style="color:var(--text)">Outside the research life</strong>, I'm probably just another curious builder chasing late-night ideas with coffee, notebooks, and too many half-finished side projects ☕ My latest weekend obsession is <em>AI Workshop Radar</em> — a tiny open-source tool I built after missing one too many submission deadlines (don't ask). I also write on Medium, mentor students, organize tech events, and turn up at AI meetups around Tokyo. Honestly, a lot of my best opportunities and friendships came from community spaces, not formal meetings.</p>
 
-        <p class="about-text" style="margin-top:14px">I serve as Session Chair at AAAI and ICAART, Women in AI Myanmar Board Member, and GDG Tokyo volunteer. Trilingual: English · Japanese (JLPT N3) · Burmese.</p>
+        <p class="about-text" style="margin-top:14px"><strong style="color:var(--text)">When I'm not coding or writing</strong>, you'll find me at the gym, on a pilates reformer, or trying to convince myself that yoga counts as productivity. (It does — clearer head, better code 🧘‍♀️) Originally from Myanmar 🇲🇲 and based in Japan 🇯🇵 since 2019, I serve as a <strong style="color:var(--text)">Women in AI Myanmar</strong> Ambassador &amp; Board Member, a <strong style="color:var(--text)">GDG Tokyo</strong> volunteer, and Session Chair at AAAI 2026 &amp; ICAART 2026. I work across English, Japanese (JLPT N3), and Burmese — because good ideas shouldn't have to cross language barriers alone.</p>
+
+        <p class="about-text" style="margin-top:14px">If you're building something impactful, experimental, community-driven, or a little bit crazy — let's talk. I'm probably just one message away.</p>
       </div>
       <div class="about-stat-list">
         <div class="about-stat"><span class="stat-num">179</span><span class="stat-label">Citations</span></div>
@@ -363,6 +384,23 @@
         <div class="about-stat"><span class="stat-num">16</span><span class="stat-label">Publications</span></div>
         <div class="about-stat"><span class="stat-num">8</span><span class="stat-label">Awards &amp; Grants</span></div>
       </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH INTERESTS -->
+  <section id="interests">
+    <div class="sec-label">🌱 Research Interests</div>
+    <div class="interests-grid fade-in">
+      <span class="interest-tag">🛡️ Multimodal AI Safety</span>
+      <span class="interest-tag">👁️ Vision-Language Models</span>
+      <span class="interest-tag">⚖️ LLM-as-a-Judge Evaluation</span>
+      <span class="interest-tag">🗾 Japanese NLP</span>
+      <span class="interest-tag">🌐 Cross-lingual &amp; Cross-cultural Safety</span>
+      <span class="interest-tag">🤖 Agentic AI &amp; GUI Agents</span>
+      <span class="interest-tag">📋 Benchmark Construction</span>
+      <span class="interest-tag">🚨 Responsible AI &amp; Red-teaming</span>
+      <span class="interest-tag">📸 Computer Vision</span>
+      <span class="interest-tag">🌏 Low-resource Language Modeling</span>
     </div>
   </section>
 
@@ -496,8 +534,7 @@
       <div class="proj-card">
         <div class="proj-img">
           <div class="proj-placeholder">
-            <span class="proj-placeholder-icon">🚦</span>
-            <span class="proj-placeholder-text">Add screenshot</span>
+            <span class="proj-placeholder-icon" style="font-size:64px">🛣️</span>
           </div>
         </div>
         <div class="proj-body">
@@ -515,8 +552,7 @@
       <div class="proj-card">
         <div class="proj-img">
           <div class="proj-placeholder">
-            <span class="proj-placeholder-icon">🤖</span>
-            <span class="proj-placeholder-text">Add screenshot</span>
+            <span class="proj-placeholder-icon" style="font-size:64px">💬</span>
           </div>
         </div>
         <div class="proj-body">
@@ -535,19 +571,18 @@
       <div class="proj-card">
         <div class="proj-img">
           <div class="proj-placeholder">
-            <span class="proj-placeholder-icon">❓</span>
-            <span class="proj-placeholder-text">Add screenshot</span>
+            <span class="proj-placeholder-icon" style="font-size:64px">📡</span>
           </div>
         </div>
         <div class="proj-body">
-          <div class="proj-cat">Side Project · NLP</div>
-          <div class="proj-title">Question-Answering NLP System</div>
-          <div class="proj-desc">Final-year undergraduate capstone applying natural language processing techniques to build a question-answering system from scratch.</div>
+          <div class="proj-cat">Side Project · Open Source · 2026</div>
+          <div class="proj-title">AI Workshop Radar</div>
+          <div class="proj-desc">Personalised Telegram &amp; Slack digests of AI conference and workshop deadlines. Multi-stage tracking (abstract → paper → camera-ready), Tokyo timezone by default, Japan-domestic venues seeded. Zero servers — runs on GitHub Actions, MIT licensed, free forever.</div>
           <div class="proj-footer">
-            <span class="proj-tag">NLP</span>
-            <span class="proj-tag">Python</span>
-            <span class="proj-tag">QA</span>
-            <a href="https://github.com/ImSuMyatNoe/Question-Answering-Project-by-NLP" class="proj-gh" target="_blank">GitHub ↗</a>
+            <span class="proj-tag">GitHub Actions</span>
+            <span class="proj-tag">YAML</span>
+            <span class="proj-tag">Telegram</span>
+            <a href="https://github.com/ImSuMyatNoe/ai-workshop-radar" class="proj-gh" target="_blank">GitHub ↗</a>
           </div>
         </div>
       </div>
@@ -563,7 +598,6 @@
           OR keep the placeholder:
           <div class="proj-placeholder">
             <span class="proj-placeholder-icon">🔬</span>
-            <span class="proj-placeholder-text">Add screenshot</span>
           </div>
         </div>
         <div class="proj-body">
@@ -724,13 +758,15 @@
   <section id="contact">
     <div class="sec-label">Contact</div>
     <p class="contact-text">
-      Open to research collaborations, applied scientist roles, and conversations about multilingual AI safety in the APAC region.
+      Open to research collaborations, applied scientist roles, and conversations about multilingual AI safety in the APAC region. Also always up for a coffee chat about side projects, community building, or new ideas — formal or completely informal.
     </p>
     <div class="hero-links">
       <a href="mailto:sumyatnoe.uit@gmail.com" class="pill pill-solid">sumyatnoe.uit@gmail.com</a>
       <a href="https://www.linkedin.com/in/sumyatnoe29/" target="_blank" class="pill pill-outline">LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=BdUh5ogAAAAJ&hl=en" target="_blank" class="pill pill-outline">Google Scholar</a>
       <a href="https://github.com/ImSuMyatNoe" target="_blank" class="pill pill-outline">GitHub</a>
+      <a href="https://medium.com/@sumyatnoe" target="_blank" class="pill pill-outline">Medium</a>
+      <a href="https://orcid.org/0000-0001-7802-8263" target="_blank" class="pill pill-outline">ORCID</a>
     </div>
   </section>
 
