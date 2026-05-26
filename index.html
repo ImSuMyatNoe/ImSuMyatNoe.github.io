@@ -171,9 +171,11 @@
     .proj-img {
       width: 100%; aspect-ratio: 16/9;
       background: var(--surface);
-      display: flex; align-items: center; justify-content: center;
+      display: none;
+      align-items: center; justify-content: center;
       overflow: hidden;
     }
+    .proj-img:has(img) { display: flex; }
     .proj-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.35s; }
     .proj-card:hover .proj-img img { transform: scale(1.03); }
     .proj-placeholder { display: flex; flex-direction: column; align-items: center; gap: 8px; }
@@ -197,6 +199,15 @@
       transition: border-color .2s ease, transform .2s ease, background .2s ease;
     }
     .interest-tag:hover { border-color: var(--accent); background: #fff; transform: translateY(-1px); }
+    /* NEWS */
+    .news-list { display: flex; flex-direction: column; gap: 0; max-height: 360px; overflow-y: auto; padding-right: 8px; }
+    .news-list::-webkit-scrollbar { width: 4px; }
+    .news-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+    .news-item { display: grid; grid-template-columns: 88px 1fr; gap: 0 16px; padding: 11px 0; border-bottom: 1px dashed var(--border); }
+    .news-item:last-child { border-bottom: none; }
+    .news-date { font-family: 'Lora', serif; font-size: 12px; color: var(--accent); font-weight: 600; padding-top: 1px; }
+    .news-text { font-size: 13.5px; color: var(--text); line-height: 1.55; }
+    .news-text em { color: var(--muted); font-style: normal; font-size: 12px; }
     .proj-gh { font-size: 11px; color: var(--accent); text-decoration: none; font-weight: 500; margin-left: auto; }
     .proj-gh:hover { text-decoration: underline; }
     .proj-gh.dim { color: var(--light); cursor: default; }
@@ -284,11 +295,11 @@
   <a href="#hero" class="nav-name">Su Myat Noe</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
-    <li><a href="#interests">Interests</a></li>
+    <li><a href="#news">News</a></li>
     <li><a href="#publications">Publications</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
-    <li><a href="#awards">Awards</a></li>
+    <li><a href="#honors">Honors</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <!-- Mobile hamburger -->
@@ -299,11 +310,11 @@
 <!-- Mobile dropdown -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about" onclick="closeMenu()">About</a>
-  <a href="#interests" onclick="closeMenu()">Interests</a>
+  <a href="#news" onclick="closeMenu()">News</a>
   <a href="#publications" onclick="closeMenu()">Publications</a>
   <a href="#projects" onclick="closeMenu()">Projects</a>
   <a href="#experience" onclick="closeMenu()">Experience</a>
-  <a href="#awards" onclick="closeMenu()">Awards</a>
+  <a href="#honors" onclick="closeMenu()">Honors</a>
   <a href="#contact" onclick="closeMenu()">Contact</a>
 </div>
 <div class="page">
@@ -336,11 +347,26 @@
     <div class="sec-label">About</div>
     <div class="about-cols fade-in">
       <div>
-        <p class="about-text">I build AI safety tools at the <strong style="color:var(--text)">National Institute of Informatics (NII)</strong>, Tokyo. The short version: when frontier vision-language models meet the messiness of real languages and cultures, I'm one of the people checking whether they actually hold up.</p>
-        <p class="about-text" style="margin-top:14px">I didn't always think this way. During my Ph.D. at the University of Miyazaki, I spent 5.5 years building computer vision systems to track cattle across multi-camera farms (yes, really — cattle 🐄). The work ended up in <em>Nature Scientific Reports</em>, but the bigger lesson wasn't technical. Watching farmers depend on a model I'd written quietly rewired how I think. I stopped asking <em>"can it work?"</em> and started asking <em>"is it safe when someone actually depends on it?"</em></p>
-        <p class="about-text" style="margin-top:14px"><strong style="color:var(--text)">At NII</strong>, my work sits at the intersection of multimodal safety and agentic AI. I contribute to Japanese agent benchmarks. The questions I keep returning to: how do frontier models behave when the language and culture shift, and what does <em>safe</em> actually mean when an AI agent acts on someone's behalf?</p>
+        <p class="about-text">This is <strong style="color:var(--text)">Su Myat Noe</strong>. Currently, I am a Project Researcher at the Research and Development Center for Large Language Models (LLMC) of the <strong style="color:var(--text)">National Institute of Informatics (NII)</strong>, Tokyo. Previously, I obtained my Ph.D. in Computer Science from the University of Miyazaki under the supervision of Prof. Thi Thi Zin, supported by the JST Doctoral Researchers Grant.</p>
+
+        <p class="about-text" style="margin-top:14px">My research direction focuses on <strong style="color:var(--text)">multimodal AI safety evaluation</strong> for vision-language models, particularly across multilingual and cross-cultural settings. My previous research direction was multi-camera computer vision for livestock tracking (yes — cattle 🐄, and yes, the work ended up in <em>Nature Scientific Reports</em>). Any interesting discussion is welcome, and my full publications can be accessed from <a href="https://scholar.google.com/citations?user=BdUh5ogAAAAJ&hl=en" target="_blank" style="color:var(--accent)">Google Scholar</a>.</p>
+
+        <p class="about-text" style="margin-top:14px">Currently, I am working on research related to:</p>
+        <ul style="font-family:'Times New Roman',Times,serif;font-size:18px;color:var(--muted);line-height:1.85;margin:6px 0 4px 28px">
+          <li>Multimodal AI Safety</li>
+          <li>Vision-Language Model evaluation across languages and cultures</li>
+          <li>LLM-as-Judge pipelines for safety benchmarks</li>
+          <li>Japanese Agentic AI Benchmarks</li>
+        </ul>
+
+        <p class="about-text" style="margin-top:18px">I build AI safety tools at NII. The short version: when frontier vision-language models meet the messiness of real languages and cultures, I'm one of the people checking whether they actually hold up.</p>
+
+        <p class="about-text" style="margin-top:14px">I didn't always think this way. During my Ph.D., I spent 5.5 years building computer vision systems to track cattle across multi-camera farms. Watching farmers depend on a model I'd written quietly rewired how I think. I stopped asking <em>"can it work?"</em> and started asking <em>"is it safe when someone actually depends on it?"</em></p>
+
         <p class="about-text" style="margin-top:14px"><strong style="color:var(--text)">Outside the research life</strong>, I'm probably just another curious builder chasing late-night ideas with coffee, notebooks, and too many half-finished side projects ☕ My latest weekend obsession is <em>AI Workshop Radar</em> — a tiny open-source tool I built after missing one too many submission deadlines (don't ask). I also write on Medium, mentor students, organize tech events, and turn up at AI meetups around Tokyo. Honestly, a lot of my best opportunities and friendships came from community spaces, not formal meetings.</p>
+
         <p class="about-text" style="margin-top:14px"><strong style="color:var(--text)">When I'm not coding or writing</strong>, you'll find me at the gym, on a pilates reformer, or trying to convince myself that yoga counts as productivity. (It does — clearer head, better code 🧘‍♀️) Originally from Myanmar 🇲🇲 and based in Japan 🇯🇵 since 2019, I serve as a <strong style="color:var(--text)">Women in AI Myanmar</strong> Ambassador &amp; Board Member, a <strong style="color:var(--text)">GDG Tokyo</strong> volunteer, and Session Chair at AAAI 2026 &amp; ICAART 2026. I work across English, Japanese (JLPT N3), and Burmese — because good ideas shouldn't have to cross language barriers alone.</p>
+
         <p class="about-text" style="margin-top:14px">If you're building something impactful, experimental, community-driven, or a little bit crazy — let's talk. I'm probably just one message away.</p>
       </div>
     </div>
@@ -361,11 +387,83 @@
       <span class="interest-tag">🌏 Low-resource Language Modeling</span>
     </div>
   </section>
+  <!-- NEWS -->
+  <section id="news">
+    <div class="sec-label">🔥 News</div>
+    <div class="news-list fade-in">
+      <div class="news-item">
+        <div class="news-date">2026.03</div>
+        <div class="news-text">🎉 Two papers accepted at NLP 2026: <em>MSTS-JP</em> and <em>AnswerCarefully Dataset Extension</em>.</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2026.02</div>
+        <div class="news-text">🌍 Presented <em>Traffic Sign Interpretation</em> paper at ICAART 2026 in Marbella, Spain — and served as Session Chair.</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2026.02</div>
+        <div class="news-text">🎉 <em>BIS Reasoning 1.0</em> — a large-scale Japanese benchmark for belief-inconsistent reasoning — accepted at LREC 2026.</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2025.04</div>
+        <div class="news-text">🚀 Joined the LLM Research and Development Center (LLMC) at NII, Tokyo, as Project Researcher.</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2025.03</div>
+        <div class="news-text">🎓 Successfully defended my Ph.D. at the University of Miyazaki!</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2025.02</div>
+        <div class="news-text">🎉 Paper accepted at <em>Scientific Reports</em> (Nature Portfolio): Black Cattle Tracking with YOLOv8 Multi-Camera System.</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2024.11</div>
+        <div class="news-text">🏆 Best Student Paper Award at ICGEC 2024.</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2024.02</div>
+        <div class="news-text">🏆 Best Paper Award (Top 1/25) at NCSP 2024 — RISP Workshop, Hawaii.</div>
+      </div>
+    </div>
+  </section>
+
   <!-- PUBLICATIONS -->
   <section id="publications">
-    <div class="sec-label">Publications</div>
+    <div class="sec-label">📝 Publications</div>
+
+    <h3 style="font-family:'Lora',serif;font-size:15px;font-weight:600;color:var(--text);margin:0 0 10px;letter-spacing:0.02em;">Journals</h3>
+    <div class="pub-list fade-in" style="margin-bottom:28px;">
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
+        <div>
+          <span class="pub-venue-badge journal">Scientific Reports</span>
+          <div class="pub-title">
+            <a href="https://doi.org/10.1038/s41598-025-91095-3" target="_blank">Optimizing Black Cattle Tracking in Complex Open Ranch Environments Using YOLOv8 Embedded Multi-Camera System</a>
+          </div>
+          <div class="pub-authors"><strong>Su Myat Noe</strong> et al.</div>
+          <div class="pub-meta">
+            <em>Scientific Reports</em>, 15, 6820 (Nature Portfolio) · IF: 3.8
+            <a href="https://doi.org/10.1038/s41598-025-91095-3" class="pub-link" target="_blank">DOI ↗</a>
+          </div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-year">2023</div>
+        <div>
+          <span class="pub-venue-badge journal">Sensors</span>
+          <div class="pub-title">
+            <a href="https://doi.org/10.3390/s23010532" target="_blank">Comparing State-of-the-Art Deep Learning Algorithms for Automated Detection and Tracking of Black Cattle</a>
+          </div>
+          <div class="pub-authors"><strong>Su Myat Noe</strong> et al.</div>
+          <div class="pub-meta">
+            <em>Sensors</em>, 23(1), 532 · MDPI · IF: 3.9
+            <a href="https://doi.org/10.3390/s23010532" class="pub-link" target="_blank">DOI ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Lora',serif;font-size:15px;font-weight:600;color:var(--text);margin:0 0 10px;letter-spacing:0.02em;">Conference Papers</h3>
     <div class="pub-list fade-in">
-      <!-- 2026 -->
       <div class="pub-item">
         <div class="pub-year">2026</div>
         <div>
@@ -403,20 +501,6 @@
         </div>
       </div>
       <div class="pub-item">
-        <div class="pub-year">2025</div>
-        <div>
-          <span class="pub-venue-badge journal">Scientific Reports</span>
-          <div class="pub-title">
-            <a href="https://doi.org/10.1038/s41598-025-91095-3" target="_blank">Optimizing Black Cattle Tracking in Complex Open Ranch Environments Using YOLOv8 Embedded Multi-Camera System</a>
-          </div>
-          <div class="pub-authors"><strong>Su Myat Noe</strong> et al.</div>
-          <div class="pub-meta">
-            <em>Scientific Reports</em>, 15, 6820 (Nature Portfolio) · IF: 3.8
-            <a href="https://doi.org/10.1038/s41598-025-91095-3" class="pub-link" target="_blank">DOI ↗</a>
-          </div>
-        </div>
-      </div>
-      <div class="pub-item">
         <div class="pub-year">2024</div>
         <div>
           <span class="pub-venue-badge">ICGEC 2024</span>
@@ -441,20 +525,6 @@
         </div>
       </div>
       <div class="pub-item">
-        <div class="pub-year">2023</div>
-        <div>
-          <span class="pub-venue-badge journal">Sensors</span>
-          <div class="pub-title">
-            <a href="https://doi.org/10.3390/s23010532" target="_blank">Comparing State-of-the-Art Deep Learning Algorithms for Automated Detection and Tracking of Black Cattle</a>
-          </div>
-          <div class="pub-authors"><strong>Su Myat Noe</strong> et al.</div>
-          <div class="pub-meta">
-            <em>Sensors</em>, 23(1), 532 · MDPI · IF: 3.9
-            <a href="https://doi.org/10.3390/s23010532" class="pub-link" target="_blank">DOI ↗</a>
-          </div>
-        </div>
-      </div>
-      <div class="pub-item">
         <div class="pub-year">2021</div>
         <div>
           <span class="pub-venue-badge">LifeTech 2021</span>
@@ -474,7 +544,7 @@
   </section>
   <!-- PROJECTS -->
   <section id="projects">
-    <div class="sec-label">Selected Projects</div>
+    <div class="sec-label">💻 Projects</div>
     <div class="projects-grid fade-in">
       <div class="proj-card">
         <div class="proj-img">
@@ -555,51 +625,24 @@
       -->
     </div>
   </section>
-  <!-- EXPERIENCE -->
+  <!-- EDUCATION + EXPERIENCE -->
   <section id="experience">
-    <div class="sec-label">Experience</div>
+    <div class="sec-label">📖 Education</div>
     <div class="timeline fade-in">
       <div class="tl-item">
-        <div class="tl-period">Apr 2025 – Present</div>
-        <div>
-          <div class="tl-role">Project Researcher</div>
-          <div class="tl-org">National Institute of Informatics (NII) — LLMC · Tokyo, Japan</div>
-          <div class="tl-note">Multimodal safety evaluation · LLM-as-Judge pipelines · Japanese agent benchmark · VLM evaluation</div>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-period">2018</div>
-        <div>
-          <div class="tl-role">Junior Data Scientist</div>
-          <div class="tl-org">Bagan Innovation Technology · Myanmar</div>
-          <div class="tl-note">Low-resource NLP for Myanmar language</div>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-period">2017</div>
-        <div>
-          <div class="tl-role">Junior System Developer</div>
-          <div class="tl-org">Fujitsu Japan · Japan</div>
-          <div class="tl-note">Enterprise web applications · PHP · JavaScript</div>
-        </div>
-      </div>
-    </div>
-    <div class="sec-label" style="margin-top:40px">Education</div>
-    <div class="timeline fade-in">
-      <div class="tl-item">
-        <div class="tl-period">2022 – 2025</div>
+        <div class="tl-period">2022.04 – 2025.03</div>
         <div>
           <div class="tl-role">Ph.D. in Computer Science</div>
           <div class="tl-org">University of Miyazaki, Japan</div>
-          <div class="tl-note">Computer vision · multi-camera tracking · Advisor: Dr. Thi Thi Zin · JST Doctoral Grant · NEC C&amp;C Grant</div>
+          <div class="tl-note">Computer vision · multi-camera tracking · Advisor: Dr. Thi Thi Zin · JST Doctoral Researcher Grant · NEC C&amp;C Research Grant</div>
         </div>
       </div>
       <div class="tl-item">
-        <div class="tl-period">2020 – 2022</div>
+        <div class="tl-period">2020.04 – 2022.03</div>
         <div>
           <div class="tl-role">M.Eng. in Energy and Electronics</div>
           <div class="tl-org">University of Miyazaki, Japan</div>
-          <div class="tl-note">Naoji Iwatani Full Master Scholarship Award</div>
+          <div class="tl-note">Naoji Iwatani Full Master Scholarship</div>
         </div>
       </div>
       <div class="tl-item">
@@ -610,21 +653,78 @@
         </div>
       </div>
     </div>
+
+    <div class="sec-label" style="margin-top:48px">🐂 Work Experience</div>
+    <div class="timeline fade-in">
+      <div class="tl-item">
+        <div class="tl-period">2025.04 – Present</div>
+        <div>
+          <div class="tl-role">Project Researcher</div>
+          <div class="tl-org">National Institute of Informatics (NII) — LLMC · Tokyo, Japan</div>
+          <div class="tl-note">Multimodal safety evaluation · LLM-as-Judge pipelines · Japanese agent benchmarks · VLM evaluation</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-label" style="margin-top:48px">👨‍💻 Internships &amp; Early Career</div>
+    <div class="timeline fade-in">
+      <div class="tl-item">
+        <div class="tl-period">2018.07 – 2018.12</div>
+        <div>
+          <div class="tl-role">Junior Data Scientist</div>
+          <div class="tl-org">Bagan Innovation Technology · Yangon, Myanmar</div>
+          <div class="tl-note">Low-resource NLP for the Myanmar language</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">2017.06 – 2017.09</div>
+        <div>
+          <div class="tl-role">Junior System Developer (Intern)</div>
+          <div class="tl-org">Fujitsu Japan · Tokyo, Japan</div>
+          <div class="tl-note">Enterprise web applications · PHP · JavaScript</div>
+        </div>
+      </div>
+    </div>
   </section>
-  <!-- AWARDS -->
-  <section id="awards">
-    <div class="sec-label">Awards &amp; Grants</div>
+  <!-- HONORS, FUNDINGS, COMMITTEES, COMMUNITY -->
+  <section id="honors">
+    <div class="sec-label">🎖 Honors &amp; Awards</div>
     <div class="fade-in">
       <div class="award-row"><span class="award-name">Encouragement Women Research Award — University of Miyazaki</span><span class="award-yr">2025</span></div>
-      <div class="award-row"><span class="award-name">Best Student Paper Award — ICGEC Conference</span><span class="award-yr">2024</span></div>
+      <div class="award-row"><span class="award-name">Best Student Paper Award — ICGEC 2024</span><span class="award-yr">2024</span></div>
       <div class="award-row"><span class="award-name">Best Paper Award (Top 1/25) — RISP NCSP Workshop, Hawaii</span><span class="award-yr">2024</span></div>
+      <div class="award-row"><span class="award-name">IEEE Women in Engineering Best Paper Award — LifeTech 2021</span><span class="award-yr">2021</span></div>
+    </div>
+
+    <div class="sec-label" style="margin-top:48px">💰 Fundings &amp; Scholarships</div>
+    <div class="fade-in">
       <div class="award-row"><span class="award-name">President's Research Funding Award — University of Miyazaki</span><span class="award-yr">2024–2025</span></div>
       <div class="award-row"><span class="award-name">JST Doctoral Researchers Grant</span><span class="award-yr">2022–2025</span></div>
       <div class="award-row"><span class="award-name">NEC C&amp;C Research Grant</span><span class="award-yr">2022–2023</span></div>
-      <div class="award-row"><span class="award-name">IEEE Women in Engineering Best Paper Award — LifeTech</span><span class="award-yr">2021</span></div>
       <div class="award-row"><span class="award-name">Naoji Iwatani Full Master Scholarship Award</span><span class="award-yr">2020–2022</span></div>
     </div>
-    <div class="sec-label" style="margin-top:40px">Community &amp; Service</div>
+
+    <div class="sec-label" style="margin-top:48px">👓 Committees &amp; Academic Service</div>
+    <div class="fade-in">
+      <div class="award-row">
+        <span class="award-name"><a href="https://eccv2026.ecva.net/" target="_blank">Workshop Organizer — ECCV 2026 LIMIT Workshop</a>, Sweden</span>
+        <span class="award-yr">Sep 2026</span>
+      </div>
+      <div class="award-row">
+        <span class="award-name">Session Chair — <a href="https://aaai.org/" target="_blank">AAAI 2026</a> &amp; <a href="https://icaart.scitevents.org/" target="_blank">ICAART 2026</a></span>
+        <span class="award-yr">2025–2026</span>
+      </div>
+      <div class="award-row">
+        <span class="award-name">Invited Talks —
+          <a href="https://io.google/2025/intl/extended/" target="_blank">Google I/O Extended Yangon 2025</a> ·
+          Women in AI ML Summer School 2025 ·
+          Sakura Workshop Taiwan 2023
+        </span>
+        <span class="award-yr">2023–2025</span>
+      </div>
+    </div>
+
+    <div class="sec-label" style="margin-top:48px">🌏 Community &amp; Service</div>
     <div class="fade-in">
       <!-- Women in AI Myanmar — expanded block -->
       <div class="wai-block">
@@ -659,30 +759,13 @@
           As a trilingual communicator (English · Japanese · Burmese), I also publish AI articles on Medium and speak at events across global communities — translating cutting-edge research into accessible insights for audiences encountering these ideas for the first time.
         </p>
       </div>
-      <!-- Other community rows -->
       <div class="award-row" style="margin-top:4px">
-        <span class="award-name"><a href="https://eccv2026.ecva.net/" target="_blank">Workshop Organizer — ECCV 2026 LIMIT Workshop</a>, Sweden</span>
-        <span class="award-yr">Sep 2026</span>
-      </div>
-      <div class="award-row">
-        <span class="award-name">Session Chair — <a href="https://aaai.org/" target="_blank">AAAI</a> &amp; <a href="https://icaart.scitevents.org/" target="_blank">ICAART</a></span>
-        <span class="award-yr">2025–2026</span>
-      </div>
-      <div class="award-row">
         <span class="award-name"><a href="https://gdg.community.dev/gdg-tokyo/" target="_blank">Google Developer Group Tokyo</a> — Staff Volunteer</span>
         <span class="award-yr">2025–Present</span>
       </div>
       <div class="award-row">
         <span class="award-name"><a href="https://gdsc.community.dev/" target="_blank">Google Developer Student Club Lead</a>, Japan</span>
         <span class="award-yr">2022–2023</span>
-      </div>
-      <div class="award-row">
-        <span class="award-name">Invited Talks —
-          <a href="https://io.google/2025/intl/extended/" target="_blank">Google I/O Extended Yangon 2025</a> ·
-          Women in AI ML Summer School 2025 ·
-          Sakura Workshop Taiwan 2023
-        </span>
-        <span class="award-yr">2023–2025</span>
       </div>
     </div>
   </section>
@@ -703,7 +786,6 @@
   </section>
   <footer>
     <span>© 2026 Su Myat Noe</span>
-    <span>Tokyo, Japan · EN · JP · Burmese</span>
   </footer>
 </div><!-- .page -->
 <script>
