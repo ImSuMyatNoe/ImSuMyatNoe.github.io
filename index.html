@@ -240,14 +240,13 @@
     .contact-text { font-size: 15px; color: var(--muted); max-width: 480px; margin-bottom: 28px; line-height: 1.7; }
     .email-obfuscated {
       display: inline-block;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 14px;
-      color: var(--red);
-      background: #fdf2f2;
-      border: 1px solid #f5d6d6;
-      border-radius: 6px;
-      padding: 6px 14px;
-      margin-bottom: 16px;
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+    .email-obfuscated strong {
+      color: var(--text);
+      font-weight: 600;
       user-select: all;
     }
     /* FOOTER */
@@ -309,9 +308,9 @@
     <li><a href="#about">About</a></li>
     <li><a href="#news">News</a></li>
     <li><a href="#publications">Publications</a></li>
-    <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#honors">Honors</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <!-- Mobile hamburger -->
@@ -324,9 +323,9 @@
   <a href="#about" onclick="closeMenu()">About</a>
   <a href="#news" onclick="closeMenu()">News</a>
   <a href="#publications" onclick="closeMenu()">Publications</a>
-  <a href="#projects" onclick="closeMenu()">Projects</a>
   <a href="#experience" onclick="closeMenu()">Experience</a>
   <a href="#honors" onclick="closeMenu()">Honors</a>
+  <a href="#projects" onclick="closeMenu()">Projects</a>
   <a href="#contact" onclick="closeMenu()">Contact</a>
 </div>
 <div class="page">
@@ -338,7 +337,7 @@
         Ph.D. · Project Researcher, <strong>National Institute of Informatics (NII)</strong>, Tokyo<br>
         Multimodal AI Safety · Multilingual LLM Evaluation · Vision-Language Models
       </p>
-      <div class="email-obfuscated">sumyatnoe [at] nii.ac.jp</div>
+      <a href="mailto:sumyatnoe.uit@gmail.com" class="email-obfuscated" style="text-decoration:none;">Email: <strong>sumyatnoe.uit [at] gmail.com</strong></a>
       <p class="hero-mission">"To build AI that is powerful, responsible, and accessible."</p>
       <div class="hero-links">
         <a href="https://scholar.google.com/citations?user=BdUh5ogAAAAJ&hl=en" target="_blank" class="pill pill-solid">Google Scholar</a>
@@ -359,7 +358,7 @@
     <div class="sec-label">About</div>
     <div class="about-cols fade-in">
       <div>
-        <p class="about-text">This is <strong style="color:var(--text)">Su Myat Noe</strong>. Currently, I am a Project Researcher at the Research and Development Center for Large Language Models (LLMC) of the <strong style="color:var(--text)">National Institute of Informatics (NII)</strong>, Tokyo. Previously, I obtained my Ph.D. in Computer Science from the University of Miyazaki under the supervision of Prof. Thi Thi Zin, supported by the JST Doctoral Researchers Grant.</p>
+        <p class="about-text">This is <strong style="color:var(--text)">Su Myat Noe</strong>. Currently, I am a Project Researcher at the <a href="https://llmc.nii.ac.jp/en/" target="_blank" style="color:var(--accent);text-decoration:underline;">Research and Development Center for Large Language Models (LLMC)</a> of the <strong style="color:var(--text)">National Institute of Informatics (NII)</strong>, Tokyo. Previously, I obtained my Ph.D. in Computer Science from the University of Miyazaki under the supervision of Prof. Thi Thi Zin, supported by the JST Doctoral Researchers Grant.</p>
 
         <p class="about-text" style="margin-top:14px">My research direction focuses on <strong style="color:var(--text)">multimodal AI safety evaluation</strong> for vision-language models, particularly across multilingual and cross-cultural settings. My previous research direction was multi-camera computer vision for livestock tracking (yes — cattle 🐄, and yes, the work ended up in <em>Nature Scientific Reports</em>). Any interesting discussion is welcome, and my full publications can be accessed from <a href="https://scholar.google.com/citations?user=BdUh5ogAAAAJ&hl=en" target="_blank" style="color:var(--accent)">Google Scholar</a>.</p>
 
@@ -566,6 +565,150 @@
       <a href="https://scholar.google.com/citations?user=BdUh5ogAAAAJ&hl=en" target="_blank" style="color:var(--accent)">Google Scholar ↗</a>
     </p>
   </section>
+  <!-- EDUCATION + EXPERIENCE -->
+  <section id="experience">
+    <div class="sec-label">📖 Education</div>
+    <div class="timeline fade-in">
+      <div class="tl-item">
+        <div class="tl-period">2022.04 – 2025.03</div>
+        <div>
+          <div class="tl-role">Ph.D. in Computer Science</div>
+          <div class="tl-org">University of Miyazaki, Japan</div>
+          <div class="tl-note">Computer vision · multi-camera tracking · Advisor: Dr. Thi Thi Zin · JST Doctoral Researcher Grant · NEC C&amp;C Research Grant</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">2020.04 – 2022.03</div>
+        <div>
+          <div class="tl-role">M.Eng. in Energy and Electronics</div>
+          <div class="tl-org">University of Miyazaki, Japan</div>
+          <div class="tl-note">Naoji Iwatani Full Master Scholarship</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">2013 – 2018</div>
+        <div>
+          <div class="tl-role">B.C.Sc. in Computer Science (Knowledge Engineering)</div>
+          <div class="tl-org">University of Information Technology, Myanmar</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-label" style="margin-top:48px">🐂 Work Experience</div>
+    <div class="timeline fade-in">
+      <div class="tl-item">
+        <div class="tl-period">2025.04 – Present</div>
+        <div>
+          <div class="tl-role">Project Researcher</div>
+          <div class="tl-org">National Institute of Informatics (NII) — LLMC · Tokyo, Japan</div>
+          <div class="tl-note">Multimodal safety evaluation · LLM-as-Judge pipelines · Japanese agent benchmarks · VLM evaluation</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-label" style="margin-top:48px">👨‍💻 Internships &amp; Early Career</div>
+    <div class="timeline fade-in">
+      <div class="tl-item">
+        <div class="tl-period">2018</div>
+        <div>
+          <div class="tl-role">Junior Data Scientist</div>
+          <div class="tl-org">Bagan Innovation Technology · Yangon, Myanmar</div>
+          <div class="tl-note">Low-resource NLP for the Myanmar language</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">2017</div>
+        <div>
+          <div class="tl-role">Junior System Developer (Intern)</div>
+          <div class="tl-org">Fujitsu Japan · Tokyo, Japan</div>
+          <div class="tl-note">Enterprise web applications · PHP · JavaScript</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HONORS, FUNDINGS, COMMITTEES, COMMUNITY -->
+  <section id="honors">
+    <div class="sec-label">🎖 Honors &amp; Awards</div>
+    <div class="fade-in">
+      <div class="award-row"><span class="award-name">Encouragement Women Research Award — University of Miyazaki</span><span class="award-yr">2025</span></div>
+      <div class="award-row"><span class="award-name"><a href="https://www.miyazaki-u.ac.jp/jisedai/topics/news/post-43.html" target="_blank">Best Student Paper Award — ICGEC 2024</a></span><span class="award-yr">2024</span></div>
+      <div class="award-row"><span class="award-name">Best Paper Award (Top 1/25) — RISP NCSP Workshop, Hawaii</span><span class="award-yr">2024</span></div>
+      <div class="award-row"><span class="award-name">IEEE Women in Engineering Best Paper Award — LifeTech 2021</span><span class="award-yr">2021</span></div>
+    </div>
+
+    <div class="sec-label" style="margin-top:48px">💰 Fundings &amp; Scholarships</div>
+    <div class="fade-in">
+      <div class="award-row"><span class="award-name">President's Research Funding Award — University of Miyazaki</span><span class="award-yr">2024–2025</span></div>
+      <div class="award-row"><span class="award-name"><a href="https://www.miyazaki-u.ac.jp/jisedai/interview/interview14.html" target="_blank">JST Doctoral Researchers Grant (SPRING)</a></span><span class="award-yr">2022–2025</span></div>
+      <div class="award-row"><span class="award-name">NEC C&amp;C Research Grant</span><span class="award-yr">2022–2023</span></div>
+      <div class="award-row"><span class="award-name"><a href="https://www.iwatani-foundation.or.jp/" target="_blank">Naoji Iwatani Full Master Scholarship Award</a></span><span class="award-yr">2020–2022</span></div>
+    </div>
+
+    <div class="sec-label" style="margin-top:48px">👓 Committees &amp; Academic Service</div>
+    <div class="fade-in">
+      <div class="award-row">
+        <span class="award-name"><a href="https://eccv2026-limit-workshop.limitlab.xyz/" target="_blank">Workshop Co-Organizer — ECCV 2026 LIMIT Workshop</a>, Sweden</span>
+        <span class="award-yr">Sep 2026</span>
+      </div>
+      <div class="award-row">
+        <span class="award-name">Session Chair — <a href="https://aaai.org/" target="_blank">AAAI 2026</a> &amp; <a href="https://icaart.scitevents.org/" target="_blank">ICAART 2026</a></span>
+        <span class="award-yr">2025–2026</span>
+      </div>
+      <div class="award-row">
+        <span class="award-name">Invited Talks —
+          <a href="https://io.google/2025/intl/extended/" target="_blank">Google I/O Extended Yangon 2025</a> ·
+          Women in AI ML Summer School 2025 ·
+          Sakura Workshop Taiwan 2023
+        </span>
+        <span class="award-yr">2023–2025</span>
+      </div>
+    </div>
+
+    <div class="sec-label" style="margin-top:48px">🌏 Community &amp; Service</div>
+    <div class="fade-in">
+      <!-- Women in AI Myanmar — expanded block -->
+      <div class="wai-block">
+        <div class="wai-header">
+          <div>
+            <div class="wai-title"><a href="https://www.womeninai.co/myanmar" target="_blank" style="color:var(--text);text-decoration:none;">Women in AI Myanmar</a></div>
+            <div class="wai-role">Board Member &amp; Ambassador · 2022 – Present</div>
+          </div>
+          <span class="wai-yr">2022 – Present</span>
+        </div>
+        <p class="wai-text">
+          I believe access to AI education should not depend on geography, gender, or privilege. Since 2022, I have served as an Ambassador — and now Board Member — of Women in AI Myanmar, helping lead national programs that open doors for students exploring AI for the first time, with a focus on women and underrepresented communities.
+        </p>
+        <p class="wai-text" style="margin-top:10px">
+          In 2025 alone, these programs reached over 900 participants across three initiatives:
+        </p>
+        <div class="wai-stats">
+          <div class="wai-stat">
+            <span class="wai-num">153</span>
+            <span class="wai-lbl">Responsible AI Workshop<br>participants</span>
+          </div>
+          <div class="wai-stat">
+            <span class="wai-num">305</span>
+            <span class="wai-lbl">ML Summer School applicants<br><em style="font-size:11px;color:var(--light)">(89 selected for 6-month program)</em></span>
+          </div>
+          <div class="wai-stat">
+            <span class="wai-num">482</span>
+            <span class="wai-lbl">Scholarship knowledge-sharing<br>session participants</span>
+          </div>
+        </div>
+        <p class="wai-text" style="margin-top:12px">
+          As a trilingual communicator (English · Japanese · Burmese), I also publish AI articles on Medium and speak at events across global communities — translating cutting-edge research into accessible insights for audiences encountering these ideas for the first time.
+        </p>
+      </div>
+      <div class="award-row" style="margin-top:4px">
+        <span class="award-name"><a href="https://gdg.community.dev/gdg-tokyo/" target="_blank">Google Developer Group Tokyo</a> — Staff Volunteer</span>
+        <span class="award-yr">2025–Present</span>
+      </div>
+      <div class="award-row">
+        <span class="award-name"><a href="https://gdsc.community.dev/" target="_blank">Google Developer Student Club Lead</a>, Japan</span>
+        <span class="award-yr">2022–2023</span>
+      </div>
+    </div>
+  </section>
   <!-- PROJECTS -->
   <section id="projects">
     <div class="sec-label">💻 Projects</div>
@@ -649,157 +792,13 @@
       -->
     </div>
   </section>
-  <!-- EDUCATION + EXPERIENCE -->
-  <section id="experience">
-    <div class="sec-label">📖 Education</div>
-    <div class="timeline fade-in">
-      <div class="tl-item">
-        <div class="tl-period">2022.04 – 2025.03</div>
-        <div>
-          <div class="tl-role">Ph.D. in Computer Science</div>
-          <div class="tl-org">University of Miyazaki, Japan</div>
-          <div class="tl-note">Computer vision · multi-camera tracking · Advisor: Dr. Thi Thi Zin · JST Doctoral Researcher Grant · NEC C&amp;C Research Grant</div>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-period">2020.04 – 2022.03</div>
-        <div>
-          <div class="tl-role">M.Eng. in Energy and Electronics</div>
-          <div class="tl-org">University of Miyazaki, Japan</div>
-          <div class="tl-note">Naoji Iwatani Full Master Scholarship</div>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-period">2013 – 2018</div>
-        <div>
-          <div class="tl-role">B.C.Sc. in Computer Science (Knowledge Engineering)</div>
-          <div class="tl-org">University of Information Technology, Myanmar</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="sec-label" style="margin-top:48px">🐂 Work Experience</div>
-    <div class="timeline fade-in">
-      <div class="tl-item">
-        <div class="tl-period">2025.04 – Present</div>
-        <div>
-          <div class="tl-role">Project Researcher</div>
-          <div class="tl-org">National Institute of Informatics (NII) — LLMC · Tokyo, Japan</div>
-          <div class="tl-note">Multimodal safety evaluation · LLM-as-Judge pipelines · Japanese agent benchmarks · VLM evaluation</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="sec-label" style="margin-top:48px">👨‍💻 Internships &amp; Early Career</div>
-    <div class="timeline fade-in">
-      <div class="tl-item">
-        <div class="tl-period">2018</div>
-        <div>
-          <div class="tl-role">Junior Data Scientist</div>
-          <div class="tl-org">Bagan Innovation Technology · Yangon, Myanmar</div>
-          <div class="tl-note">Low-resource NLP for the Myanmar language</div>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-period">2017</div>
-        <div>
-          <div class="tl-role">Junior System Developer (Intern)</div>
-          <div class="tl-org">Fujitsu Japan · Tokyo, Japan</div>
-          <div class="tl-note">Enterprise web applications · PHP · JavaScript</div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- HONORS, FUNDINGS, COMMITTEES, COMMUNITY -->
-  <section id="honors">
-    <div class="sec-label">🎖 Honors &amp; Awards</div>
-    <div class="fade-in">
-      <div class="award-row"><span class="award-name">Encouragement Women Research Award — University of Miyazaki</span><span class="award-yr">2025</span></div>
-      <div class="award-row"><span class="award-name">Best Student Paper Award — ICGEC 2024</span><span class="award-yr">2024</span></div>
-      <div class="award-row"><span class="award-name">Best Paper Award (Top 1/25) — RISP NCSP Workshop, Hawaii</span><span class="award-yr">2024</span></div>
-      <div class="award-row"><span class="award-name">IEEE Women in Engineering Best Paper Award — LifeTech 2021</span><span class="award-yr">2021</span></div>
-    </div>
-
-    <div class="sec-label" style="margin-top:48px">💰 Fundings &amp; Scholarships</div>
-    <div class="fade-in">
-      <div class="award-row"><span class="award-name">President's Research Funding Award — University of Miyazaki</span><span class="award-yr">2024–2025</span></div>
-      <div class="award-row"><span class="award-name">JST Doctoral Researchers Grant</span><span class="award-yr">2022–2025</span></div>
-      <div class="award-row"><span class="award-name">NEC C&amp;C Research Grant</span><span class="award-yr">2022–2023</span></div>
-      <div class="award-row"><span class="award-name">Naoji Iwatani Full Master Scholarship Award</span><span class="award-yr">2020–2022</span></div>
-    </div>
-
-    <div class="sec-label" style="margin-top:48px">👓 Committees &amp; Academic Service</div>
-    <div class="fade-in">
-      <div class="award-row">
-        <span class="award-name"><a href="https://eccv2026-limit-workshop.limitlab.xyz/" target="_blank">Workshop Co-Organizer — ECCV 2026 LIMIT Workshop</a>, Sweden</span>
-        <span class="award-yr">Sep 2026</span>
-      </div>
-      <div class="award-row">
-        <span class="award-name">Session Chair — <a href="https://aaai.org/" target="_blank">AAAI 2026</a> &amp; <a href="https://icaart.scitevents.org/" target="_blank">ICAART 2026</a></span>
-        <span class="award-yr">2025–2026</span>
-      </div>
-      <div class="award-row">
-        <span class="award-name">Invited Talks —
-          <a href="https://io.google/2025/intl/extended/" target="_blank">Google I/O Extended Yangon 2025</a> ·
-          Women in AI ML Summer School 2025 ·
-          Sakura Workshop Taiwan 2023
-        </span>
-        <span class="award-yr">2023–2025</span>
-      </div>
-    </div>
-
-    <div class="sec-label" style="margin-top:48px">🌏 Community &amp; Service</div>
-    <div class="fade-in">
-      <!-- Women in AI Myanmar — expanded block -->
-      <div class="wai-block">
-        <div class="wai-header">
-          <div>
-            <div class="wai-title"><a href="https://www.womeninai.co/myanmar" target="_blank" style="color:var(--text);text-decoration:none;">Women in AI Myanmar</a></div>
-            <div class="wai-role">Board Member &amp; Ambassador · 2022 – Present</div>
-          </div>
-          <span class="wai-yr">2022 – Present</span>
-        </div>
-        <p class="wai-text">
-          I believe access to AI education should not depend on geography, gender, or privilege. Since 2022, I have served as an Ambassador — and now Board Member — of Women in AI Myanmar, helping lead national programs that open doors for students exploring AI for the first time, with a focus on women and underrepresented communities.
-        </p>
-        <p class="wai-text" style="margin-top:10px">
-          In 2025 alone, these programs reached over 900 participants across three initiatives:
-        </p>
-        <div class="wai-stats">
-          <div class="wai-stat">
-            <span class="wai-num">153</span>
-            <span class="wai-lbl">Responsible AI Workshop<br>participants</span>
-          </div>
-          <div class="wai-stat">
-            <span class="wai-num">305</span>
-            <span class="wai-lbl">ML Summer School applicants<br><em style="font-size:11px;color:var(--light)">(89 selected for 6-month program)</em></span>
-          </div>
-          <div class="wai-stat">
-            <span class="wai-num">482</span>
-            <span class="wai-lbl">Scholarship knowledge-sharing<br>session participants</span>
-          </div>
-        </div>
-        <p class="wai-text" style="margin-top:12px">
-          As a trilingual communicator (English · Japanese · Burmese), I also publish AI articles on Medium and speak at events across global communities — translating cutting-edge research into accessible insights for audiences encountering these ideas for the first time.
-        </p>
-      </div>
-      <div class="award-row" style="margin-top:4px">
-        <span class="award-name"><a href="https://gdg.community.dev/gdg-tokyo/" target="_blank">Google Developer Group Tokyo</a> — Staff Volunteer</span>
-        <span class="award-yr">2025–Present</span>
-      </div>
-      <div class="award-row">
-        <span class="award-name"><a href="https://gdsc.community.dev/" target="_blank">Google Developer Student Club Lead</a>, Japan</span>
-        <span class="award-yr">2022–2023</span>
-      </div>
-    </div>
-  </section>
   <!-- CONTACT -->
   <section id="contact">
     <div class="sec-label">Contact</div>
     <p class="contact-text">
       Open to research collaborations, applied scientist roles, and conversations about multilingual AI safety in the APAC region. Also always up for a coffee chat about side projects, community building, or new ideas — formal or completely informal.
     </p>
-    <div class="email-obfuscated">sumyatnoe [at] nii.ac.jp</div>
+    <a href="mailto:sumyatnoe.uit@gmail.com" class="email-obfuscated" style="text-decoration:none;">Email: <strong>sumyatnoe.uit [at] gmail.com</strong></a>
     <div class="hero-links">
       <a href="https://www.linkedin.com/in/sumyatnoe29/" target="_blank" class="pill pill-outline">LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=BdUh5ogAAAAJ&hl=en" target="_blank" class="pill pill-outline">Google Scholar</a>
