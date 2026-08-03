@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --bg: #ffffff;
       --surface: #f7f7f5;
@@ -21,9 +20,7 @@
       --accent-light: #e8eef7;
       --red: #c0392b;
     }
-
     html { scroll-behavior: smooth; }
-
     body {
       background: var(--bg);
       color: var(--text);
@@ -33,7 +30,6 @@
       -webkit-font-smoothing: antialiased;
       text-align: justify;
     }
-
     /* NAV */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -47,10 +43,8 @@
     .nav-links { display: flex; gap: 28px; list-style: none; }
     .nav-links a { font-size: 13px; color: var(--muted); text-decoration: none; transition: color 0.15s; }
     .nav-links a:hover { color: var(--accent); }
-
     /* LAYOUT */
     .page { max-width: 860px; margin: 0 auto; padding: 0 40px; }
-
     /* HERO */
     #hero {
       padding-top: 120px;
@@ -93,27 +87,24 @@
     .pill-solid:hover { background: #0f2a55; }
     .pill-outline { border: 1px solid var(--border); color: var(--muted); background: #fff; }
     .pill-outline:hover { border-color: var(--accent); color: var(--accent); }
-
     /* avatar placeholder */
     .avatar-box {
-      width: 130px; height: 130px;
+      width: 180px; height: 180px;
       border-radius: 50%;
       background: var(--accent-light);
       border: 2px solid var(--border);
       display: flex; align-items: center; justify-content: center;
-      font-family: 'Lora', serif;
-      font-size: 36px;
+      font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', 'Lora', serif;
+      font-size: 90px;
+      line-height: 1;
       color: var(--accent);
-      font-style: italic;
       flex-shrink: 0;
       overflow: hidden;
     }
-    .avatar-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
+    .avatar-box img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; }
     /* SECTION */
     section { padding: 56px 0; border-bottom: 1px solid var(--border); }
     section:last-of-type { border-bottom: none; }
-
     .sec-label {
       font-size: 11px;
       font-weight: 600;
@@ -122,39 +113,10 @@
       color: var(--accent);
       margin-bottom: 28px;
     }
-
-    /* NEWS */
-    .news-list { display: flex; flex-direction: column; gap: 0; }
-    .news-row {
-      display: grid;
-      grid-template-columns: 100px 1fr;
-      gap: 0 20px;
-      padding: 14px 0;
-      border-bottom: 1px solid var(--border);
-      align-items: start;
-    }
-    .news-row:last-child { border-bottom: none; }
-    .news-date { font-size: 12px; color: var(--light); font-weight: 500; padding-top: 1px; white-space: nowrap; }
-    .news-text { font-size: 14px; color: var(--muted); line-height: 1.65; text-align: left; }
-    .news-text strong { color: var(--text); font-weight: 600; }
-    .news-text a { color: var(--accent); text-decoration: none; font-weight: 500; }
-    .news-text a:hover { text-decoration: underline; }
-    .news-flag {
-      display: inline-block; font-size: 10px; font-weight: 600;
-      padding: 1px 7px; border-radius: 3px;
-      background: #fff3e8; color: #c2410c;
-      margin-left: 8px; letter-spacing: 0.04em; vertical-align: middle;
-    }
-
     /* ABOUT */
-    .about-cols { display: grid; grid-template-columns: 1fr 88px; gap: 40px; align-items: start; }
-    .about-text { font-size: 15px; color: var(--muted); line-height: 1.8; text-align: justify; }
+    .about-cols { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: start; }
+    .about-text { font-family: 'Times New Roman', Times, serif; font-size: 18px; color: var(--muted); line-height: 1.75; text-align: justify; }
     .about-text + .about-text { margin-top: 14px; }
-    .about-stat-list { display: flex; flex-direction: column; gap: 16px; padding-top: 4px; }
-    .about-stat { display: flex; flex-direction: column; }
-    .stat-num { font-family: 'Lora', serif; font-size: 22px; color: var(--accent); font-weight: 600; line-height: 1; }
-    .stat-label { font-size: 10px; color: var(--light); margin-top: 3px; line-height: 1.3; }
-
     /* PUBLICATIONS */
     .pub-list { display: flex; flex-direction: column; gap: 0; }
     .pub-item {
@@ -197,7 +159,6 @@
     }
     .pub-link { font-size: 11px; color: var(--accent); text-decoration: none; font-weight: 500; }
     .pub-link:hover { text-decoration: underline; }
-
     /* PROJECTS */
     .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
     .proj-card {
@@ -210,9 +171,11 @@
     .proj-img {
       width: 100%; aspect-ratio: 16/9;
       background: var(--surface);
-      display: flex; align-items: center; justify-content: center;
+      display: none;
+      align-items: center; justify-content: center;
       overflow: hidden;
     }
+    .proj-img:has(img) { display: flex; }
     .proj-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.35s; }
     .proj-card:hover .proj-img img { transform: scale(1.03); }
     .proj-placeholder { display: flex; flex-direction: column; align-items: center; gap: 8px; }
@@ -224,10 +187,30 @@
     .proj-desc { font-size: 12px; color: var(--muted); line-height: 1.6; margin-bottom: 12px; }
     .proj-footer { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
     .proj-tag { font-size: 10px; padding: 2px 8px; border-radius: 3px; background: var(--surface); border: 1px solid var(--border); color: var(--muted); }
+    /* Research Interests */
+    .interests-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+    .interest-tag {
+      font-size: 13px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      transition: border-color .2s ease, transform .2s ease, background .2s ease;
+    }
+    .interest-tag:hover { border-color: var(--accent); background: #fff; transform: translateY(-1px); }
+    /* NEWS */
+    .news-list { display: flex; flex-direction: column; gap: 0; max-height: 360px; overflow-y: auto; padding-right: 8px; }
+    .news-list::-webkit-scrollbar { width: 4px; }
+    .news-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+    .news-item { display: grid; grid-template-columns: 88px 1fr; gap: 0 16px; padding: 11px 0; border-bottom: 1px dashed var(--border); }
+    .news-item:last-child { border-bottom: none; }
+    .news-date { font-family: 'Lora', serif; font-size: 12px; color: var(--accent); font-weight: 600; padding-top: 1px; }
+    .news-text { font-size: 13.5px; color: var(--text); line-height: 1.55; }
+    .news-text em { color: var(--muted); font-style: normal; font-size: 12px; }
     .proj-gh { font-size: 11px; color: var(--accent); text-decoration: none; font-weight: 500; margin-left: auto; }
     .proj-gh:hover { text-decoration: underline; }
     .proj-gh.dim { color: var(--light); cursor: default; }
-
     /* EXPERIENCE + EDU — timeline style */
     .timeline { display: flex; flex-direction: column; gap: 0; }
     .tl-item { display: grid; grid-template-columns: 120px 1fr; gap: 0 24px; padding: 18px 0; border-bottom: 1px solid var(--border); }
@@ -236,13 +219,11 @@
     .tl-role { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
     .tl-org { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
     .tl-note { font-size: 12px; color: var(--light); }
-
     /* AWARDS */
     .award-row { display: flex; justify-content: space-between; align-items: baseline; padding: 13px 0; border-bottom: 1px solid var(--border); gap: 12px; }
     .award-row:last-child { border-bottom: none; }
     .award-name { font-size: 13px; color: var(--text); }
     .award-yr { font-size: 12px; color: var(--light); white-space: nowrap; }
-
     /* WOMEN IN AI BLOCK */
     .wai-block { border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; padding: 22px 24px; background: var(--surface); margin-bottom: 4px; }
     .wai-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 12px; }
@@ -254,14 +235,22 @@
     .wai-stat { background: var(--bg); padding: 16px 14px; text-align: center; }
     .wai-num { font-family: 'Lora', serif; font-size: 28px; color: var(--accent); display: block; line-height: 1; margin-bottom: 5px; }
     .wai-lbl { font-size: 11.5px; color: var(--muted); line-height: 1.5; }
-
     /* CONTACT */
     #contact { padding-bottom: 80px; }
     .contact-text { font-size: 15px; color: var(--muted); max-width: 480px; margin-bottom: 28px; line-height: 1.7; }
-
+    .email-obfuscated {
+      display: inline-block;
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+    .email-obfuscated strong {
+      color: var(--text);
+      font-weight: 600;
+      user-select: all;
+    }
     /* FOOTER */
     footer { padding: 28px 0; font-size: 12px; color: var(--light); display: flex; justify-content: space-between; }
-
     /* NAV BURGER */
     .nav-burger {
       display: none;
@@ -278,7 +267,6 @@
     .nav-burger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
     .nav-burger.open span:nth-child(2) { opacity: 0; }
     .nav-burger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-
     .mobile-menu {
       display: none;
       position: fixed; top: 56px; left: 0; right: 0; z-index: 99;
@@ -295,11 +283,9 @@
       transition: color 0.15s;
     }
     .mobile-menu a:hover { color: var(--accent); }
-
     /* ANIM */
     .fade-in { opacity: 0; transform: translateY(14px); transition: opacity 0.55s ease, transform 0.55s ease; }
     .fade-in.visible { opacity: 1; transform: none; }
-
     @media (max-width: 700px) {
       nav { padding: 0 20px; }
       .nav-links { display: none; }
@@ -316,15 +302,15 @@
   </style>
 </head>
 <body>
-
 <nav>
   <a href="#hero" class="nav-name">Su Myat Noe</a>
   <ul class="nav-links">
+    <li><a href="#about">About</a></li>
     <li><a href="#news">News</a></li>
     <li><a href="#publications">Publications</a></li>
-    <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
-    <li><a href="#awards">Awards</a></li>
+    <li><a href="#honors">Honors</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <!-- Mobile hamburger -->
@@ -334,16 +320,15 @@
 </nav>
 <!-- Mobile dropdown -->
 <div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMenu()">About</a>
   <a href="#news" onclick="closeMenu()">News</a>
   <a href="#publications" onclick="closeMenu()">Publications</a>
-  <a href="#projects" onclick="closeMenu()">Projects</a>
   <a href="#experience" onclick="closeMenu()">Experience</a>
-  <a href="#awards" onclick="closeMenu()">Awards</a>
+  <a href="#honors" onclick="closeMenu()">Honors</a>
+  <a href="#projects" onclick="closeMenu()">Projects</a>
   <a href="#contact" onclick="closeMenu()">Contact</a>
 </div>
-
 <div class="page">
-
   <!-- HERO -->
   <section id="hero">
     <div>
@@ -352,105 +337,132 @@
         Ph.D. · Project Researcher, <strong>National Institute of Informatics (NII)</strong>, Tokyo<br>
         Multimodal AI Safety · Multilingual LLM Evaluation · Vision-Language Models
       </p>
+      <a href="mailto:sumyatnoe.uit@gmail.com" class="email-obfuscated" style="text-decoration:none;">Email: <strong>sumyatnoe.uit [at] gmail.com</strong></a>
       <p class="hero-mission">"To build AI that is powerful, responsible, and accessible."</p>
       <div class="hero-links">
         <a href="https://scholar.google.com/citations?user=BdUh5ogAAAAJ&hl=en" target="_blank" class="pill pill-solid">Google Scholar</a>
         <a href="https://github.com/ImSuMyatNoe" target="_blank" class="pill pill-outline">GitHub</a>
         <a href="https://www.linkedin.com/in/sumyatnoe29/" target="_blank" class="pill pill-outline">LinkedIn</a>
-        <a href="https://linktr.ee/sumyatnoe" target="_blank" class="pill pill-outline">LinkTree</a>
-        <a href="mailto:sumyatnoe.uit@gmail.com" class="pill pill-outline">Email</a>
+        <a href="https://medium.com/@sumyatnoe" target="_blank" class="pill pill-outline">Medium</a>
+        <a href="https://substack.com/@su2749" target="_blank" class="pill pill-outline">Substack</a>
+        <a href="https://orcid.org/0000-0001-7802-8263" target="_blank" class="pill pill-outline">ORCID</a>
       </div>
     </div>
     <div>
-      <!-- Replace with: <img src="photo.jpg" alt="Su Myat Noe"> inside the div -->
-      <div class="avatar-box">S</div>
+      <!-- Place your photo at img/su.jpg (or .png/.webp) — it will fill the circle -->
+      <div class="avatar-box"><img src="img/su.jpg" alt="Su Myat Noe"></div>
     </div>
   </section>
-
   <!-- ABOUT -->
   <section id="about">
     <div class="sec-label">About</div>
     <div class="about-cols fade-in">
       <div>
-        <p class="about-text">I am a Ph.D.-trained researcher at the National Institute of Informatics (NII), Tokyo, working on multimodal AI safety — specifically how frontier vision-language models (VLMs) behave when safety matters, across languages, modalities, and cultures.</p>
+        <p class="about-text">This is <strong style="color:var(--text)">Su Myat Noe</strong>. Currently, I am a Project Researcher at the <a href="https://llmc.nii.ac.jp/en/" target="_blank" style="color:var(--accent);text-decoration:underline;">Research and Development Center for Large Language Models (LLMC)</a> of the <strong style="color:var(--text)">National Institute of Informatics (NII)</strong>, Tokyo. Previously, I obtained my Ph.D. in Computer Science from the University of Miyazaki under the supervision of Prof. Thi Thi Zin, supported by the JST Doctoral Researchers Grant.</p>
 
-        <p class="about-text" style="margin-top:14px"><strong style="color:var(--text)">My core project</strong> is extending DeepMind's Multimodal Safety Test Suite (MSTS) to Japanese as the 12th language. This is not a translation task — it is a full cross-linguistic safety evaluation involving human-translated and human-edited prompts, model evaluations across both multimodal (image + text) and text-only conditions, and a rigorous human annotation campaign (1,700+ safety judgments). I evaluate five frontier VLMs — including GPT-5, Gemini-2.5-Flash, Qwen2.5-VL, InternVL2.5, and LLM-JP-3-VILA — and find that Japanese inputs consistently produce higher violation rates than English (+10 to +46 percentage points depending on model and condition). This reveals a systematic safety gap that text-only evaluation misses entirely.</p>
+        <p class="about-text" style="margin-top:14px">My research direction focuses on <strong style="color:var(--text)">multimodal AI safety evaluation</strong> for vision-language models, particularly across multilingual and cross-cultural settings. My previous research direction was multi-camera computer vision for livestock tracking (yes — cattle 🐄, and yes, the work ended up in <em>Nature Scientific Reports</em>). Any interesting discussion is welcome, and my full publications can be accessed from <a href="https://scholar.google.com/citations?user=BdUh5ogAAAAJ&hl=en" target="_blank" style="color:var(--accent)">Google Scholar</a>.</p>
 
-        <p class="about-text" style="margin-top:14px"><strong style="color:var(--text)">On evaluation methodology</strong>, I build and validate automated LLM-as-Judge pipelines, comparing them against human judgments through correlation analysis and ablation studies across modality and language conditions. A key finding: text-only reference answers actively hurt automated evaluation when applied to multimodal prompts — because models appropriately incorporate visual context that text-only references don't anticipate. This has direct implications for how we design reward signals for safer model alignment.</p>
+        <p class="about-text" style="margin-top:14px">Currently, I am working on research related to:</p>
+        <ul style="font-family:'Times New Roman',Times,serif;font-size:18px;color:var(--muted);line-height:1.85;margin:6px 0 4px 28px">
+          <li>Multimodal AI Safety</li>
+          <li>Vision-Language Model evaluation across languages and cultures</li>
+          <li>LLM-as-Judge pipelines for safety benchmarks</li>
+          <li>Japanese Agentic AI Benchmarks</li>
+        </ul>
 
-        <p class="about-text" style="margin-top:14px"><strong style="color:var(--text)">Beyond safety evaluation</strong>, I contribute to an end-to-end agent evaluation framework for Japanese, localizing benchmarks like OSWorld to assess whether LLM-powered agents can complete real-world tasks — not just call tools. I also study agentic architectures empirically: my ICAART 2026 paper shows that well-designed single-agent systems significantly outperform multi-agent decomposition for vision-based reasoning tasks.</p>
+        <p class="about-text" style="margin-top:18px">I build AI safety tools at NII. The short version: when frontier vision-language models meet the messiness of real languages and cultures, I'm one of the people checking whether they actually hold up.</p>
 
-        <p class="about-text" style="margin-top:14px">I serve as Session Chair at AAAI and ICAART, Women in AI Myanmar Board Member, and GDG Tokyo volunteer. Trilingual: English · Japanese (JLPT N3) · Burmese.</p>
-      </div>
-      <div class="about-stat-list">
-        <div class="about-stat"><span class="stat-num">179</span><span class="stat-label">Citations</span></div>
-        <div class="about-stat"><span class="stat-num">7</span><span class="stat-label">h-index</span></div>
-        <div class="about-stat"><span class="stat-num">16</span><span class="stat-label">Publications</span></div>
-        <div class="about-stat"><span class="stat-num">8</span><span class="stat-label">Awards &amp; Grants</span></div>
+        <p class="about-text" style="margin-top:14px">I didn't always think this way. During my Ph.D., I spent 5.5 years building computer vision systems to track cattle across multi-camera farms. Watching farmers depend on a model I'd written quietly rewired how I think. I stopped asking <em>"can it work?"</em> and started asking <em>"is it safe when someone actually depends on it?"</em></p>
+
+        <p class="about-text" style="margin-top:14px"><strong style="color:var(--text)">Outside the research life</strong>, I'm probably just another curious builder chasing late-night ideas with coffee, notebooks, and too many half-finished side projects ☕ My latest weekend obsession is <em>AI Workshop Radar</em> — a tiny open-source tool I built after missing one too many submission deadlines (don't ask). I also write on Medium and Substack, mentor students, organize tech events, and turn up at AI meetups around Tokyo. Honestly, a lot of my best opportunities and friendships came from community spaces, not formal meetings.</p>
+
+        <p class="about-text" style="margin-top:14px"><strong style="color:var(--text)">When I'm not coding or writing</strong>, you'll find me at the gym, on a pilates reformer, or trying to convince myself that yoga counts as productivity. (It does — clearer head, better code 🧘‍♀️) Originally from Myanmar 🇲🇲 and based in Japan 🇯🇵 since 2019, I serve as a <strong style="color:var(--text)">Women in AI Myanmar</strong> Ambassador &amp; Board Member, a <strong style="color:var(--text)">GDG Tokyo</strong> volunteer, and Session Chair at AAAI 2026 &amp; ICAART 2026. I work across English, Japanese (JLPT N3), and Burmese — because good ideas shouldn't have to cross language barriers alone.</p>
+
+        <p class="about-text" style="margin-top:14px">If you're building something impactful, experimental, community-driven, or a little bit crazy — let's talk. I'm probably just one message away.</p>
       </div>
     </div>
   </section>
-
+  <!-- RESEARCH INTERESTS -->
+  <section id="interests">
+    <div class="sec-label">🌱 Research Interests</div>
+    <div class="interests-grid fade-in">
+      <span class="interest-tag">🛡️ Multimodal AI Safety</span>
+      <span class="interest-tag">👁️ Vision-Language Models</span>
+      <span class="interest-tag">⚖️ LLM-as-a-Judge Evaluation</span>
+      <span class="interest-tag">🗾 Japanese NLP</span>
+      <span class="interest-tag">🌐 Cross-lingual &amp; Cross-cultural Safety</span>
+      <span class="interest-tag">🤖 Agentic AI &amp; GUI Agents</span>
+      <span class="interest-tag">📋 Benchmark Construction</span>
+      <span class="interest-tag">🚨 Responsible AI &amp; Red-teaming</span>
+      <span class="interest-tag">📸 Computer Vision</span>
+      <span class="interest-tag">🌏 Low-resource Language Modeling</span>
+    </div>
+  </section>
   <!-- NEWS -->
   <section id="news">
     <div class="sec-label">🔥 News</div>
     <div class="news-list fade-in">
-      <div class="news-row">
-        <span class="news-date">Aug 2, 2026</span>
-        <span class="news-text">
-          Now leading the <a href="https://gdg.community.dev/gdg-shibuya/" target="_blank">Google Developer Group (GDG) Shibuya</a> chapter as Organizer.<span class="news-flag">NEW</span><br>
-          <a href="https://www.linkedin.com/company/143028156/" target="_blank">Follow the chapter on LinkedIn ↗</a>
-        </span>
+      <div class="news-item">
+        <div class="news-date">2026.08</div>
+        <div class="news-text">🚀 Now leading the <a href="https://gdg.community.dev/gdg-shibuya/" target="_blank" style="color:var(--accent);text-decoration:underline;">Google Developer Group (GDG) Shibuya</a> chapter as Organizer. <a href="https://www.linkedin.com/company/143028156/" target="_blank" style="color:var(--accent);text-decoration:underline;">LinkedIn ↗</a></div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2026.06</div>
+        <div class="news-text">🎉 Paper accepted at the <em>AI for Law (AI4Law)</em> Workshop @ ICML 2026: <em>"Beyond Accuracy: A Dual-Judge Evaluation Protocol for Vision-Language Models in Legally Grounded Tasks."</em></div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2026.06</div>
+        <div class="news-text">🎤 Co-organizing the <a href="https://eccv2026-limit-workshop.limitlab.xyz/" target="_blank" style="color:var(--accent);text-decoration:underline;">ECCV 2026 LIMIT Workshop</a> in Sweden this September. See you there!</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2026.05</div>
+        <div class="news-text">😊 Selected as a mentee for the <em>Women in Computer Vision (WiCV)</em> mentoring session at CVPR 2026.</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2026.05</div>
+        <div class="news-text">🇰🇷 Abstract accepted to the <em>Women in Machine Learning (WiML)</em> workshop at ICML 2026 in Korea.</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2026.03</div>
+        <div class="news-text">🎉 Two papers accepted at NLP 2026: <em>MSTS-JP</em> and <em>AnswerCarefully Dataset Extension</em>.</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2026.02</div>
+        <div class="news-text">🌍 Presented <em>Traffic Sign Interpretation</em> paper at ICAART 2026 in Marbella, Spain — and served as Session Chair.</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2026.02</div>
+        <div class="news-text">🎉 <em>BIS Reasoning 1.0</em> — a large-scale Japanese benchmark for belief-inconsistent reasoning — accepted at LREC 2026.</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2025.04</div>
+        <div class="news-text">🚀 Joined the LLM Research and Development Center (LLMC) at NII, Tokyo, as Project Researcher.</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2025.03</div>
+        <div class="news-text">🎓 Successfully defended my Ph.D. at the University of Miyazaki!</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2025.02</div>
+        <div class="news-text">🎉 Paper accepted at <em>Scientific Reports</em> (Nature Portfolio): Black Cattle Tracking with YOLOv8 Multi-Camera System.</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2024.11</div>
+        <div class="news-text">🏆 Best Student Paper Award at ICGEC 2024.</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2024.02</div>
+        <div class="news-text">🏆 Best Paper Award (Top 1/25) at NCSP 2024 — RISP Workshop, Hawaii.</div>
       </div>
     </div>
   </section>
 
   <!-- PUBLICATIONS -->
   <section id="publications">
-    <div class="sec-label">Publications</div>
-    <div class="pub-list fade-in">
+    <div class="sec-label">📝 Publications</div>
 
-      <!-- 2026 -->
-      <div class="pub-item">
-        <div class="pub-year">2026</div>
-        <div>
-          <span class="pub-venue-badge">NLP 2026</span>
-          <div class="pub-title">Multimodal Safety Evaluation of Vision-Language Models in Japanese</div>
-          <div class="pub-authors"><strong>Su Myat Noe</strong>, H. Suzuki, N. Okazaki</div>
-          <div class="pub-meta">The 32nd Annual Conference of the Association for Natural Language Processing · Japan</div>
-        </div>
-      </div>
-
-      <div class="pub-item">
-        <div class="pub-year">2026</div>
-        <div>
-          <span class="pub-venue-badge">NLP 2026</span>
-          <div class="pub-title">AnswerCarefully Dataset Extension: Adding Culturally Sensitive Issues and Multimodal Questions</div>
-          <div class="pub-authors">H. Suzuki, T. Takahashi, <strong>Su Myat Noe</strong></div>
-          <div class="pub-meta">The 32nd Annual Conference of the Association for Natural Language Processing · Japan</div>
-        </div>
-      </div>
-
-      <div class="pub-item">
-        <div class="pub-year">2026</div>
-        <div>
-          <span class="pub-venue-badge">ICAART 2026</span>
-          <div class="pub-title">An Empirical Study of Architectural Trade-offs in Vision-based Traffic Sign Interpretation Systems</div>
-          <div class="pub-authors"><strong>Su Myat Noe</strong>, H. T. Nguyen, M. M. Zin, K. Satoh</div>
-          <div class="pub-meta">18th International Conference on Agents and Artificial Intelligence · Marbella, Spain</div>
-        </div>
-      </div>
-
-      <div class="pub-item">
-        <div class="pub-year">2026</div>
-        <div>
-          <span class="pub-venue-badge">LREC 2026</span>
-          <div class="pub-title">BIS Reasoning 1.0: A Large-scale Japanese Benchmark for Belief-inconsistent Reasoning</div>
-          <div class="pub-authors">H. T. Nguyen et al., <strong>Su Myat Noe</strong></div>
-          <div class="pub-meta">Joint International Conference on Computational Linguistics, Language Resources and Evaluation</div>
-        </div>
-      </div>
-
+    <h3 style="font-family:'Lora',serif;font-size:15px;font-weight:600;color:var(--text);margin:0 0 10px;letter-spacing:0.02em;">Journals</h3>
+    <div class="pub-list fade-in" style="margin-bottom:28px;">
       <div class="pub-item">
         <div class="pub-year">2025</div>
         <div>
@@ -465,33 +477,6 @@
           </div>
         </div>
       </div>
-
-      <div class="pub-item">
-        <div class="pub-year">2024</div>
-        <div>
-          <span class="pub-venue-badge">ICGEC 2024</span>
-          <div class="pub-title">From Vision to Vocabulary: A Multimodal Approach to Detect and Track Black Cattle Behaviors</div>
-          <div class="pub-authors"><strong>Su Myat Noe</strong> et al.</div>
-          <div class="pub-meta">
-            International Conference on Genetic and Evolutionary Computing
-            <span class="pub-award-badge">★ Best Student Paper Award</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="pub-item">
-        <div class="pub-year">2024</div>
-        <div>
-          <span class="pub-venue-badge">NCSP 2024</span>
-          <div class="pub-title">Multi-Camera System for Black Cattle Tracking and Behavior Detection Using YOLO and SAM</div>
-          <div class="pub-authors"><strong>Su Myat Noe</strong> et al.</div>
-          <div class="pub-meta">
-            RISP International Workshop on Nonlinear Circuits, Communications and Signal Processing · Hawaii
-            <span class="pub-award-badge">★ Best Paper Award (Top 1/25)</span>
-          </div>
-        </div>
-      </div>
-
       <div class="pub-item">
         <div class="pub-year">2023</div>
         <div>
@@ -506,7 +491,79 @@
           </div>
         </div>
       </div>
+    </div>
 
+    <h3 style="font-family:'Lora',serif;font-size:15px;font-weight:600;color:var(--text);margin:0 0 10px;letter-spacing:0.02em;">Conference Papers</h3>
+    <div class="pub-list fade-in">
+      <div class="pub-item">
+        <div class="pub-year">2026</div>
+        <div>
+          <span class="pub-venue-badge">AI4Law @ ICML 2026</span>
+          <div class="pub-title">Beyond Accuracy: A Dual-Judge Evaluation Protocol for Vision-Language Models in Legally Grounded Tasks</div>
+          <div class="pub-authors"><strong>Su Myat Noe</strong>, H. T. Nguyen, May Myo Zin, K. Satoh</div>
+          <div class="pub-meta">AI for Law Workshop @ ICML 2026 · Korea</div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-year">2026</div>
+        <div>
+          <span class="pub-venue-badge">NLP 2026</span>
+          <div class="pub-title">Multimodal Safety Evaluation of Vision-Language Models in Japanese</div>
+          <div class="pub-authors"><strong>Su Myat Noe</strong>, H. Suzuki, N. Okazaki</div>
+          <div class="pub-meta">The 32nd Annual Conference of the Association for Natural Language Processing · Japan</div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-year">2026</div>
+        <div>
+          <span class="pub-venue-badge">NLP 2026</span>
+          <div class="pub-title">AnswerCarefully Dataset Extension: Adding Culturally Sensitive Issues and Multimodal Questions</div>
+          <div class="pub-authors">H. Suzuki, T. Takahashi, <strong>Su Myat Noe</strong></div>
+          <div class="pub-meta">The 32nd Annual Conference of the Association for Natural Language Processing · Japan</div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-year">2026</div>
+        <div>
+          <span class="pub-venue-badge">ICAART 2026</span>
+          <div class="pub-title">An Empirical Study of Architectural Trade-offs in Vision-based Traffic Sign Interpretation Systems</div>
+          <div class="pub-authors"><strong>Su Myat Noe</strong>, H. T. Nguyen, M. M. Zin, K. Satoh</div>
+          <div class="pub-meta">18th International Conference on Agents and Artificial Intelligence · Marbella, Spain</div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-year">2026</div>
+        <div>
+          <span class="pub-venue-badge">LREC 2026</span>
+          <div class="pub-title">BIS Reasoning 1.0: A Large-scale Japanese Benchmark for Belief-inconsistent Reasoning</div>
+          <div class="pub-authors">H. T. Nguyen et al., <strong>Su Myat Noe</strong></div>
+          <div class="pub-meta">Joint International Conference on Computational Linguistics, Language Resources and Evaluation</div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-year">2024</div>
+        <div>
+          <span class="pub-venue-badge">ICGEC 2024</span>
+          <div class="pub-title">From Vision to Vocabulary: A Multimodal Approach to Detect and Track Black Cattle Behaviors</div>
+          <div class="pub-authors"><strong>Su Myat Noe</strong> et al.</div>
+          <div class="pub-meta">
+            International Conference on Genetic and Evolutionary Computing
+            <span class="pub-award-badge">★ Best Student Paper Award</span>
+          </div>
+        </div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-year">2024</div>
+        <div>
+          <span class="pub-venue-badge">NCSP 2024</span>
+          <div class="pub-title">Multi-Camera System for Black Cattle Tracking and Behavior Detection Using YOLO and SAM</div>
+          <div class="pub-authors"><strong>Su Myat Noe</strong> et al.</div>
+          <div class="pub-meta">
+            RISP International Workshop on Nonlinear Circuits, Communications and Signal Processing · Hawaii
+            <span class="pub-award-badge">★ Best Paper Award (Top 1/25)</span>
+          </div>
+        </div>
+      </div>
       <div class="pub-item">
         <div class="pub-year">2021</div>
         <div>
@@ -519,87 +576,30 @@
           </div>
         </div>
       </div>
-
     </div>
     <p style="margin-top:20px;font-size:12px;color:var(--light)">
       Full list: 4 journal papers (Scopus-indexed) · 12 conference papers ·
       <a href="https://scholar.google.com/citations?user=BdUh5ogAAAAJ&hl=en" target="_blank" style="color:var(--accent)">Google Scholar ↗</a>
     </p>
   </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="sec-label">Selected Projects</div>
-    <div class="projects-grid fade-in">
-
-      <div class="proj-card">
-        <div class="proj-img">
-          <div class="proj-placeholder">
-            <span class="proj-placeholder-icon">🚦</span>
-            <span class="proj-placeholder-text">Add screenshot</span>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="proj-cat">Agentic AI · ICAART 2026</div>
-          <div class="proj-title">Traffic Sign Interpretation</div>
-          <div class="proj-desc">Single-agent vs. multi-agent architectures for vision-based traffic sign interpretation. Single-agent significantly outperforms (8.21 vs 7.74, p=0.012).</div>
-          <div class="proj-footer">
-            <span class="proj-tag">Multi-agent</span>
-            <span class="proj-tag">VLM</span>
-            <span class="proj-gh dim">GitHub coming soon</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
+  <!-- EDUCATION + EXPERIENCE -->
   <section id="experience">
-    <div class="sec-label">Experience</div>
+    <div class="sec-label">📖 Education</div>
     <div class="timeline fade-in">
       <div class="tl-item">
-        <div class="tl-period">Apr 2025 – Present</div>
-        <div>
-          <div class="tl-role">Project Researcher</div>
-          <div class="tl-org">National Institute of Informatics (NII) — LLMC · Tokyo, Japan</div>
-          <div class="tl-note">Multimodal safety evaluation · LLM-as-Judge pipelines · Japanese agent benchmark · VLM evaluation</div>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-period">2018</div>
-        <div>
-          <div class="tl-role">Junior Data Scientist</div>
-          <div class="tl-org">Bagan Innovation Technology · Myanmar</div>
-          <div class="tl-note">Low-resource NLP for Myanmar language</div>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-period">2017</div>
-        <div>
-          <div class="tl-role">Junior System Developer</div>
-          <div class="tl-org">Fujitsu Japan · Japan</div>
-          <div class="tl-note">Enterprise web applications · PHP · JavaScript</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="sec-label" style="margin-top:40px">Education</div>
-    <div class="timeline fade-in">
-      <div class="tl-item">
-        <div class="tl-period">2022 – 2025</div>
+        <div class="tl-period">2022.04 – 2025.03</div>
         <div>
           <div class="tl-role">Ph.D. in Computer Science</div>
           <div class="tl-org">University of Miyazaki, Japan</div>
-          <div class="tl-note">Computer vision · multi-camera tracking · Advisor: Dr. Thi Thi Zin · JST Doctoral Grant · NEC C&amp;C Grant</div>
+          <div class="tl-note">Computer vision · multi-camera tracking · Advisor: Dr. Thi Thi Zin · JST Doctoral Researcher Grant · NEC C&amp;C Research Grant</div>
         </div>
       </div>
       <div class="tl-item">
-        <div class="tl-period">2020 – 2022</div>
+        <div class="tl-period">2020.04 – 2022.03</div>
         <div>
           <div class="tl-role">M.Eng. in Energy and Electronics</div>
           <div class="tl-org">University of Miyazaki, Japan</div>
-          <div class="tl-note">Naoji Iwatani Full Master Scholarship Award</div>
+          <div class="tl-note">Naoji Iwatani Full Master Scholarship</div>
         </div>
       </div>
       <div class="tl-item">
@@ -610,25 +610,80 @@
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- AWARDS -->
-  <section id="awards">
-    <div class="sec-label">Awards &amp; Grants</div>
-    <div class="fade-in">
-      <div class="award-row"><span class="award-name">Encouragement Women Research Award — University of Miyazaki</span><span class="award-yr">2025</span></div>
-      <div class="award-row"><span class="award-name">Best Student Paper Award — ICGEC Conference</span><span class="award-yr">2024</span></div>
-      <div class="award-row"><span class="award-name">Best Paper Award (Top 1/25) — RISP NCSP Workshop, Hawaii</span><span class="award-yr">2024</span></div>
-      <div class="award-row"><span class="award-name">President's Research Funding Award — University of Miyazaki</span><span class="award-yr">2024–2025</span></div>
-      <div class="award-row"><span class="award-name">JST Doctoral Researchers Grant</span><span class="award-yr">2022–2025</span></div>
-      <div class="award-row"><span class="award-name">NEC C&amp;C Research Grant</span><span class="award-yr">2022–2023</span></div>
-      <div class="award-row"><span class="award-name">IEEE Women in Engineering Best Paper Award — LifeTech</span><span class="award-yr">2021</span></div>
-      <div class="award-row"><span class="award-name">Naoji Iwatani Full Master Scholarship Award</span><span class="award-yr">2020–2022</span></div>
+    <div class="sec-label" style="margin-top:48px">🐂 Work Experience</div>
+    <div class="timeline fade-in">
+      <div class="tl-item">
+        <div class="tl-period">2025.04 – Present</div>
+        <div>
+          <div class="tl-role">Project Researcher</div>
+          <div class="tl-org">National Institute of Informatics (NII) — LLMC · Tokyo, Japan</div>
+          <div class="tl-note">Multimodal safety evaluation · LLM-as-Judge pipelines · Japanese agent benchmarks · VLM evaluation</div>
+        </div>
+      </div>
     </div>
 
-    <div class="sec-label" style="margin-top:40px">Community &amp; Service</div>
+    <div class="sec-label" style="margin-top:48px">👨‍💻 Internships &amp; Early Career</div>
+    <div class="timeline fade-in">
+      <div class="tl-item">
+        <div class="tl-period">2018</div>
+        <div>
+          <div class="tl-role">Junior Data Scientist</div>
+          <div class="tl-org">Bagan Innovation Technology · Yangon, Myanmar</div>
+          <div class="tl-note">Low-resource NLP for the Myanmar language</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">2017</div>
+        <div>
+          <div class="tl-role">Junior System Developer (Intern)</div>
+          <div class="tl-org">Fujitsu Japan · Tokyo, Japan</div>
+          <div class="tl-note">Enterprise web applications · PHP · JavaScript</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HONORS, FUNDINGS, COMMITTEES, COMMUNITY -->
+  <section id="honors">
+    <div class="sec-label">🎖 Honors &amp; Awards</div>
     <div class="fade-in">
+      <div class="award-row"><span class="award-name">Encouragement Women Research Award — University of Miyazaki</span><span class="award-yr">2025</span></div>
+      <div class="award-row"><span class="award-name"><a href="https://www.miyazaki-u.ac.jp/jisedai/topics/news/post-43.html" target="_blank">Best Student Paper Award — ICGEC 2024</a></span><span class="award-yr">2024</span></div>
+      <div class="award-row"><span class="award-name">Best Paper Award (Top 1/25) — RISP NCSP Workshop, Hawaii</span><span class="award-yr">2024</span></div>
+      <div class="award-row"><span class="award-name">IEEE Women in Engineering Best Paper Award — LifeTech 2021</span><span class="award-yr">2021</span></div>
+    </div>
 
+    <div class="sec-label" style="margin-top:48px">💰 Fundings &amp; Scholarships</div>
+    <div class="fade-in">
+      <div class="award-row"><span class="award-name">President's Research Funding Award — University of Miyazaki</span><span class="award-yr">2024–2025</span></div>
+      <div class="award-row"><span class="award-name"><a href="https://www.miyazaki-u.ac.jp/jisedai/interview/interview14.html" target="_blank">JST Doctoral Researchers Grant (SPRING)</a></span><span class="award-yr">2022–2025</span></div>
+      <div class="award-row"><span class="award-name">NEC C&amp;C Research Grant</span><span class="award-yr">2022–2023</span></div>
+      <div class="award-row"><span class="award-name"><a href="https://www.iwatani-foundation.or.jp/" target="_blank">Naoji Iwatani Full Master Scholarship Award</a></span><span class="award-yr">2020–2022</span></div>
+    </div>
+
+    <div class="sec-label" style="margin-top:48px">👓 Committees &amp; Academic Service</div>
+    <div class="fade-in">
+      <div class="award-row">
+        <span class="award-name"><a href="https://eccv2026-limit-workshop.limitlab.xyz/" target="_blank">Workshop Co-Organizer — ECCV 2026 LIMIT Workshop</a>, Sweden</span>
+        <span class="award-yr">Sep 2026</span>
+      </div>
+      <div class="award-row">
+        <span class="award-name">Session Chair — <a href="https://aaai.org/" target="_blank">AAAI 2026</a> &amp; <a href="https://icaart.scitevents.org/" target="_blank">ICAART 2026</a></span>
+        <span class="award-yr">2025–2026</span>
+      </div>
+      <div class="award-row">
+        <span class="award-name">Invited Talks —
+          <a href="https://io.google/2025/intl/extended/" target="_blank">Google I/O Extended Yangon 2025</a> ·
+          Women in AI ML Summer School 2025 ·
+          Sakura Workshop Taiwan 2023
+        </span>
+        <span class="award-yr">2023–2025</span>
+      </div>
+    </div>
+
+    <div class="sec-label" style="margin-top:48px">🌏 Community &amp; Service</div>
+    <div class="fade-in">
+      <!-- Women in AI Myanmar — expanded block -->
       <div class="wai-block">
         <div class="wai-header">
           <div>
@@ -661,20 +716,7 @@
           As a trilingual communicator (English · Japanese · Burmese), I also publish AI articles on Medium and speak at events across global communities — translating cutting-edge research into accessible insights for audiences encountering these ideas for the first time.
         </p>
       </div>
-
       <div class="award-row" style="margin-top:4px">
-        <span class="award-name"><a href="https://eccv2026.ecva.net/" target="_blank">Workshop Organizer — ECCV 2026 LIMIT Workshop</a>, Sweden</span>
-        <span class="award-yr">Sep 2026</span>
-      </div>
-      <div class="award-row">
-        <span class="award-name">Workshop Organizer — ASPIRE CV Workshop, <a href="https://www.oxford.ac.uk/" target="_blank">University of Oxford</a> &amp; AIST</span>
-        <span class="award-yr">Apr 2026</span>
-      </div>
-      <div class="award-row">
-        <span class="award-name">Session Chair — <a href="https://aaai.org/" target="_blank">AAAI</a> &amp; <a href="https://icaart.scitevents.org/" target="_blank">ICAART</a></span>
-        <span class="award-yr">2025–2026</span>
-      </div>
-      <div class="award-row">
         <span class="award-name"><a href="https://gdg.community.dev/gdg-shibuya/" target="_blank">Google Developer Group (GDG) Shibuya</a> — Organizer / Chapter Lead</span>
         <span class="award-yr">Aug 2026–Present</span>
       </div>
@@ -686,45 +728,117 @@
         <span class="award-name"><a href="https://gdsc.community.dev/" target="_blank">Google Developer Student Club Lead</a>, Japan</span>
         <span class="award-yr">2022–2023</span>
       </div>
-      <div class="award-row">
-        <span class="award-name">Invited Talks —
-          <a href="https://io.google/2025/intl/extended/" target="_blank">Google I/O Extended Yangon 2025</a> ·
-          Women in AI ML Summer School 2025 ·
-          Sakura Workshop Taiwan 2023
-        </span>
-        <span class="award-yr">2023–2025</span>
-      </div>
     </div>
   </section>
-
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="sec-label">💻 Projects</div>
+    <div class="projects-grid fade-in">
+      <div class="proj-card">
+        <div class="proj-img">
+          <div class="proj-placeholder">
+            <span class="proj-placeholder-icon" style="font-size:64px">🛣️</span>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">Agentic AI · ICAART 2026</div>
+          <div class="proj-title">Traffic Sign Interpretation</div>
+          <div class="proj-desc">Single-agent vs. multi-agent architectures for vision-based traffic sign interpretation. Single-agent significantly outperforms (8.21 vs 7.74, p=0.012).</div>
+          <div class="proj-footer">
+            <span class="proj-tag">Multi-agent</span>
+            <span class="proj-tag">VLM</span>
+            <span class="proj-gh dim">GitHub coming soon</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-img">
+          <div class="proj-placeholder">
+            <span class="proj-placeholder-icon" style="font-size:64px">💬</span>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">Side Project · LLM Application</div>
+          <div class="proj-title">AdminGenie</div>
+          <div class="proj-desc">AI-powered office admin FAQ chatbot using a Routing Agent + RAG pipeline (Azure OpenAI + Streamlit). Roadmap: Japanese support, LLM-JP integration, and Slack bot deployment.</div>
+          <div class="proj-footer">
+            <span class="proj-tag">RAG</span>
+            <span class="proj-tag">Azure OpenAI</span>
+            <span class="proj-tag">Streamlit</span>
+            <a href="https://github.com/ImSuMyatNoe/adminbot" class="proj-gh" target="_blank">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-img">
+          <div class="proj-placeholder">
+            <span class="proj-placeholder-icon" style="font-size:64px">📡</span>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">Side Project · Open Source · 2026</div>
+          <div class="proj-title">AI Workshop Radar</div>
+          <div class="proj-desc">Personalised Telegram &amp; Slack digests of AI conference and workshop deadlines. Multi-stage tracking (abstract → paper → camera-ready), Tokyo timezone by default, Japan-domestic venues seeded. Zero servers — runs on GitHub Actions, MIT licensed, free forever.</div>
+          <div class="proj-footer">
+            <span class="proj-tag">GitHub Actions</span>
+            <span class="proj-tag">YAML</span>
+            <span class="proj-tag">Telegram</span>
+            <a href="https://github.com/ImSuMyatNoe/ai-workshop-radar" class="proj-gh" target="_blank">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+      <!--
+        ╔══════════════════════════════════════════════════╗
+        ║  ADD A NEW PROJECT — copy this block and fill in ║
+        ╚══════════════════════════════════════════════════╝
+      <div class="proj-card">
+        <div class="proj-img">
+          <img src="your-image.jpg" alt="Project name">
+          OR keep the placeholder:
+          <div class="proj-placeholder">
+            <span class="proj-placeholder-icon">🔬</span>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat">Category · Venue · Year</div>
+          <div class="proj-title">Project Title</div>
+          <div class="proj-desc">Short description — 1-2 sentences max.</div>
+          <div class="proj-footer">
+            <span class="proj-tag">Tag 1</span>
+            <span class="proj-tag">Tag 2</span>
+            <a href="https://github.com/..." class="proj-gh" target="_blank">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+      -->
+    </div>
+  </section>
   <!-- CONTACT -->
   <section id="contact">
     <div class="sec-label">Contact</div>
     <p class="contact-text">
-      Open to research collaborations, applied scientist roles, and conversations about multilingual AI safety in the APAC region.
+      Open to research collaborations, applied scientist roles, and conversations about multilingual AI safety in the APAC region. Also always up for a coffee chat about side projects, community building, or new ideas — formal or completely informal.
     </p>
+    <a href="mailto:sumyatnoe.uit@gmail.com" class="email-obfuscated" style="text-decoration:none;">Email: <strong>sumyatnoe.uit [at] gmail.com</strong></a>
     <div class="hero-links">
-      <a href="mailto:sumyatnoe.uit@gmail.com" class="pill pill-solid">sumyatnoe.uit@gmail.com</a>
       <a href="https://www.linkedin.com/in/sumyatnoe29/" target="_blank" class="pill pill-outline">LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=BdUh5ogAAAAJ&hl=en" target="_blank" class="pill pill-outline">Google Scholar</a>
       <a href="https://github.com/ImSuMyatNoe" target="_blank" class="pill pill-outline">GitHub</a>
+      <a href="https://medium.com/@sumyatnoe" target="_blank" class="pill pill-outline">Medium</a>
+      <a href="https://substack.com/@su2749" target="_blank" class="pill pill-outline">Substack</a>
+      <a href="https://orcid.org/0000-0001-7802-8263" target="_blank" class="pill pill-outline">ORCID</a>
     </div>
   </section>
-
   <footer>
     <span>© 2026 Su Myat Noe</span>
-    <span>Tokyo, Japan · EN · JP · Burmese</span>
   </footer>
-
 </div><!-- .page -->
-
 <script>
   const io = new IntersectionObserver(
     es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }),
     { threshold: 0.08 }
   );
   document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
-
   function toggleMenu() {
     document.querySelector('.nav-burger').classList.toggle('open');
     document.getElementById('mobileMenu').classList.toggle('open');
